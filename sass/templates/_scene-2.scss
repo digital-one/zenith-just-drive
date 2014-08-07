@@ -105,6 +105,9 @@ nav#main{
 	@include abs-pos(-10px,auto,auto,50%);
 	z-index: 1;
 	margin-left: -585px;
+	.scene-3 &{
+		@include abs-pos(-10px,0,auto,auto);
+	}
 }
 #small-cloud{
 	@extend %element;

@@ -1,0 +1,63 @@
+#fg-hills{
+	@extend %element;
+	height:540px;
+	background-image: url('../images/foreground-hills.png');
+	@include abs-pos(auto,auto,0,0);
+	z-index:4;
+}
+#bg-hills{
+	@extend %element;
+	height:568px;
+	background-image: url('../images/hills-background.png');
+	@include abs-pos(auto,auto,0,0);
+	z-index:2;
+}
+#tree-wrapper{
+	@extend %element;
+	background-image: url('../images/tree-rpt.png');
+	background-repeat: repeat-y;
+	@include abs-pos(0,0,170px,0);
+	z-index: 3;
+	#top{
+		@extend %element;
+		height: 313px;
+		background-image: url('../images/tree-top.png');
+		@include abs-pos(0,auto,auto,0);
+	}
+	#base{
+		@extend %element;
+		height: 186px;
+		background-image: url('../images/tree-base.png');
+		@include abs-pos(auto,auto,0,0);
+	}
+}
+form#calculator{
+	section{
+		z-index: 10;
+		input{
+			display: none;
+		}
+		&#tax{
+			@include abs-pos(0,auto,auto,50%);
+			width: 400px;
+			margin-left: -500px;
+		}
+		&#age{
+			@include abs-pos(200px,0,auto,auto);
+		}
+		&#car-type{
+			@include abs-pos(400px,auto,auto,0);
+		}
+		div{
+			@extend %element;
+			a{
+				font-family:$interstate-light;
+				@include font-size(18);
+				cursor:pointer;
+				display: block;
+			}
+		}
+	}
+}
+	
+		

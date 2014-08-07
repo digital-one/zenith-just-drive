@@ -69,6 +69,10 @@
 		background-image: url('../images/just-drive-cloud-small.png');
 		@include abs-pos(180px,auto,auto,50%);
 		margin-left: -580px;
+		.scene-3 &{
+			@include abs-pos(140px,60px,auto,auto);
+			z-index: 6;
+		}
 	}
 }
 #balloon{
