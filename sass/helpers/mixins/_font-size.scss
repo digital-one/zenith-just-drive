@@ -1,0 +1,5 @@
+@mixin font-size($sizeValue: 12 ){
+  font-size: $sizeValue + px; //fallback for old browsers
+  //font-size: (0.125 * $sizeValue) + rem;
+  font-size: (($sizeValue/100)*10) + rem;
+}

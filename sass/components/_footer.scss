@@ -1,0 +1,15 @@
+#footer{
+	padding: 40px 0;
+	#signup,#social,#contact{
+		@include span-columns(4);
+	}
+	#signup li{
+		margin-bottom: 10px;
+	}
+}
+#footer-links{
+	@include inline-menu;
+	li{
+		margin-right: 10px;
+	}
+}

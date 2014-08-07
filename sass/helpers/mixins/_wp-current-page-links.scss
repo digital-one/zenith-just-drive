@@ -1,0 +1,11 @@
+@mixin wp-current-page-links{
+	li{
+		&.current-menu-item, &.current-page-ancestor{
+			a{
+				&:link, &:visited{
+					@content;
+				}
+			}
+		}
+	}
+}

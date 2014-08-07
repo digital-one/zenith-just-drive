@@ -1,0 +1,15 @@
+h1,h2,h3,h4,h5{
+	@include font-size(40);
+	font-family: $marydale;
+	line-height: 100%;
+	margin: 0 0 25px;
+	letter-spacing: -1px;
+	color: white;
+}
+p{
+	color: #fff;
+	margin-bottom: 12px;
+	span{
+		@include font-size(18);
+	}
+}

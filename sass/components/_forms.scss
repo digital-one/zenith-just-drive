@@ -1,0 +1,33 @@
+form ul{
+	@extend %no-list;
+}
+
+input[type="text"], 
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea{
+	@include box-sizing(border-box);
+	line-height: 1;
+	height: 40px;
+	font-family: $texgyreherosBold;
+	background-color: #fff;
+	padding: 0 5px;
+	@include font-size(12);
+	color: #000;
+	border: none;
+	width:100%;
+}
+
+//gravity forms
+
+.gform_button{
+	height:40px;
+	line-height:40px;
+	width:100%;
+	background-color:$grey;
+	color: #fff;
+	border:none;
+	font-family: $texgyreherosBold;
+}

@@ -1,0 +1,37 @@
+#header{
+	margin: 10px 0 0;
+	height: 207px;
+	padding: 0;
+
+	.container{
+		background-color: #fff;
+		@extend .clearfix;
+	}
+	.container-inner{
+		height: 207px;
+	}
+	#contacts{
+		padding: 15px 0 0;
+		display: block;
+		@extend %full-width;
+		text-align: right;
+		span{
+			@include font-size(23);
+			display: block;
+			margin: 6px 0 0;
+			a{
+				color: $grey;
+			}
+		}
+		a{
+			font-family: $texgyreherosBold;
+		}
+	}
+}
+#home-link{
+	width: 296px;
+	display: block;
+	height: 68px;
+	margin:0;
+	@include abs-pos(auto,auto,85px,0);
+}

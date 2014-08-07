@@ -1,0 +1,128 @@
+nav#main{
+	.balloon-link{
+		@extend %element;
+		font-family: $arial;
+		color: #fff;
+		text-align: center;
+		div{
+			display: block;
+			width: 100%;
+		}
+		h2{
+			font-family: $marydale;
+			@include font-size(62);	
+			font-weight: normal;
+		}
+		&.red{
+			width: 589px;
+			height: 483px;
+			background-image: url('../images/red-balloon.png');
+			z-index: 3;
+			@include abs-pos(0,auto,auto,50%);
+			margin-left: -294px;
+			div{
+				padding: 62px 0 0;
+			}
+		}
+		&.green, &.yellow{
+			z-index: 2;
+			h2{
+				@include font-size(50);
+			}
+		}
+			
+		&.green{
+			background-image: url('../images/green-balloon.png');
+			width: 504px;
+			height: 503px;
+			@include abs-pos(0,auto,auto,54%);
+			div{
+				padding: 80px 0 0  25px;
+			}
+		}
+		&.yellow{
+			background-image: url('../images/yellow-balloon.png');
+			width: 380px;
+			height: 465px;
+			@include abs-pos(0,auto,auto,50%);
+			padding-left:-40px;
+			margin-left: -440px;
+			div{
+				padding: 80px 0 0;
+				width: 75%;
+			}
+		}
+	}
+	a{
+		@include border-radius(50%);
+		display: block;
+		background-color: #ccc;
+		width: 440px;
+		height: 530px;
+		@include abs-pos(-185px,auto,auto,51%);
+		margin-left: -224px;
+		@include opacity(0);
+		z-index: 5;
+		&.green{
+			@include abs-pos(-140px,70px,140px,60%);
+			margin-left: 0;
+			z-index: 4;
+			width: 370px;
+			height: 440px;
+		}
+		&.yellow{
+			@include abs-pos(-60px,70px,140px,50%);
+			z-index: 4;
+			width: 320px;
+			height: 340px;
+			margin-left: -420px;
+		}
+	}
+}
+#car-shadow{
+	@extend %element;
+	@include abs-pos(auto,auto,100px,50%);
+	width:303px;
+	height: 37px;
+	z-index:4;
+	margin-left: -151px;
+	background-image: url('../images/car-shadow.png');
+}
+#sign-save{
+	@extend %element;
+	@extend %ir;
+	width: 448px;
+	height: 235px;
+	background-image: url('../images/sign-how-much-save.png');
+	@include abs-pos(auto,20px,0,auto);
+	z-index:6;
+}
+#sun{
+	@extend %element;
+	width:227px;
+	height:227px;
+	background-image: url('../images/sun.png');
+	@include abs-pos(-10px,auto,auto,50%);
+	z-index: 1;
+	margin-left: -585px;
+}
+#small-cloud{
+	@extend %element;
+	width: 131px;
+	height: 95px;
+	background-image: url('../images/cloud-small.png');
+	@include abs-pos(170px,auto,auto,50%);
+	margin-left:400px;
+}
+.content{
+	@include abs-pos(320px,auto,auto,50%);
+	width: 430px;
+	margin-left: -560px;
+	&.easy{
+		text-align: right;
+	}
+	&.saving{
+		margin-left:100px;
+
+	}
+}

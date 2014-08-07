@@ -1,0 +1,25 @@
+#container{
+	position: relative;
+	width: 100%;
+	display: block;
+	height: 842px;
+	background: #ccc url('../images/bg.jpg') center top no-repeat;
+	&.scene-2{
+		background: #ccc url('../images/bg-scene-2.jpg') center top no-repeat;
+	}
+	@media screen and (min-height: 800px){ //if screen height is larger than 800px make site 100% deep
+		height: 100%;
+	}
+}
+%element{
+	display: block;
+	@include abs-pos(0,auto,auto,0);
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	width: 100%;
+	@include transition (all 0.1s ease-in-out);
+}
+
+
+

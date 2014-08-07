@@ -1,0 +1,87 @@
+#hills{
+	@extend %element;
+	height: 379px;
+	background-image: url('../images/hills.png');
+	z-index: 1;
+	@include abs-pos(auto,auto,0,0);
+}
+#road{
+	@extend %element;
+	height: 188px;
+	background-image: url('../images/road.png');
+	z-index: 3;
+	@include abs-pos(auto,auto,-3px,0);
+}
+#car{
+	@extend %element;
+	width: 281px;
+	height: 223px;
+	background-image: url('../images/car.png');
+	@include abs-pos(auto,auto,63px,50%);
+	margin-left: -140px;
+	z-index: 4;
+	&.with-shadow{
+		width: 276px;
+		height: 227px;
+		background-image: url('../images/car-rotated.png');
+		@include abs-pos(420px,auto,auto,50%);
+	}
+}
+#sign-yes{
+	@extend %element;
+	@extend %ir;
+	width: 241px;
+	height: 193px;
+	background-image: url('../images/sign-yes.png');
+	z-index: 2;
+	@include abs-pos(auto,auto,98px,60%);
+}
+#sign-no{
+	@extend %element;
+	@extend %ir;
+	width: 235px;
+	height: 184px;
+	margin-left: -235px;
+	background-image: url('../images/sign-no.png');
+	z-index: 2;
+	@include abs-pos(auto,auto,98px,40%);
+}
+#zenith-cloud{
+	@extend %element;
+	@extend %ir;
+	width: 287px;
+	height: 266px;
+	background-image: url('../images/cloud-sun.png');
+	@include abs-pos(-4%,auto,auto,50%);
+	margin-left: -520px;
+}
+#title-cloud{
+	@extend %element;
+	@extend %ir;
+	width: 701px;
+	height: 251px;
+	background-image: url('../images/just-drive-cloud.png');
+	@include abs-pos(10%,auto,auto,50%);
+	margin-left: -350px;
+	&.small{
+		width: 260px;
+		height: 82px;
+		background-image: url('../images/just-drive-cloud-small.png');
+		@include abs-pos(180px,auto,auto,50%);
+		margin-left: -580px;
+	}
+}
+#balloon{
+	@extend %element;
+	@extend %ir;
+	width: 393px;
+	height: 356px;
+	background-image: url('../images/balloon.png');
+	@include abs-pos(-100px,auto,auto,66%);
+}
+h3{
+	width: 60%;
+	@include abs-pos(40%,auto,auto,50%);
+	margin-left: -30%;
+	text-align: center;
+}
