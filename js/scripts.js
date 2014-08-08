@@ -29,9 +29,25 @@ var $radios = $('#car-type input[type=radio]');
 			$label = $(this).prev('label').html(),
 			$section = $(this).parents('section'),
 			$allRadios = $('input[type=radio]',$section),
-			$id = $(this).attr('id');
+			$id = $(this).attr('id'),
+			$desc = $('small',$parent).text();
+			$('small',$parent).remove();
+		$(this).before('<span>'+$label+'<small>'+$desc+'</small></span>').parent('div').before('<a class="'+$parentClass+'-link" rel="'+$id+'"></a>');
 
-		$(this).before('<span>'+$label+'</span>').parent('div').before('<a class="'+$parentClass+'-link" rel="'+$id+'"></a>');
+		$('a.'+$parentClass+'-link').on('mouseover',function(){
+			var $rel = $(this).attr('rel'),
+			$section = $('#'+$rel).parents('section'),
+			$parent = $('#'+$rel).parent('div');
+			//$('div',$section).removeClass('hovered');
+			$parent.addClass('hovered');
+		});
+			$('a.'+$parentClass+'-link').on('mouseout',function(){
+				var $rel = $(this).attr('rel'),
+				$section = $('#'+$rel).parents('section'),
+				$parent = $('#'+$rel).parent('div');
+				$parent.removeClass('hovered');
+			});
+
 		$('a.'+$parentClass+'-link').on('click',function(e){
 			e.preventDefault();
 			var $rel = $(this).attr('rel'),

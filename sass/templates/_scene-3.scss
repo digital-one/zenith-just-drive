@@ -126,9 +126,25 @@ form#calculator{
 			margin-left: -670px;
 			span{
 				text-align: right;
-				@include abs-pos(auto, auto,40px,-130px);
+				@include abs-pos(auto, auto,9px,-270px);
 				width: auto;
 				color: white;
+				@include opacity(.8);
+			}
+			div.hovered span{
+				@include opacity(1);
+			}
+			small{
+					@include font-size(11);
+					font-family: $arial;
+					display: block;
+					margin-top: 20px;
+					color: $grey;
+					@include opacity(0);
+					
+			}
+			div.hovered small{
+					@include opacity(1);	
 			}
 			a{
 				cursor: pointer;
@@ -143,7 +159,7 @@ form#calculator{
 				background-image: url('../images/small-car.png');
 				@include abs-pos(-4px,auto,auto,300px);
 				span{
-					@include abs-pos(auto, auto,40px,-70px);	
+					@include abs-pos(auto, auto,7px,-170px);	
 				}
 			}
 			.option-2{
@@ -151,6 +167,9 @@ form#calculator{
 				height: 142px;
 				background-image: url('../images/small-family-car.png');
 				@include abs-pos(80px,auto,auto,410px);
+				span{
+					@include abs-pos(auto, auto,7px,-210px);	
+				}
 			}
 			.option-3{
 				width:347px;
@@ -196,11 +215,13 @@ form#calculator{
 				text-align: center;
 				font-family:$interstate-light;
 				@include font-size(18);
+				
 			}
 			&.selected span{
 				font-family: $interstate-black; 
 				color: white;
 			}
+			
 		}
 	}
 	button{
@@ -213,9 +234,5 @@ form#calculator{
 		border:none;
 		@include abs-pos(auto,auto,0,50%);
 		margin-left: 200px;
-
 	}
-}
-
-	
-		
+}		
