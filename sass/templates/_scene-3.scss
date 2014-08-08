@@ -32,32 +32,190 @@
 	}
 }
 form#calculator{
+	@include abs-pos(0,auto,auto,0);
+	width: 100%;
+	height: 100%;
+	display:block;
+	z-index: 10;
 	section{
 		z-index: 10;
-		input{
+		input,label{
 			display: none;
 		}
+		h2{
+			@include abs-pos(auto,auto,0,0);
+		}
 		&#tax{
-			@include abs-pos(0,auto,auto,50%);
-			width: 400px;
-			margin-left: -500px;
+			@include abs-pos(49px,auto,auto,50%);
+			width: 380px;
+			height: 310px;
+			margin-left: -470px;
+			.option-1{
+				width:110px;
+				height:179px;
+				@include abs-pos(0,auto,auto,0);
+				background-image: url('../images/honeycomb-small.png');
+			}
+			.option-2{
+				width:120px;
+				height:196px;
+				@include abs-pos(10px,auto,auto,110px);
+				background-image: url('../images/honeycomb-medium.png');
+			}
+			.option-3{
+				width:139px;
+				height:225px;
+				@include abs-pos(12px,auto,auto,230px);
+				background-image: url('../images/honeycomb.png');
+			}
+			a{
+				color: $yellow;
+				&:hover,&:active{
+					color: white;
+				}
+			}
 		}
 		&#age{
-			@include abs-pos(200px,0,auto,auto);
+			@include abs-pos(auto,0,260px,50%);
+			width:433px;
+			height:390px;
+			margin-left:200px;
+			h2{
+				@include abs-pos(auto,auto,0,50px);
+			}
+			a{
+				color: $green;
+				&:hover,&:active{
+					color: white;
+				}
+			}
+			.option-1{
+				width:109px;
+				height:134px;
+				@include abs-pos(180px,auto,auto,0);
+				background-image: url('../images/small-tree.png');
+			}
+			.option-2{
+				width:125px;
+				height:208px;
+				@include abs-pos(106px,auto,auto,98px);
+				background-image: url('../images/medium-tree.png');
+			}
+			.option-3{
+				width:201px;
+				height:314px;
+				@include abs-pos(0,auto,auto,223px);
+				background-image: url('../images/big-tree.png');
+				span{
+					padding-right:25px;
+				}
+			}
+			.shadow{
+				width:480px;
+				height: 23px;
+				@extend %element;
+				@include abs-pos(auto,auto,101px,-45px);
+				background-image: url('../images/trees-shadow.png');
+				z-index: 1;
+			}
 		}
 		&#car-type{
-			@include abs-pos(400px,auto,auto,0);
+			width:800px;
+			height: 420px;
+			@include abs-pos(auto,auto,50px,50%);
+			margin-left: -670px;
+			span{
+				text-align: right;
+				@include abs-pos(auto, auto,40px,-130px);
+				width: auto;
+				color: white;
+			}
+			a{
+				cursor: pointer;
+				@include border-radius(40%);
+			}
+			h2{
+				@include abs-pos(auto,auto,0,140px);
+			}
+			.option-1{
+				width: 231px;
+				height: 128px;
+				background-image: url('../images/small-car.png');
+				@include abs-pos(-4px,auto,auto,300px);
+				span{
+					@include abs-pos(auto, auto,40px,-70px);	
+				}
+			}
+			.option-2{
+				width: 272px;
+				height: 142px;
+				background-image: url('../images/small-family-car.png');
+				@include abs-pos(80px,auto,auto,410px);
+			}
+			.option-3{
+				width:347px;
+				height:159px;
+				background-image: url('../images/large-family-car.png');
+				@include abs-pos(160px,auto,auto,560px);
+			}
+			.option-1-link{
+				width:190px;
+				height:130px;
+				@include abs-pos(0px, auto,auto,310px);	
+				z-index: 3;
+				
+			}
+			.option-2-link{
+				width:260px;
+				height:140px;
+				@include abs-pos(85px, auto,auto,420px);	
+				z-index: 4;
+			}
+			.option-3-link{
+				width:330px;
+				height:160px;
+				@include abs-pos(165px, auto,auto,570px);	
+				z-index: 5;
+			}
 		}
 		div{
 			@extend %element;
+			z-index: 2;
 			a{
-				font-family:$interstate-light;
-				@include font-size(18);
 				cursor:pointer;
 				display: block;
+				display: block;
+				background-repeat: center top;
+				background-repeat: no-repeat;
+				@include abs-pos(0,0,0,0);	
+			}
+			span{
+				display: block;
+				width: 100%;
+				@include abs-pos(auto,auto,5px,0);
+				text-align: center;
+				font-family:$interstate-light;
+				@include font-size(18);
+			}
+			&.selected span{
+				font-family: $interstate-black; 
+				color: white;
 			}
 		}
 	}
+	button{
+		@extend %ir;
+		@extend %element;
+		width:331px;
+		height:175px;
+		background-image: url('../images/submit-sign.png');
+		cursor: pointer;
+		border:none;
+		@include abs-pos(auto,auto,0,50%);
+		margin-left: 200px;
+
+	}
 }
+
 	
 		

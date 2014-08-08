@@ -107,6 +107,7 @@ nav#main{
 	margin-left: -585px;
 	.scene-3 &{
 		@include abs-pos(-10px,0,auto,auto);
+		z-index: 1;
 	}
 }
 #small-cloud{

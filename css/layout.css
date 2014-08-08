@@ -430,7 +430,7 @@ th {
 /*
 .box-shadow ($string: 0px 0px 5px 0px rgba(50, 50, 50, 0.75));
 */
-#sign-yes, #sign-no, #zenith-cloud, #title-cloud, #balloon, #sign-save {
+#sign-yes, #sign-no, #zenith-cloud, #title-cloud, #balloon, #sign-save, form#calculator button {
   text-indent: -10000px;
   overflow: hidden; }
 
@@ -440,11 +440,11 @@ html {
 body, html {
   width: 100%;
   height: 100%;
-  overflow-y: scroll; }
+  overflow-y: scroll;
+  overflow-x: hidden; }
   @media screen and (min-height: 800px) {
     body, html {
-      overflow-y: hidden;
-      overflow-x: hidden; } }
+      overflow-y: hidden; } }
 
 body {
   font-size: 12px;
@@ -479,7 +479,7 @@ p {
     #container {
       height: 100%; } }
 
-#hills, #road, #car, #sign-yes, #sign-no, #zenith-cloud, #title-cloud, #balloon, nav#main .balloon-link, #car-shadow, #sign-save, #sun, #small-cloud, #fg-hills, #bg-hills, #tree-wrapper, #tree-wrapper #top, #tree-wrapper #base, form#calculator section div {
+#hills, #road, #car, #sign-yes, #sign-no, #zenith-cloud, #title-cloud, #balloon, nav#main .balloon-link, #car-shadow, #sign-save, #sun, #small-cloud, #fg-hills, #bg-hills, #tree-wrapper, #tree-wrapper #top, #tree-wrapper #base, form#calculator section#age .shadow, form#calculator section div, form#calculator button {
   display: block;
   top: 0;
   right: auto;
@@ -595,7 +595,7 @@ p {
       bottom: auto;
       left: auto;
       position: absolute;
-      z-index: 6; }
+      z-index: 2; }
 
 #balloon {
   width: 393px;
@@ -754,7 +754,8 @@ nav#main a {
     right: 0;
     bottom: auto;
     left: auto;
-    position: absolute; }
+    position: absolute;
+    z-index: 1; }
 
 #small-cloud {
   width: 131px;
@@ -826,33 +827,253 @@ nav#main a {
     left: 0;
     position: absolute; }
 
-form#calculator section {
+form#calculator {
+  top: 0;
+  right: auto;
+  bottom: auto;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
   z-index: 10; }
-  form#calculator section input {
-    display: none; }
-  form#calculator section#tax {
-    top: 0;
+  form#calculator section {
+    z-index: 10; }
+    form#calculator section input, form#calculator section label {
+      display: none; }
+    form#calculator section h2 {
+      top: auto;
+      right: auto;
+      bottom: 0;
+      left: 0;
+      position: absolute; }
+    form#calculator section#tax {
+      top: 49px;
+      right: auto;
+      bottom: auto;
+      left: 50%;
+      position: absolute;
+      width: 380px;
+      height: 310px;
+      margin-left: -470px; }
+      form#calculator section#tax .option-1 {
+        width: 110px;
+        height: 179px;
+        top: 0;
+        right: auto;
+        bottom: auto;
+        left: 0;
+        position: absolute;
+        background-image: url("../images/honeycomb-small.png"); }
+      form#calculator section#tax .option-2 {
+        width: 120px;
+        height: 196px;
+        top: 10px;
+        right: auto;
+        bottom: auto;
+        left: 110px;
+        position: absolute;
+        background-image: url("../images/honeycomb-medium.png"); }
+      form#calculator section#tax .option-3 {
+        width: 139px;
+        height: 225px;
+        top: 12px;
+        right: auto;
+        bottom: auto;
+        left: 230px;
+        position: absolute;
+        background-image: url("../images/honeycomb.png"); }
+      form#calculator section#tax a {
+        color: #f3e600; }
+        form#calculator section#tax a:hover, form#calculator section#tax a:active {
+          color: white; }
+    form#calculator section#age {
+      top: auto;
+      right: 0;
+      bottom: 260px;
+      left: 50%;
+      position: absolute;
+      width: 433px;
+      height: 390px;
+      margin-left: 200px; }
+      form#calculator section#age h2 {
+        top: auto;
+        right: auto;
+        bottom: 0;
+        left: 50px;
+        position: absolute; }
+      form#calculator section#age a {
+        color: #92a65c; }
+        form#calculator section#age a:hover, form#calculator section#age a:active {
+          color: white; }
+      form#calculator section#age .option-1 {
+        width: 109px;
+        height: 134px;
+        top: 180px;
+        right: auto;
+        bottom: auto;
+        left: 0;
+        position: absolute;
+        background-image: url("../images/small-tree.png"); }
+      form#calculator section#age .option-2 {
+        width: 125px;
+        height: 208px;
+        top: 106px;
+        right: auto;
+        bottom: auto;
+        left: 98px;
+        position: absolute;
+        background-image: url("../images/medium-tree.png"); }
+      form#calculator section#age .option-3 {
+        width: 201px;
+        height: 314px;
+        top: 0;
+        right: auto;
+        bottom: auto;
+        left: 223px;
+        position: absolute;
+        background-image: url("../images/big-tree.png"); }
+        form#calculator section#age .option-3 span {
+          padding-right: 25px; }
+      form#calculator section#age .shadow {
+        width: 480px;
+        height: 23px;
+        top: auto;
+        right: auto;
+        bottom: 101px;
+        left: -45px;
+        position: absolute;
+        background-image: url("../images/trees-shadow.png");
+        z-index: 1; }
+    form#calculator section#car-type {
+      width: 800px;
+      height: 420px;
+      top: auto;
+      right: auto;
+      bottom: 50px;
+      left: 50%;
+      position: absolute;
+      margin-left: -670px; }
+      form#calculator section#car-type span {
+        text-align: right;
+        top: auto;
+        right: auto;
+        bottom: 40px;
+        left: -130px;
+        position: absolute;
+        width: auto;
+        color: white; }
+      form#calculator section#car-type a {
+        cursor: pointer;
+        -webkit-border-radius: 40%;
+        -moz-border-radius: 40%;
+        border-radius: 40%;
+        -moz-background-clip: padding;
+        -webkit-background-clip: padding-box;
+        background-clip: padding-box; }
+      form#calculator section#car-type h2 {
+        top: auto;
+        right: auto;
+        bottom: 0;
+        left: 140px;
+        position: absolute; }
+      form#calculator section#car-type .option-1 {
+        width: 231px;
+        height: 128px;
+        background-image: url("../images/small-car.png");
+        top: -4px;
+        right: auto;
+        bottom: auto;
+        left: 300px;
+        position: absolute; }
+        form#calculator section#car-type .option-1 span {
+          top: auto;
+          right: auto;
+          bottom: 40px;
+          left: -70px;
+          position: absolute; }
+      form#calculator section#car-type .option-2 {
+        width: 272px;
+        height: 142px;
+        background-image: url("../images/small-family-car.png");
+        top: 80px;
+        right: auto;
+        bottom: auto;
+        left: 410px;
+        position: absolute; }
+      form#calculator section#car-type .option-3 {
+        width: 347px;
+        height: 159px;
+        background-image: url("../images/large-family-car.png");
+        top: 160px;
+        right: auto;
+        bottom: auto;
+        left: 560px;
+        position: absolute; }
+      form#calculator section#car-type .option-1-link {
+        width: 190px;
+        height: 130px;
+        top: 0px;
+        right: auto;
+        bottom: auto;
+        left: 310px;
+        position: absolute;
+        z-index: 3; }
+      form#calculator section#car-type .option-2-link {
+        width: 260px;
+        height: 140px;
+        top: 85px;
+        right: auto;
+        bottom: auto;
+        left: 420px;
+        position: absolute;
+        z-index: 4; }
+      form#calculator section#car-type .option-3-link {
+        width: 330px;
+        height: 160px;
+        top: 165px;
+        right: auto;
+        bottom: auto;
+        left: 570px;
+        position: absolute;
+        z-index: 5; }
+    form#calculator section div {
+      z-index: 2; }
+      form#calculator section div a {
+        cursor: pointer;
+        display: block;
+        display: block;
+        background-repeat: center top;
+        background-repeat: no-repeat;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        position: absolute; }
+      form#calculator section div span {
+        display: block;
+        width: 100%;
+        top: auto;
+        right: auto;
+        bottom: 5px;
+        left: 0;
+        position: absolute;
+        text-align: center;
+        font-family: "interstatelight", Helvetica, Arial, sans-serif;
+        font-size: 18px;
+        font-size: 1.8rem; }
+      form#calculator section div.selected span {
+        font-family: "interstateblack", Helvetica, Arial, sans-serif;
+        color: white; }
+  form#calculator button {
+    width: 331px;
+    height: 175px;
+    background-image: url("../images/submit-sign.png");
+    cursor: pointer;
+    border: none;
+    top: auto;
     right: auto;
-    bottom: auto;
+    bottom: 0;
     left: 50%;
     position: absolute;
-    width: 400px;
-    margin-left: -500px; }
-  form#calculator section#age {
-    top: 200px;
-    right: 0;
-    bottom: auto;
-    left: auto;
-    position: absolute; }
-  form#calculator section#car-type {
-    top: 400px;
-    right: auto;
-    bottom: auto;
-    left: 0;
-    position: absolute; }
-  form#calculator section div a {
-    font-family: "interstatelight", Helvetica, Arial, sans-serif;
-    font-size: 18px;
-    font-size: 1.8rem;
-    cursor: pointer;
-    display: block; }
+    margin-left: 200px; }
