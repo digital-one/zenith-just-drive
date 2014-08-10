@@ -3,9 +3,13 @@
 	width: 100%;
 	display: block;
 	height: 842px;
-	background: #ccc url('../images/bg.jpg') center top no-repeat;
+	@include bg-cover;
+	background-image: url('../images/bg.jpg');
 	&.scene-2{
-		background: #ccc url('../images/bg-scene-2.jpg') center top no-repeat;
+		background-image: url('../images/bg-scene-2.jpg');
+	}
+	&.scene-4{
+		background-image: url('../images/bg-scene-4.jpg');
 	}
 	@media screen and (min-height: 800px){ //if screen height is larger than 800px make site 100% deep
 		height: 100%;

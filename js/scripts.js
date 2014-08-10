@@ -1,4 +1,21 @@
+$(window).on('resize',function(){
+	resizeTree();
+});
+
+function resizeTree(){
+	var $width = $('#poster-tree img.trunk').width();
+	$('#poster-tree').width($width);
+}
+
+
 $(document).ready(function(){
+
+resizeTree();
+
+$('a.tooltip-btn').on('click',function(e){
+	e.preventDefault();
+	$('.tooltip',$(this).parents('p')).fadeToggle();
+})
 
 // tax and age radio buttons
 

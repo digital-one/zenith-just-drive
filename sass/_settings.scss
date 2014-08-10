@@ -50,6 +50,16 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: "interstatebold";
+    src: url('/fonts/interstate_bold-webfont.eot');
+    src: url('/fonts/interstate_bold-webfont?#iefix') format('embedded-opentype'),
+         url('/fonts/interstate_bold-webfont.woff') format('woff'),
+         url('/fonts/interstate_bold-webfont.ttf') format('truetype'),
+         url('/fonts/interstate_bold-webfont.svg#interstatebold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 //overide neat outer container width
 $max-width: 1080px; 
@@ -67,6 +77,7 @@ $marydaleBold:  "marydale-bold", Helvetica, Arial, sans-serif;
 $arial: Arial,Helvetica, sans-serif;
 $interstate-light: "interstatelight",Helvetica,Arial,sans-serif;
 $interstate-regular: "interstateregular",Helvetica,Arial,sans-serif;
+$interstate-bold: "interstatebold",Helvetica,Arial,sans-serif;
 $interstate-black: "interstateblack",Helvetica,Arial,sans-serif;
 //Break points
 

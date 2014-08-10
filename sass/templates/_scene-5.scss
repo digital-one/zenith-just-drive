@@ -1,0 +1,105 @@
+#kite{
+	@extend %element;
+	width: 613px;
+	height: 841px;
+	background-image: url('../images/kite.png');
+	@include abs-pos(0,auto,auto,50%);
+	z-index: 5;
+	margin-left: -80px;
+	color: white;
+	padding: 120px 0 0 130px;
+	header{
+		@extend .clearfix;
+		margin-bottom: 30px;
+		position: relative;
+		span{
+			&.left{
+				width: 50%;
+				@include abs-pos(auto,auto,10px,0);
+				@include font-size(27);
+				font-weight: bold;
+			}
+			&.right{
+				font-family: $marydale;
+				@include font-size(27);
+				width: 50%;
+				float: right;
+				line-height: 110%;
+			}
+		}
+	}
+	p{
+		@extend .clearfix;
+		margin-bottom: 25px;
+		margin-left: -18px;
+		&:nth-child(3){
+			margin-left: -24px;
+			span.left{
+				width: 59%;
+			}
+		}
+		&:nth-child(4){
+			margin-left: -30px;
+			span.left{
+				width: 58.5%;
+			}
+		}
+		&:nth-child(5){
+			margin-left: -36px;
+			span.left{
+				width: 58%;
+			}
+		}
+		&:nth-child(6){
+			margin-left: -42px;
+			span.left{
+				width: 57.5%;
+			}
+		}
+		&:nth-child(7){
+			margin-left: -48px;
+			span.left{
+				width: 57%;
+			}
+		}
+		&:nth-child(8){
+			margin-left: -54px;
+			span.left{
+				width: 56.5%;
+			}
+		}
+		span{
+			&.left{
+				font-family: $interstate-regular;
+				@include font-size(15);
+				width:60%;
+				float: left;
+			}
+			&.right{
+				@include font-size(21);
+				font-weight: bold;
+				width: 40%;
+				float: left;
+			}
+		}
+	}
+}
+#sign-get-a-quote{
+	@extend %element;
+	@extend %ir;
+	width:504px;
+	height: 219px;
+	background-image: url('../images/sign-get-a-quote.png');
+	@include abs-pos(auto,auto,0,50%);
+	z-index: 10;
+	margin: 0 0 0 -350px;
+}
+#deer-left{
+	@extend %element;
+	width: 320px;
+	height: 283px;
+	background-image: url('../images/deer-left.png');
+	@include abs-pos(auto,auto,0,-11%);
+	z-index: 4;
+}
+

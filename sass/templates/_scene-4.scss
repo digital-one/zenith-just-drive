@@ -1,0 +1,262 @@
+.scene-4,.scene-5 h1{
+	font-family: $interstate-light;
+	font-weight: normal;
+	@include font-size(30);
+	@include abs-pos(45px, auto, auto, 10%);
+	z-index:10;
+}
+.scene-5 h1{
+	@include abs-pos(45px, auto, auto, 50%);
+	margin-left: -540px;
+}
+#sign-off{
+	@extend %element;
+	@include abs-pos(300px,auto,auto,65%);
+	width:380px;
+	h2{
+		@include font-size(60);
+		font-weight: normal;
+		line-height: 100%;
+		margin-bottom: 60px;
+	}
+	h3{
+		position: relative;
+		margin:0;
+		left: auto;
+		font-family: $interstate-light;
+		@include font-size(30);
+		font-weight: normal;
+		text-align: left;
+		width: 100%;
+	}
+}
+a#show-me-sign{
+	@extend %element;
+	@extend %ir;
+	z-index: 4;
+	width: 320px;
+	height: 245px;
+	display: block;
+	@include abs-pos(auto,180px,0,auto);
+	background-image: url('../images/show-me-sign.png');
+}
+#hills-scene-4{
+	@extend %element;
+	height:370px;
+	background-image: url('../images/scene-4-hills.png');
+	@include abs-pos(auto,auto,0,0);
+	z-index:1;
+}
+#deer{
+	@extend %element;
+	width: 242px;
+	height: 264px;
+	background-image: url('../images/deer.png');
+	@include abs-pos(auto,-100px,0,auto);
+	z-index: 2;
+}
+.big-cloud{
+	@extend %element;
+	width: 233px;
+	height: 170px;
+	background-image: url('../images/big-cloud.png');
+	@include abs-pos(110px,auto,auto,-100px);
+	z-index: 3;
+	&.right{
+		@include abs-pos(30px,130px,auto,auto);
+	}
+}
+#poster-tree{
+	@include abs-pos(0,auto,0,50%);
+	z-index:5;
+	margin-left: -600px;
+	.scene-5 &{
+		margin-left: -500px;
+	}
+	img{
+		width: auto;
+		height: 100%;
+		@include abs-pos(0,auto,auto,0);
+	}
+	#poster{
+		@extend %element;
+		width: 589px;
+		height: 672px;
+		//background-image: url('../images/poster.png');
+		@include abs-pos(50%,auto,auto,50%);
+		margin-left: -295px;
+		margin-top: -336px;
+		z-index: 5;
+		padding: 70px 50px 0 40px;
+		img{
+			@extend %fit-grid;
+			position: absolute;
+			z-index: 1;
+			display: block;
+		}
+		span{
+			display: block;
+			&.left{
+				float: left;
+			}
+			&.right{
+				float: right;
+			}
+		}
+		header{
+			z-index: 2;
+			position: relative;
+			@extend .clearfix;
+			color: white;
+			margin-bottom: 40px;
+			span{
+				&.left{
+					width: 65%;
+					@include font-size(26);
+					line-height: 120%;
+					font-family: $interstate-light;
+				}
+				&.right{
+					width: 35%;
+					@include font-size(14);
+				}
+			}
+		}
+		#main{
+			position: relative;
+			z-index: 2;
+			margin-bottom: 100px;
+			p{
+				margin-bottom: 20px;
+				position: relative;
+				@extend .clearfix;
+				.tooltip{
+					height:70px;
+					width:426px;
+					@include abs-pos(30px,auto,auto,-20px);
+					font-family: $interstate-bold;
+					@include font-size(14);
+					color: $grey;
+					background-image: url('../images/tooltip-1.png');
+					padding: 14px 0 0 25px;
+					z-index: 10;
+					display: none;
+				}
+				&:nth-child(2) .tooltip{
+					background-image: url('../images/tooltip-2.png');
+					width: 458px;
+				}
+				&:nth-child(3) .tooltip{
+					background-image: url('../images/tooltip-3.png');
+					width: 406px;
+				}
+				&:nth-child(4) .tooltip{
+					background-image: url('../images/tooltip-4.png');
+					width: 346px;
+				}
+			}
+			span{
+				&.left{
+					width:80%;
+					@extend .clearfix;
+				}
+				&.right{
+					width: 20%;
+					line-height: 50px;
+					height: 50px;
+					color: $grey;
+					text-align: right;
+					@include font-size(30);
+					font-weight: bold;
+				}	
+				.label{
+					line-height: 50px;
+					height: 50px;
+					float: left;
+					font-family: $interstate-light;
+					@include font-size(18);
+					color: $grey;
+				}
+				a{
+					@extend %ir;
+					width:84px;
+					height:71px;
+					display: block;
+					position: relative;
+					//background: url('../images/tooltip-btn.png') left top no-repeat;
+					float: left;
+					margin-top: -21px;
+					cursor: pointer;
+					img{
+						@extend %fit-grid;
+					}
+				}
+			}
+		}
+		footer{
+			position: relative;
+			z-index: 2;
+			span{
+				&.left{
+					width:65%;
+					font-family: $marydale;
+					@include font-size(42);
+					text-indent: 10px;
+				}
+				&.right{
+					width: 35%;
+					@include font-size(38);
+					font-weight: bold;
+					text-align: right;
+				}
+			}
+		}
+		&.small{
+			width:453px;
+			height: 513px;
+			margin: 0 0 0 -226px;
+			padding: 50px 40px 0 30px;
+			@include abs-pos(120px,auto,auto,50%);
+			header{
+				span.left{
+					@include font-size(18);
+				}
+				span.right{
+					@include font-size(11);
+				}
+			}
+			#main{
+				margin-bottom: 50px;
+				p{
+					margin: 0 0 20px;
+				}
+				span{
+					&.right{
+						@include font-size(21);
+						line-height: 40px;
+						height: 40px;
+					}
+					&.label{
+						@include font-size(15);
+						line-height: 40px;
+						height: 40px;
+					}	
+				}
+				a{
+					width: 61px;
+					height: 50px;
+				}
+			}
+			footer{
+				span{
+					&.left{
+						@include font-size(30);
+					}
+					&.right{
+						@include font-size(27);
+					}
+				}
+			}
+		}
+	}
+}
