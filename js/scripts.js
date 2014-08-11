@@ -10,11 +10,32 @@ function resizeTree(){
 
 $(document).ready(function(){
 
+// Browser history
+	 //var History = window.History;
+	  History.Adapter.bind(window,'statechange',function() {
+	  	 var State = History.getState();
+	  	 $('#content').load(State.url + ' #container');
+	  });
+	   $('a.history').click(function(evt) {
+        evt.preventDefault();
+        History.pushState(null, $(this).text(), $(this).attr('href'));
+    });
+
 resizeTree();
+
+// tooltips
 
 $('a.tooltip-btn').on('click',function(e){
 	e.preventDefault();
 	$('.tooltip',$(this).parents('p')).fadeToggle();
+})
+
+// balloon content regions
+
+$('a.balloon-link').on('click',function(e){
+	e.preventDefault();
+	$('.content').fadeOut();
+	$('.'+$(this).attr('rel')).fadeToggle();
 })
 
 // tax and age radio buttons

@@ -502,7 +502,7 @@ p {
     #container {
       height: 100%; } }
 
-#hills, #road, #car, #sign-yes, #sign-no, #zenith-cloud, #title-cloud, #balloon, nav#main .balloon-link, #car-shadow, #sign-save, #sun, #small-cloud, #fg-hills, #bg-hills, #tree-wrapper, #tree-wrapper #top, #tree-wrapper #base, form#calculator section#age .shadow, form#calculator section div, form#calculator button, #sign-off, a#show-me-sign, #hills-scene-4, #deer, .big-cloud, #poster-tree #poster, #kite, #sign-get-a-quote, #deer-left {
+#hills, #road, #car, #sign-yes, #sign-no, #zenith-cloud, #title-cloud, #balloon, nav#main .balloon, #car-shadow, #sign-save, #sun, #small-cloud, #fg-hills, #bg-hills, #tree-wrapper, #tree-wrapper #top, #tree-wrapper #base, form#calculator section#age .shadow, form#calculator section div, form#calculator button, #sign-off, a#show-me-sign, #hills-scene-4, #deer, .big-cloud, #poster-tree #poster, #kite, #sign-get-a-quote, #deer-left {
   display: block;
   top: 0;
   right: auto;
@@ -640,19 +640,19 @@ h3 {
   margin-left: -30%;
   text-align: center; }
 
-nav#main .balloon-link {
+nav#main .balloon {
   font-family: Arial, Helvetica, sans-serif;
   color: #fff;
   text-align: center; }
-  nav#main .balloon-link div {
+  nav#main .balloon div {
     display: block;
     width: 100%; }
-  nav#main .balloon-link h2 {
+  nav#main .balloon h2 {
     font-family: "marydale", Helvetica, Arial, sans-serif;
     font-size: 62px;
     font-size: 6.2rem;
     font-weight: normal; }
-  nav#main .balloon-link.red {
+  nav#main .balloon.red {
     width: 589px;
     height: 483px;
     background-image: url("../images/red-balloon.png");
@@ -663,14 +663,17 @@ nav#main .balloon-link {
     left: 50%;
     position: absolute;
     margin-left: -294px; }
-    nav#main .balloon-link.red div {
+    nav#main .balloon.red div {
       padding: 62px 0 0; }
-  nav#main .balloon-link.green, nav#main .balloon-link.yellow {
+      nav#main .balloon.red div.content {
+        padding-top: 0;
+        display: none; }
+  nav#main .balloon.green, nav#main .balloon.yellow {
     z-index: 2; }
-    nav#main .balloon-link.green h2, nav#main .balloon-link.yellow h2 {
+    nav#main .balloon.green h2, nav#main .balloon.yellow h2 {
       font-size: 50px;
       font-size: 5rem; }
-  nav#main .balloon-link.green {
+  nav#main .balloon.green {
     background-image: url("../images/green-balloon.png");
     width: 504px;
     height: 503px;
@@ -679,9 +682,9 @@ nav#main .balloon-link {
     bottom: auto;
     left: 54%;
     position: absolute; }
-    nav#main .balloon-link.green div {
+    nav#main .balloon.green div {
       padding: 80px 0 0  25px; }
-  nav#main .balloon-link.yellow {
+  nav#main .balloon.yellow {
     background-image: url("../images/yellow-balloon.png");
     width: 380px;
     height: 465px;
@@ -692,7 +695,7 @@ nav#main .balloon-link {
     position: absolute;
     padding-left: -40px;
     margin-left: -440px; }
-    nav#main .balloon-link.yellow div {
+    nav#main .balloon.yellow div {
       padding: 80px 0 0;
       width: 75%; }
 nav#main a {
@@ -797,13 +800,15 @@ nav#main a {
   margin-left: 400px; }
 
 .content {
-  top: 320px;
-  right: auto;
-  bottom: auto;
-  left: 50%;
-  position: absolute;
-  width: 430px;
-  margin-left: -560px; }
+  display: none; }
+  .content.easy, .content.saving {
+    top: 320px;
+    right: auto;
+    bottom: auto;
+    left: 50%;
+    position: absolute;
+    width: 430px;
+    margin-left: -560px; }
   .content.easy {
     text-align: right; }
   .content.saving {

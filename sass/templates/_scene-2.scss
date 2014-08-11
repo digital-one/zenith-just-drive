@@ -1,5 +1,5 @@
 nav#main{
-	.balloon-link{
+	.balloon{
 		@extend %element;
 		font-family: $arial;
 		color: #fff;
@@ -22,6 +22,10 @@ nav#main{
 			margin-left: -294px;
 			div{
 				padding: 62px 0 0;
+				&.content{
+					padding-top:0;
+					display: none;
+				}
 			}
 		}
 		&.green, &.yellow{
@@ -121,9 +125,12 @@ nav#main{
 	margin-left:400px;
 }
 .content{
-	@include abs-pos(320px,auto,auto,50%);
-	width: 430px;
-	margin-left: -560px;
+	display:none;
+	&.easy,&.saving{
+		@include abs-pos(320px,auto,auto,50%);
+		width: 430px;
+		margin-left: -560px;
+	}
 	&.easy{
 		text-align: right;
 	}
