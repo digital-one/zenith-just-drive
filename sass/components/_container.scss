@@ -13,6 +13,7 @@
 	}
 	@media screen and (min-height: 800px){ //if screen height is larger than 800px make site 100% deep
 		height: 100%;
+		min-height: 100%;
 	}
 }
 %element{

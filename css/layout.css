@@ -500,7 +500,8 @@ p {
     background-image: url("../images/bg-scene-4.jpg"); }
   @media screen and (min-height: 800px) {
     #container {
-      height: 100%; } }
+      height: 100%;
+      min-height: 100%; } }
 
 #hills, #road, #car, #sign-yes, #sign-no, #zenith-cloud, #title-cloud, #balloon, nav#main .balloon, #car-shadow, #sign-save, #sun, #small-cloud, #fg-hills, #bg-hills, #tree-wrapper, #tree-wrapper #top, #tree-wrapper #base, form#calculator section#age .shadow, form#calculator section div, form#calculator button, #sign-off, a#show-me-sign, #hills-scene-4, #deer, .big-cloud, #poster-tree #poster, #kite, #sign-get-a-quote, #deer-left {
   display: block;
