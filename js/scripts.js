@@ -23,6 +23,8 @@ for (var i = 0; i < list.length; i++) {
     //$img = new Image();
     //$img.src = list[i];
      $('<img>').attr({ src: list[i] }).load(function() {
+     	console.log(list[i]);
+     	console.log(++$loaded);
     	if(++$loaded==$imageCount){
     		callback();
     	}
