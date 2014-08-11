@@ -45,6 +45,7 @@ for (var i = 0; i < list.length; i++) {
 	  	 	$preloads.each(function(){
 	  	 		$images.push($(this).css('background-image').replace(/.*\s?url\([\'\"]?/, '').replace(/[\'\"]?\).*/, ''));
 	  	 	})
+	  	 	console.log($images);
 	  	 	preloadImages($images,function(){
 	  	 		$page.fadeIn();
 	  	 	})
