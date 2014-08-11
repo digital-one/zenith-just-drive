@@ -10,11 +10,44 @@ function resizeTree(){
 
 $(document).ready(function(){
 
+// image preloader
+
+function preloadImages(list,callback) {
+    var $img,
+   		$imageCount = list.length,
+    	$loaded=0;
+   // if (!preloadImages.cache) {
+   // preloadImages.cache = [];
+//}
+for (var i = 0; i < list.length; i++) {
+    //$img = new Image();
+    //$img.src = list[i];
+     $('<img>').attr({ src: list[i] }).load(function() {
+    	if(++$loaded==$imageCount){
+    		callback();
+    	}
+    })
+    //preloadImages.cache.push(img);
+}
+}
+
 // Browser history
 	 //var History = window.History;
 	  History.Adapter.bind(window,'statechange',function() {
 	  	 var State = History.getState();
-	  	 $('#content').load(State.url + ' #container');
+	  	 $('#content').load(State.url + ' #container',function(){
+	  	 	var $page = $(this);
+	  	 	//get all background images to preload
+	  	 	var $preloads = $('.preload',$page),
+	  	 		$images=[];
+	  	 	$preloads.each(function(){
+	  	 		$images.push($(this).css('background-image').replace(/.*\s?url\([\'\"]?/, '').replace(/[\'\"]?\).*/, ''));
+	  	 	})
+	  	 	preloadImages($images,function(){
+	  	 		$page.fadeIn();
+	  	 	})
+
+	  	 });
 	  });
 	   $('a.history').click(function(evt) {
         evt.preventDefault();
