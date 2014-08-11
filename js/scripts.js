@@ -25,10 +25,8 @@ function preloadImages(list,callback) {
 for (var i = 0; i < $imageCount; i++) {
     //$img = new Image();
     //$img.src = list[i];
-    console.log(list[i]);
+   // console.log(list[i]);
      $('<img>').attr({ src: list[i] }).load(function() {
-   	console.log('loaded');
-     	//console.log(++$loaded);
     	if(++$loaded==$imageCount){
     		callback();
     	}
@@ -40,12 +38,21 @@ for (var i = 0; i < $imageCount; i++) {
 // Browser history
 	 //var History = window.History;
 	  History.Adapter.bind(window,'statechange',function() {
+	  	console.log('change state');
 	  	 var State = History.getState();
 	  	// $('#content').load(State.url + ' #container',function(){
-	  	 	$.get(State.url + ' #container', function(data) {
-	  	 	var $page = data;
+
+
+
+
+	  	 	$.get(State.url, function(content) {
+	  	 		
+	  	 	var $page = $(content).find('#container');
+
+	  	 	//var $class = $(content).find('#container').attr('class');
+	  	 	
 	  	 	//get all background images to preload
-	  	 	var $preloads = $('.preload',$page),
+	  	 	var $preloads = $('.preload',content),
 	  	 		$images=[];
 	  	 	$preloads.each(function(){
 	  	 		$images.push($(this).css('background-image').replace(/.*\s?url\([\'\"]?/, '').replace(/[\'\"]?\).*/, ''));
