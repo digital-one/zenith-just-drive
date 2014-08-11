@@ -13,18 +13,22 @@ $(document).ready(function(){
 // image preloader
 
 function preloadImages(list,callback) {
-    var $img,
-   		$imageCount = list.length,
-    	$loaded=0;
+
+   		var $imageCount = list.length,
+    		$loaded=0;
+    		console.log($imageCount);
+
+
    // if (!preloadImages.cache) {
    // preloadImages.cache = [];
 //}
-for (var i = 0; i < list.length; i++) {
+for (var i = 0; i < $imageCount; i++) {
     //$img = new Image();
     //$img.src = list[i];
+    console.log(list[i]);
      $('<img>').attr({ src: list[i] }).load(function() {
-     	console.log(list[i]);
-     	console.log(++$loaded);
+   	console.log('loaded');
+     	//console.log(++$loaded);
     	if(++$loaded==$imageCount){
     		callback();
     	}
@@ -37,17 +41,18 @@ for (var i = 0; i < list.length; i++) {
 	 //var History = window.History;
 	  History.Adapter.bind(window,'statechange',function() {
 	  	 var State = History.getState();
-	  	 $('#content').load(State.url + ' #container',function(){
-	  	 	var $page = $(this);
+	  	// $('#content').load(State.url + ' #container',function(){
+	  	 	$.get(State.url + ' #container', function(data) {
+	  	 	var $page = data;
 	  	 	//get all background images to preload
 	  	 	var $preloads = $('.preload',$page),
 	  	 		$images=[];
 	  	 	$preloads.each(function(){
 	  	 		$images.push($(this).css('background-image').replace(/.*\s?url\([\'\"]?/, '').replace(/[\'\"]?\).*/, ''));
 	  	 	})
-	  	 	console.log($images);
+
 	  	 	preloadImages($images,function(){
-	  	 		$page.fadeIn();
+	  	 		$("#content").html($page);
 	  	 	})
 
 	  	 });
