@@ -1,3 +1,12 @@
+<?php
+if($_GET):
+$tax = $_GET['tax'];
+$age = $_GET['age'];
+$car = $_GET['car'];
+//calculations here
+endif;
+?>
+
 <!doctype html>
 <html class="no-js page-home logged ">
     <head>
@@ -17,7 +26,7 @@
     </head>
     <body>
         <div id="content">
-<div id="container" class="scene-4">
+<div id="container" class="scene-4 preload"  style="background-image: url('images/bg-scene-4.jpg');">
       &nbsp;
     <div id="sun"></div>
     <div id="deer" class="preload" style="background-image: url('images/deer.png');"></div>
@@ -29,7 +38,11 @@
     <div id="poster-tree">
          <div id="poster">
             <header>
-<span class="left">a large family car<br />
+<span class="left">
+tax=<?php echo $tax ?><br />
+age=<?php echo $car ?><br />
+car=<?php echo $car ?><br />
+    a large family car<br />
 for someone 35-44<br />
 and paying 40% tax</span>
 <span class="right">
@@ -54,7 +67,7 @@ Annual mileage: 18,000
 <h2>That's<br />quite a saving!</h2>
 <h3>There's more good news&hellip;</h3>
 </div>
-<a href="" id="show-me-sign" class="preload" style="background-image: url('images/show-me-sign.png);">Show me</a>
+<a href="" id="show-me-sign" class="preload" style="background-image: url('images/show-me-sign.png');">Show me</a>
    </div>
 </div>
 <script  src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>

@@ -10,9 +10,11 @@ function resizeTree(){
 
 $(document).ready(function(){
 
+
 setHistoryLink();
 scene2JS();
 scene3JS();
+resizeTree();
 
 // image preloader
 
@@ -43,10 +45,14 @@ for (var i = 0; i < $imageCount; i++) {
 // Browser history
 
 	 var History = window.History;
+//History.pushState(null, '', 'index.html');
+
 	  History.Adapter.bind(window,'statechange',function() {
 	  	if(console) console.log('change state');
 	  	 var State = History.getState();
 	  	// $('#content').load(State.url + ' #container',function(){
+	  		console.log(State.url);
+	  		
 			$.get(State.url, function(data) {
 	  	 		
 	  	 		var $images=[],
@@ -61,7 +67,7 @@ for (var i = 0; i < $imageCount; i++) {
 	  	 				$images.push($(this));
 	  	 			});
 				}
-	  	 	console.log($images);
+	  	 	//if(console) console.log($images);
 	  	 	var $page = $(data).find('#container').html();
 	  	 	var $sceneClass = $(data).find('#container').attr('class');
 	  	 
@@ -73,25 +79,18 @@ for (var i = 0; i < $imageCount; i++) {
 
 	  	 	})
 	  	 });
+			
 	  });
 	  
 
-resizeTree();
-
-//form submit
-
-/*
-function submitForm(){
-	$.get('scene-4.php',)	
-}
-*/
-
-// tooltips
-
-$('a.tooltip-btn').on('click',function(e){
+function scene4JS(){
+	// tooltips
+	$('a.tooltip-btn').on('click',function(e){
 	e.preventDefault();
 	$('.tooltip',$(this).parents('p')).fadeToggle();
 })
+}
+
 function setHistoryLink(){
  $('a.history').click(function(evt) {
         evt.preventDefault();
@@ -188,6 +187,35 @@ function submitForm(){
 		
 		if($tax && $age && $car){
 			$.get('scene-4.php', {tax:$tax,age:$age,car:$car},function(data) {
+				//loaded page, preload images then show
+	  	 		var $images=[],
+	  	 			$preloads = $('.preload',data),
+	  	 			$preloads_src = $('img',data);
+	  	 			
+					$preloads.each(function(index) {
+	  	 				$images.push(this.style.backgroundImage.replace(/.*\s?url\([\'\"]?/, '').replace(/[\'\"]?\).*/, ''));
+					});
+					
+					$preloads_src.each(function(){
+						$images.push($(this).attr('src'));
+					})
+					
+				//if(console) console.log($images);
+
+				var $page = $(data).find('#container').html();
+	  	 		var $sceneClass = $(data).find('#container').attr('class');
+
+	  	 		preloadImages($images,function(){
+	  	 		$("#container").attr('class','').addClass($sceneClass).html($page);
+	  	 		resizeTree();
+	  	 		scene4JS();
+	  	 		History.pushState(null, '', 'scene-3.php');
+	  	 		//scene2JS();
+	  	 		//scene3JS();
+	  	 		//setHistoryLink();
+
+	  	 	})
+
 				});
 		} else {
 			console.log('all not filled');
