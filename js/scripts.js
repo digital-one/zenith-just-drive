@@ -52,10 +52,12 @@ for (var i = 0; i < $imageCount; i++) {
 	  	 			$preloads.each(function(index) {
 	  	 				$images.push(this.style.backgroundImage.replace(/.*\s?url\([\'\"]?/, '').replace(/[\'\"]?\).*/, ''));
 					});
+					if($preloads_src){
 					$preloads_src.each(function(index){
 	  	 				$images.push($(this));
 	  	 			});
-	  	 	
+				}
+	  	 	console.log($images);
 	  	 	var $page = $(data).find('#container').html();
 	  	 
 	  	 	preloadImages($images,function(){

@@ -795,7 +795,7 @@ nav#main a {
     bottom: auto;
     left: auto;
     position: absolute; }
-  #sun .scene-4, .scene-5 #sun {
+  .scene-4 #sun, .scene-5 #sun {
     top: -10px;
     right: 0;
     bottom: auto;
@@ -1166,7 +1166,7 @@ form#calculator {
     position: absolute;
     margin-left: 200px; }
 
-.scene-4, .scene-5 h1 {
+.scene-4 h1, .scene-5 h1 {
   font-family: "interstatelight", Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-size: 30px;
