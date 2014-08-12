@@ -72,10 +72,11 @@ resizeTree();
 
 //form submit
 
+/*
 function submitForm(){
 	$.get('scene-4.php',)	
 }
-
+*/
 
 // tooltips
 
