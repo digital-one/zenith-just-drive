@@ -209,7 +209,7 @@ function submitForm(){
 	  	 		$("#container").attr('class','').addClass($sceneClass).html($page);
 	  	 		resizeTree();
 	  	 		scene4JS();
-	  	 		History.pushState(null, '', 'scene-3.php');
+	  	 		//History.pushState(null, '', 'scene-3.html');
 	  	 		//scene2JS();
 	  	 		//scene3JS();
 	  	 		//setHistoryLink();
