@@ -10,6 +10,7 @@ function resizeTree(){
 
 $(document).ready(function(){
 
+setHistoryLink();
 scene2JS();
 scene3JS();
 
@@ -62,19 +63,18 @@ for (var i = 0; i < $imageCount; i++) {
 				}
 	  	 	console.log($images);
 	  	 	var $page = $(data).find('#container').html();
+	  	 	var $sceneClass = $(data).find('#container').attr('class');
 	  	 
 	  	 	preloadImages($images,function(){
-	  	 		$("#container").html($page);
+	  	 		$("#container").attr('class','').addClass($sceneClass).html($page);
 	  	 		scene2JS();
 	  	 		scene3JS();
+	  	 		setHistoryLink();
 
 	  	 	})
 	  	 });
 	  });
-	   $('a.history').click(function(evt) {
-        evt.preventDefault();
-        History.pushState(null, $(this).text(), $(this).attr('href'));
-    });
+	  
 
 resizeTree();
 
@@ -92,6 +92,14 @@ $('a.tooltip-btn').on('click',function(e){
 	e.preventDefault();
 	$('.tooltip',$(this).parents('p')).fadeToggle();
 })
+function setHistoryLink(){
+ $('a.history').click(function(evt) {
+        evt.preventDefault();
+        History.pushState(null, $(this).text(), $(this).attr('href'));
+    });
+
+}
+
 
 // balloon content regions
 
@@ -119,7 +127,8 @@ $radios.each(function(){
 		e.preventDefault();
 		$allRadios.attr('checked', false);
 		$('div',$section).removeClass('selected');
-		$radio.attr('checked', 'checked');
+		//$radio.attr('checked', 'checked');
+		$radio.prop("checked", true);
 		$parent.addClass('selected');
 	});
 })
@@ -159,14 +168,32 @@ var $radios = $('#car-type input[type=radio]');
 			$section = $('#'+$rel).parents('section');
 			$('div',$section).removeClass('selected');
 			$allRadios.attr('checked', false);
-			$('#'+$rel).attr('checked', 'checked');
+			//$('#'+$rel).attr('checked', 'checked');
+			$('#'+$rel).prop("checked", true);
 			$parent.addClass('selected');
 		})
+	})
+	$('#calculator').on('submit',function(e){
+		e.preventDefault();
+		submitForm();
 	})
 
 }
 // form validation - dont let form submit without the 3 selections
 
+function submitForm(){
+	var $tax = $('input[name=tax-banding]:checked').val(),
+		$age= $('input[name=age]:checked').val(),
+		$car= $('input[name=car]:checked').val();
+		
+		if($tax && $age && $car){
+			$.get('scene-4.php', {tax:$tax,age:$age,car:$car},function(data) {
+				});
+		} else {
+			console.log('all not filled');
+		}
+		
+}
 
 //
 })
