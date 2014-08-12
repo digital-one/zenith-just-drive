@@ -96,7 +96,7 @@ $('a.tooltip-btn').on('click',function(e){
 // balloon content regions
 
 function scene2JS(){
-	console.log('scene2');
+	if(console) console.log('scene2');
 $('a.balloon-link').on('click',function(e){
 	e.preventDefault();
 	$('.content').fadeOut();
