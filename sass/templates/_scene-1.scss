@@ -23,7 +23,7 @@
 	&.with-shadow{
 		width: 276px;
 		height: 227px;
-		background-image: url('../images/car-rotated.png');
+		//background-image: url('../images/car-rotated.png');
 		@include abs-pos(420px,auto,auto,50%);
 	}
 }

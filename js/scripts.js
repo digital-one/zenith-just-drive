@@ -25,8 +25,9 @@ function preloadImages(list,callback) {
 for (var i = 0; i < $imageCount; i++) {
     //$img = new Image();
     //$img.src = list[i];
-   // console.log(list[i]);
+   //console.log(list[i]);
      $('<img>').attr({ src: list[i] }).load(function() {
+
     	if(++$loaded==$imageCount){
     		callback();
     	}
@@ -36,32 +37,30 @@ for (var i = 0; i < $imageCount; i++) {
 }
 
 // Browser history
-	 //var History = window.History;
+
+	 var History = window.History;
 	  History.Adapter.bind(window,'statechange',function() {
 	  	console.log('change state');
 	  	 var State = History.getState();
 	  	// $('#content').load(State.url + ' #container',function(){
-
-
-
-
-	  	 	$.get(State.url, function(content) {
+			$.get(State.url, function(data) {
 	  	 		
-	  	 	var $page = $(content).find('#container');
+	  	 		var $images=[],
+	  	 			$preloads = $('.preload',data),
+	  	 			$preloads_src = $('img',data).attr('src');
 
-	  	 	//var $class = $(content).find('#container').attr('class');
+	  	 			$preloads.each(function(index) {
+	  	 				$images.push(this.style.backgroundImage.replace(/.*\s?url\([\'\"]?/, '').replace(/[\'\"]?\).*/, ''));
+					});
+					$preloads_src.each(function(index){
+	  	 				$images.push($(this));
+	  	 			});
 	  	 	
-	  	 	//get all background images to preload
-	  	 	var $preloads = $('.preload',content),
-	  	 		$images=[];
-	  	 	$preloads.each(function(){
-	  	 		$images.push($(this).css('background-image').replace(/.*\s?url\([\'\"]?/, '').replace(/[\'\"]?\).*/, ''));
-	  	 	})
-
+	  	 	var $page = $(data).find('#container').html();
+	  	 
 	  	 	preloadImages($images,function(){
-	  	 		$("#content").html($page);
+	  	 		$("#container").html($page);
 	  	 	})
-
 	  	 });
 	  });
 	   $('a.history').click(function(evt) {
@@ -70,6 +69,13 @@ for (var i = 0; i < $imageCount; i++) {
     });
 
 resizeTree();
+
+//form submit
+
+function submitForm(){
+	$.get('scene-4.php',)	
+}
+
 
 // tooltips
 
@@ -110,7 +116,7 @@ $radios.each(function(){
 
 var $radios = $('#car-type input[type=radio]');
 	$radios.each(function(){
-		var $parentClass = $(this).parent('div').attr('class'),
+		var $parentClass = $(this).parent('div').removeClass('preload').attr('class'),
 			$parent = $(this).parent('div'),
 			$label = $(this).prev('label').html(),
 			$section = $(this).parents('section'),
@@ -145,4 +151,9 @@ var $radios = $('#car-type input[type=radio]');
 			$parent.addClass('selected');
 		})
 	})
+
+// form validation - dont let form submit without the 3 selections
+
+
+//
 })

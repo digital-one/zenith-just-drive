@@ -566,7 +566,6 @@ p {
   #car.with-shadow {
     width: 276px;
     height: 227px;
-    background-image: url("../images/car-rotated.png");
     top: 420px;
     right: auto;
     bottom: auto;
@@ -829,6 +828,9 @@ nav#main a {
   .content.saving {
     margin-left: 100px; }
 
+.preload {
+  background-image: url("../images/red-balloon.png"); }
+
 #fg-hills {
   height: 540px;
   background-image: url("../images/foreground-hills.png");
@@ -901,7 +903,7 @@ form#calculator {
       bottom: auto;
       left: 50%;
       position: absolute;
-      width: 380px;
+      width: 400px;
       height: 310px;
       margin-left: -470px; }
       form#calculator section#tax .option-1 {
@@ -1009,7 +1011,7 @@ form#calculator {
         top: auto;
         right: auto;
         bottom: 9px;
-        left: -270px;
+        left: -280px;
         position: absolute;
         width: auto;
         color: white;
@@ -1070,7 +1072,7 @@ form#calculator {
           top: auto;
           right: auto;
           bottom: 7px;
-          left: -170px;
+          left: -180px;
           position: absolute; }
       form#calculator section#car-type .option-2 {
         width: 272px;
@@ -1085,7 +1087,7 @@ form#calculator {
           top: auto;
           right: auto;
           bottom: 7px;
-          left: -210px;
+          left: -220px;
           position: absolute; }
       form#calculator section#car-type .option-3 {
         width: 347px;

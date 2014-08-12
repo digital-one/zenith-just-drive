@@ -47,7 +47,7 @@ form#calculator{
 		}
 		&#tax{
 			@include abs-pos(49px,auto,auto,50%);
-			width: 380px;
+			width: 400px;
 			height: 310px;
 			margin-left: -470px;
 			.option-1{
@@ -129,7 +129,7 @@ form#calculator{
 			margin-left: -670px;
 			span{
 				text-align: right;
-				@include abs-pos(auto, auto,9px,-270px);
+				@include abs-pos(auto, auto,9px,-280px);
 				width: auto;
 				color: white;
 				@include opacity(.8);
@@ -164,7 +164,7 @@ form#calculator{
 				background-image: url('../images/small-car.png');
 				@include abs-pos(-4px,auto,auto,300px);
 				span{
-					@include abs-pos(auto, auto,7px,-170px);	
+					@include abs-pos(auto, auto,7px,-180px);	
 				}
 			}
 			.option-2{
@@ -173,7 +173,7 @@ form#calculator{
 				background-image: url('../images/small-family-car.png');
 				@include abs-pos(80px,auto,auto,410px);
 				span{
-					@include abs-pos(auto, auto,7px,-210px);	
+					@include abs-pos(auto, auto,7px,-220px);	
 				}
 			}
 			.option-3{
