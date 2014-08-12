@@ -67,7 +67,7 @@ Annual mileage: 18,000
 <h2>That's<br />quite a saving!</h2>
 <h3>There's more good news&hellip;</h3>
 </div>
-<a href="" id="show-me-sign" class="preload" style="background-image: url('images/show-me-sign.png');">Show me</a>
+<a href="scene-5.html" id="show-me-sign" class="preload history" style="background-image: url('images/show-me-sign.png');">Show me</a>
    </div>
 </div>
 <script  src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>

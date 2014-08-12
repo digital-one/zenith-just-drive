@@ -57,14 +57,14 @@ for (var i = 0; i < $imageCount; i++) {
 	  	 		
 	  	 		var $images=[],
 	  	 			$preloads = $('.preload',data),
-	  	 			$preloads_src = $('img',data).attr('src');
+	  	 			$preloads_src = $('img',data);
 
 	  	 			$preloads.each(function(index) {
 	  	 				$images.push(this.style.backgroundImage.replace(/.*\s?url\([\'\"]?/, '').replace(/[\'\"]?\).*/, ''));
 					});
 					if($preloads_src){
 					$preloads_src.each(function(index){
-	  	 				$images.push($(this));
+	  	 				$images.push($(this).attr('src'));
 	  	 			});
 				}
 	  	 	//if(console) console.log($images);
@@ -75,6 +75,8 @@ for (var i = 0; i < $imageCount; i++) {
 	  	 		$("#container").attr('class','').addClass($sceneClass).html($page);
 	  	 		scene2JS();
 	  	 		scene3JS();
+	  	 		scene4JS();
+	  	 		resizeTree();
 	  	 		setHistoryLink();
 
 	  	 	})
@@ -84,6 +86,7 @@ for (var i = 0; i < $imageCount; i++) {
 	  
 
 function scene4JS(){
+	console.log('scene 4 js')
 	// tooltips
 	$('a.tooltip-btn').on('click',function(e){
 	e.preventDefault();
@@ -209,10 +212,7 @@ function submitForm(){
 	  	 		$("#container").attr('class','').addClass($sceneClass).html($page);
 	  	 		resizeTree();
 	  	 		scene4JS();
-	  	 		//History.pushState(null, '', 'scene-3.html');
-	  	 		//scene2JS();
-	  	 		//scene3JS();
-	  	 		//setHistoryLink();
+	  	 		setHistoryLink();
 
 	  	 	})
 
