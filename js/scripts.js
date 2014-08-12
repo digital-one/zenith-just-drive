@@ -10,6 +10,7 @@ function resizeTree(){
 
 $(document).ready(function(){
 
+scene2JS();
 scene3JS();
 
 // image preloader
@@ -64,7 +65,7 @@ for (var i = 0; i < $imageCount; i++) {
 	  	 
 	  	 	preloadImages($images,function(){
 	  	 		$("#container").html($page);
-	  	 		//scene3JS();
+	  	 		scene2JS();
 
 	  	 	})
 	  	 });
@@ -93,12 +94,14 @@ $('a.tooltip-btn').on('click',function(e){
 
 // balloon content regions
 
+function scene2JS(){
+	console.log('scene2');
 $('a.balloon-link').on('click',function(e){
 	e.preventDefault();
 	$('.content').fadeOut();
 	$('.'+$(this).attr('rel')).fadeToggle();
 })
-
+}
 // tax and age radio buttons
 
 function scene3JS(){
