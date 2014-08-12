@@ -1,0 +1,14 @@
+h1,h2,h3,h4,h5{
+	@include font-size(21);
+	font-family: $interstate-bold;
+	line-height: 110%;
+	margin: 0 0 25px;
+	letter-spacing: -1px;
+	color: $blue;
+}
+p{
+	margin: 0 0 12px;
+	span{
+		@include font-size(18);
+	}
+}

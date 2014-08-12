@@ -1,0 +1,23 @@
+header#header-scene-3{
+	@extend %full-width;
+	height:185px;
+	@extend %element;
+	@extend %ir;
+	text-align:center;
+	background-image: url('../images/header-scene-3.png');
+}
+form#calculator{
+	footer{
+		@extend %full-width;
+		height:227px;
+		position:relative;
+		button{
+			@extend %ir;
+			@extend %full-width;
+			height:227px;
+			border:none;
+			background:url('../images/footer-scene-3.png') left top no-repeat;
+		}
+	}
+}
+

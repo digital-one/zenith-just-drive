@@ -1,0 +1,50 @@
+header#header-scene-1{
+	@extend %full-width;
+	height:150px;
+	@extend %element;
+	@extend %ir;
+	background-image: url('../images/header-scene-1.png');
+}
+.scene-1{
+	h3{
+		text-align: center;
+	}
+}
+footer#footer-scene-1{
+	height:244px;
+	@extend %full-width;
+	@extend %element;
+	@include abs-pos(auto,auto,0,0);
+	background-image:url('../images/hills.png');
+	background-position: left bottom;
+	#road{
+		@extend %full-width;
+		height:124px;
+		@extend %element;
+		@include abs-pos(auto,auto,0,0);
+		background-image:url('../images/road.png');
+		z-index:3;
+	}
+	a#sign-no{
+		@extend %element;
+		@extend %ir;
+		width:170px;
+		height:142px;
+		background-image:url('../images/sign-no.png');
+		@include abs-pos(60px,auto,auto,11px);
+		z-index:2;
+	}
+	a#sign-yes{
+		@extend %element;
+		@extend %ir;
+		z-index:2;
+		width:154px;
+		height:194px;
+		background-image:url('../images/sign-yes.png');
+		@include abs-pos(0,20px,auto,auto);
+		z-index:1;
+	}
+
+
+}
+

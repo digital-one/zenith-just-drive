@@ -1,0 +1,15 @@
+#header{
+	@extend %full-width;
+	height: 63px;
+	background: white url('../images/header-rule.jpg') left bottom repeat-x;
+	position: relative;
+}
+#home-link{
+	@extend %ir;
+	width: 88px;
+	display: block;
+	height: 39px;
+	margin:0;
+	@include abs-pos(10px,auto,auto,20px);
+	background-image:url('../images/zenith.jpg');
+}

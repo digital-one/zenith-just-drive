@@ -1,32 +1,9 @@
 #header{
-	margin: 10px 0 0;
-	height: 207px;
-	padding: 0;
-
-	.container{
-		background-color: #fff;
-		@extend .clearfix;
-	}
-	.container-inner{
-		height: 207px;
-	}
-	#contacts{
-		padding: 15px 0 0;
-		display: block;
-		@extend %full-width;
-		text-align: right;
-		span{
-			@include font-size(23);
-			display: block;
-			margin: 6px 0 0;
-			a{
-				color: $grey;
-			}
-		}
-		a{
-			font-family: $texgyreherosBold;
-		}
-	}
+	@extend %full-width;
+	height: 63px;
+	background: white url('../header-rule.jpg') left bottom repeat-x;
+	position: fixed;
+	z-index: 999;
 }
 #home-link{
 	width: 296px;

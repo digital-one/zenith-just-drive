@@ -1,0 +1,27 @@
+#container{
+	width: 100%;
+	height: auto;
+	max-width: 320px;
+	min-height:568px;
+	display: block;
+	@include bg-cover;
+	background-image: url('../images/mobile-bg.jpg');
+	@extend %center;
+	background-color: #8ebedd;
+	@extend .clearfix;
+}
+#main{
+	@extend %full-width;
+	padding:0 20px 50px;
+}
+%element{
+	display: block;
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	width: 100%;
+	@include transition (all 0.1s ease-in-out);
+}
+
+
+

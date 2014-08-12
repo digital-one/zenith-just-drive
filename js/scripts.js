@@ -14,6 +14,7 @@ $(document).ready(function(){
 setHistoryLink();
 scene2JS();
 scene3JS();
+scene4JS();
 resizeTree();
 
 // image preloader

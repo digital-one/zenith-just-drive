@@ -1,0 +1,14 @@
+@mixin inline-menu(){
+	ul{
+		list-style-type: none;
+	}
+	li,a{
+		float: left;
+	}
+	li{
+		display: inline;
+		a{
+			display: block;
+		}
+	}
+}

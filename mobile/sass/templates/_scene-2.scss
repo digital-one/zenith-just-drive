@@ -1,0 +1,48 @@
+header#header-scene-2{
+	@extend %full-width;
+	height:287px;
+	@extend %element;
+	@extend %ir;
+	text-align:center;
+	background-image: url('../images/header-scene-2.png');
+}
+dl{
+	padding:0;
+	margin:0;
+	dt{
+		position: relative;
+		height: 21px;
+		display: block;
+		font-family: $interstate-bold;
+		@include font-size(21);
+		display: block;
+		cursor:pointer;
+		margin-bottom: 20px;
+		&:after{
+			content:"";
+			display: block;
+			@include abs-pos(0,0,auto,auto);
+			background: url('../images/icon-expand.png') center center no-repeat;
+			height:22px;
+			width:22px;
+		}
+	}
+	dd{
+		padding:0;
+		margin:0 0 40px;
+		display: none;
+	}
+}
+footer#footer-scene-2{
+	height:260px;
+	@extend %full-width;
+	@extend %element;
+	position:relative;
+	background-image:url('../images/footer-scene-2.png');
+	background-position: left top;
+	a{
+		@include abs-pos(0,0,0,0);
+		@extend %ir;	
+	}
+}
+

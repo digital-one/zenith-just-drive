@@ -1,0 +1,17 @@
+html{
+	font-size: 62.5%;
+}
+body,html{
+	width: 100%;
+	height: 100%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	color: $blue;
+	font-family: $interstate-light;
+}
+body{
+	@include font-size(14);
+	line-height: 130%;
+}
+
+
