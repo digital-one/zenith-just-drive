@@ -66,6 +66,7 @@ for (var i = 0; i < $imageCount; i++) {
 	  	 	preloadImages($images,function(){
 	  	 		$("#container").html($page);
 	  	 		scene2JS();
+	  	 		scene3JS();
 
 	  	 	})
 	  	 });
