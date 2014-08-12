@@ -10,6 +10,8 @@ function resizeTree(){
 
 $(document).ready(function(){
 
+scene3JS();
+
 // image preloader
 
 function preloadImages(list,callback) {
@@ -40,7 +42,7 @@ for (var i = 0; i < $imageCount; i++) {
 
 	 var History = window.History;
 	  History.Adapter.bind(window,'statechange',function() {
-	  	console.log('change state');
+	  	if(console) console.log('change state');
 	  	 var State = History.getState();
 	  	// $('#content').load(State.url + ' #container',function(){
 			$.get(State.url, function(data) {
@@ -62,6 +64,8 @@ for (var i = 0; i < $imageCount; i++) {
 	  	 
 	  	 	preloadImages($images,function(){
 	  	 		$("#container").html($page);
+	  	 		//scene3JS();
+
 	  	 	})
 	  	 });
 	  });
@@ -97,6 +101,7 @@ $('a.balloon-link').on('click',function(e){
 
 // tax and age radio buttons
 
+function scene3JS(){
 var $radios = $('#tax input[type=radio], #age input[type=radio]');
 $radios.each(function(){
 	var $label = $(this).prev('label').html(),
@@ -155,6 +160,7 @@ var $radios = $('#car-type input[type=radio]');
 		})
 	})
 
+}
 // form validation - dont let form submit without the 3 selections
 
 
