@@ -478,7 +478,11 @@ body {
   position: fixed;
   display: block;
   width: 100%;
-  z-index: 999; }
+  z-index: 999;
+  max-width: 768px; }
+  @media screen and (min-width: 321px) {
+    #header {
+      background: white url("../images/header-rule-tablet.jpg") left bottom repeat-x; } }
 
 #home-link {
   width: 88px;
@@ -508,8 +512,9 @@ a#menu {
 nav#nav {
   position: fixed;
   top: 63px;
-  left: 0;
+  left: auto;
   width: 100%;
+  max-width: 768px;
   margin: 0 auto;
   display: block;
   background-color: white;
@@ -517,7 +522,8 @@ nav#nav {
   z-index: 999; }
   nav#nav ul {
     padding: 0;
-    margin: 0; }
+    margin: 0;
+    list-style-type: none; }
     nav#nav ul a:link, nav#nav ul a:visited {
       font-size: 14px;
       font-size: 1.4rem;
@@ -554,8 +560,9 @@ small {
 #container {
   width: 100%;
   height: auto;
-  max-width: 320px;
+  max-width: 768px;
   min-height: 568px;
+  height: auto;
   display: block;
   background-position: center top;
   background-repeat: no-repeat;
@@ -567,9 +574,19 @@ small {
   background-color: #8ebedd;
   position: relative;
   overflow: hidden; }
+  @media screen and (min-width: 321px) {
+    #container {
+      background-image: url("../images/tablet-bg.jpg"); } }
+  @media screen and (min-width: 321px) {
+    #container {
+      min-height: 1024px; } }
 
 #main {
   padding: 0 20px 50px; }
+  @media screen and (min-width: 321px) {
+    #main {
+      width: 400px;
+      margin: 0 auto; } }
   .scene-4 #main {
     padding-bottom: 0; }
 
@@ -584,7 +601,7 @@ header#header-scene-1, footer#footer-scene-1, footer#footer-scene-1 #road, foote
   transition: all 0.1s ease-in-out; }
 
 header#header-scene-1 {
-  height: 150px;
+  height: 164px;
   margin-top: 62px;
   background-image: url("../images/header-scene-1.png"); }
 
@@ -599,7 +616,11 @@ footer#footer-scene-1 {
   left: 0;
   position: absolute;
   background-image: url("../images/hills.png");
-  background-position: left bottom; }
+  background-position: center bottom; }
+  @media screen and (min-width: 321px) {
+    footer#footer-scene-1 {
+      background-image: url("../images/hills-tablet.png");
+      height: 313px; } }
   footer#footer-scene-1 #road {
     height: 124px;
     top: auto;
@@ -609,6 +630,10 @@ footer#footer-scene-1 {
     position: absolute;
     background-image: url("../images/road.png");
     z-index: 3; }
+    @media screen and (min-width: 321px) {
+      footer#footer-scene-1 #road {
+        background-image: url("../images/road-tablet.png");
+        height: 197px; } }
   footer#footer-scene-1 a#sign-no {
     width: 170px;
     height: 142px;
@@ -616,61 +641,93 @@ footer#footer-scene-1 {
     top: 60px;
     right: auto;
     bottom: auto;
-    left: 11px;
+    left: 50%;
     position: absolute;
+    margin-left: -140px;
     z-index: 2; }
+    @media screen and (min-width: 321px) {
+      footer#footer-scene-1 a#sign-no {
+        top: 40px;
+        right: auto;
+        bottom: auto;
+        left: 50%;
+        position: absolute; } }
   footer#footer-scene-1 a#sign-yes {
     z-index: 2;
     width: 154px;
     height: 194px;
     background-image: url("../images/sign-yes.png");
     top: 0;
-    right: 20px;
+    right: auto;
     bottom: auto;
-    left: auto;
+    left: 50%;
     position: absolute;
-    z-index: 1; }
+    z-index: 1;
+    margin-left: -10px; }
+    @media screen and (min-width: 321px) {
+      footer#footer-scene-1 a#sign-yes {
+        top: -20px;
+        right: auto;
+        bottom: auto;
+        left: 50%;
+        position: absolute; } }
 
 header#header-scene-2 {
   height: 287px;
   text-align: center;
   background-image: url("../images/header-scene-2.png");
   margin-top: 62px; }
+  @media screen and (min-width: 321px) {
+    header#header-scene-2 {
+      height: 322px;
+      background-image: url("../images/header-scene-2-tablet.png"); } }
 
-#accordion dl {
-  padding: 0;
-  margin: 0; }
-  #accordion dl dt {
-    position: relative;
-    height: 21px;
-    display: block;
-    font-family: "interstatebold", Helvetica, Arial, sans-serif;
-    font-size: 21px;
-    font-size: 2.1rem;
-    display: block;
-    cursor: pointer;
-    margin-bottom: 20px; }
-    #accordion dl dt:after {
-      content: "";
-      display: block;
-      top: 0;
-      right: 0;
-      bottom: auto;
-      left: auto;
-      position: absolute;
-      background: url("../images/icon-expand.png") center center no-repeat;
-      height: 22px;
-      width: 22px; }
-  #accordion dl dd {
+#accordion {
+  width: 100%;
+  margin: 0 auto; }
+  #accordion dl {
     padding: 0;
-    margin: 0 0 40px;
-    display: none; }
+    margin: 0; }
+    #accordion dl dt {
+      position: relative;
+      height: 21px;
+      display: block;
+      font-family: "interstatebold", Helvetica, Arial, sans-serif;
+      font-size: 21px;
+      font-size: 2.1rem;
+      display: block;
+      cursor: pointer;
+      margin-bottom: 20px; }
+      #accordion dl dt:after {
+        content: "";
+        display: block;
+        top: 0;
+        right: 0;
+        bottom: auto;
+        left: auto;
+        position: absolute;
+        background: url("../images/icon-expand.png") center center no-repeat;
+        height: 22px;
+        width: 22px; }
+    #accordion dl dd {
+      padding: 0;
+      margin: 0 0 40px;
+      display: none; }
 
 footer#footer-scene-2 {
   height: 260px;
   position: relative;
   background-image: url("../images/footer-scene-2.png");
   background-position: left top; }
+  @media screen and (min-width: 321px) {
+    footer#footer-scene-2 {
+      background-image: url("../images/footer-scene-2-tablet.png");
+      height: 268px;
+      top: auto;
+      right: auto;
+      bottom: -10px;
+      left: 0;
+      position: absolute; } }
   footer#footer-scene-2 a {
     top: 0;
     right: 0;
@@ -684,9 +741,17 @@ header#header-scene-3 {
   background-image: url("../images/header-scene-3.png");
   margin-bottom: 20px;
   margin-top: 62px; }
+  @media screen and (min-width: 321px) {
+    header#header-scene-3 {
+      height: 244px;
+      background-image: url("../images/header-scene-3-tablet.png"); } }
 
 form#calculator {
   text-align: center; }
+  form#calculator h3 {
+    margin-bottom: 20px; }
+  form#calculator input[type=radio] {
+    display: none; }
   form#calculator section {
     margin: 0 20px 30px 20px; }
     form#calculator section:after {
@@ -746,10 +811,12 @@ form#calculator {
     font-family: "interstatebold", Helvetica, Arial, sans-serif;
     display: block; }
     form#calculator label small {
-      font-size: 14px;
-      font-size: 1.4rem;
+      font-size: 12px;
+      font-size: 1.2rem;
       font-family: "interstatelight", Helvetica, Arial, sans-serif;
-      display: block; }
+      display: block;
+      margin: 5px 0 0;
+      line-height: 110% !important; }
   form#calculator a.radio {
     display: block;
     width: 30px;
@@ -757,6 +824,7 @@ form#calculator {
     background-image: url("../images/radio-button.png");
     background-position: left top;
     background-repeat: no-repeat;
+    margin: 0 auto;
     cursor: pointer; }
     form#calculator a.radio.checked {
       background-position: right top; }
@@ -767,18 +835,30 @@ form#calculator {
       height: 227px;
       border: none;
       background: url("../images/footer-scene-3.png") left top no-repeat; }
+      @media screen and (min-width: 321px) {
+        form#calculator footer button {
+          background: url("../images/footer-scene-3-tablet.png") left top no-repeat;
+          height: 241px; } }
 
 header#header-scene-4 {
   height: 146px;
   text-align: center;
   background-image: url("../images/header-scene-4.png");
   margin-top: 62px; }
+  @media screen and (min-width: 321px) {
+    header#header-scene-4 {
+      background-image: url("../images/header-scene-4-tablet.png");
+      height: 148px; } }
 
 footer#footer-scene-4 {
   height: 204px;
   position: relative;
   background-image: url("../images/footer-scene-4.png");
   background-position: left top; }
+  @media screen and (min-width: 321px) {
+    footer#footer-scene-4 {
+      background-image: url("../images/footer-scene-4-tablet.png");
+      height: 259px; } }
   footer#footer-scene-4 a {
     top: 0;
     right: 0;
@@ -877,12 +957,25 @@ header#header-scene-5 {
   text-align: center;
   background-image: url("../images/header-scene-5.png");
   margin-top: 62px; }
+  @media screen and (min-width: 321px) {
+    header#header-scene-5 {
+      background-image: url("../images/header-scene-5-tablet.png");
+      height: 192px; } }
 
 footer#footer-scene-5 {
   height: 163px;
   position: relative;
   background-image: url("../images/footer-scene-5.png");
   background-position: left top; }
+  @media screen and (min-width: 321px) {
+    footer#footer-scene-5 {
+      background-image: url("../images/footer-scene-5-tablet.png");
+      height: 235px;
+      top: auto;
+      right: auto;
+      bottom: 0;
+      left: 0;
+      position: absolute; } }
   footer#footer-scene-5 a {
     top: 0;
     right: 0;
@@ -932,6 +1025,9 @@ header#header-scene-6 {
 #useful-info {
   text-align: center;
   margin: 10px 0; }
+  #useful-info nav {
+    width: 280px;
+    margin: 0 auto; }
   #useful-info ul {
     list-style-type: none;
     margin: 0;
@@ -952,7 +1048,6 @@ header#header-scene-6 {
         font-size: 1.6rem;
         display: block;
         width: 100%;
-        max-width: 280px;
         padding: 15px 0; }
       #useful-info ul li a:active {
         background-color: #1d1e4b; }
@@ -964,6 +1059,9 @@ footer#footer-scene-6 {
   background-color: transparent;
   height: 316px;
   display: block; }
+  @media screen and (min-width: 321px) {
+    footer#footer-scene-6 {
+      background-image: url("../images/footer-scene-6-tablet.png"); } }
   footer#footer-scene-6 ul {
     list-style-type: none;
     padding: 0;
@@ -971,7 +1069,7 @@ footer#footer-scene-6 {
   footer#footer-scene-6 a {
     display: block;
     width: 100%;
-    background-position: 0 0;
+    background-position: center top;
     background-repeat: no-repeat; }
     footer#footer-scene-6 a.link-1 {
       height: 65px;
@@ -1000,24 +1098,27 @@ footer#footer-scene-6 {
   footer#footer-scene-6.version-2 {
     background-image: url("../images/footer-scene-6-v2.png");
     height: 366px; }
+    @media screen and (min-width: 321px) {
+      footer#footer-scene-6.version-2 {
+        background-image: url("../images/footer-scene-6-v2-tablet.png"); } }
     footer#footer-scene-6.version-2 a.link-1 {
       background-image: url("../images/sign-order-2nd-car-v2.png");
-      height: 73px;
+      height: 70px;
       top: 0;
       right: auto;
       bottom: auto;
       left: 0;
       position: absolute; }
     footer#footer-scene-6.version-2 a.link-2 {
-      height: 58px;
+      height: 61px;
       background-image: url("../images/sign-book-service-v2.png");
-      top: 73px;
+      top: 70px;
       right: auto;
       bottom: auto;
       left: 0;
       position: absolute; }
     footer#footer-scene-6.version-2 a.link-3 {
-      height: 66px;
+      height: 61px;
       background-image: url("../images/sign-book-tyre-replacement-v2.png");
       top: 131px;
       right: auto;
@@ -1026,8 +1127,8 @@ footer#footer-scene-6 {
       position: absolute; }
     footer#footer-scene-6.version-2 a.link-4 {
       background-image: url("../images/sign-review-details-v2.png");
-      height: 65px;
-      top: 197px;
+      height: 70px;
+      top: 192px;
       right: auto;
       bottom: auto;
       left: 0;

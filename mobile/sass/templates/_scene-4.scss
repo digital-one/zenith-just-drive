@@ -6,6 +6,10 @@ header#header-scene-4{
 	text-align:center;
 	background-image: url('../images/header-scene-4.png');
 	margin-top:62px;
+	@media screen and (min-width: $break-point) {
+		background-image: url('../images/header-scene-4-tablet.png');
+		height:148px;
+	}
 }
 footer#footer-scene-4{
 	height:204px;
@@ -14,6 +18,10 @@ footer#footer-scene-4{
 	position:relative;
 	background-image:url('../images/footer-scene-4.png');
 	background-position: left top;
+	@media screen and (min-width: $break-point) {
+		background-image: url('../images/footer-scene-4-tablet.png');
+		height:259px;
+	}
 	a{
 		@include abs-pos(0,0,0,0);
 		@extend %ir;	

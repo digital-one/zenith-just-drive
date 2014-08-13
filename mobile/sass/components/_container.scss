@@ -1,20 +1,31 @@
 #container{
 	width: 100%;
 	height: auto;
-	max-width: 320px;
+	max-width: 768px;
 	min-height:568px;
+	height:auto;
 	display: block;
 	@include bg-cover;
 	background-image: url('../images/mobile-bg.jpg');
+	@media screen and (min-width: $break-point) {
+		background-image: url('../images/tablet-bg.jpg');
+	}
 	@extend %center;
 	background-color: #8ebedd;
 	@extend .clearfix;
 	position: relative;
 	overflow: hidden;
+	@media screen and (min-width: $break-point) {
+		min-height:1024px;
+	}
 }
 #main{
 	@extend %full-width;
 	padding:0 20px 50px;
+	@media screen and (min-width: $break-point) {
+		width: 400px;
+		margin:0 auto;
+	}
 	.scene-4 &{
 		padding-bottom: 0;
 	}

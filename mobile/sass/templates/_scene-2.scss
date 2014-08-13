@@ -6,8 +6,14 @@ header#header-scene-2{
 	text-align:center;
 	background-image: url('../images/header-scene-2.png');
 	margin-top:62px;
+	@media screen and (min-width: $break-point) {
+		height:322px;
+		background-image: url('../images/header-scene-2-tablet.png');
+	}
 }
 #accordion{
+	width:100%;
+	margin:0 auto;
 	dl{
 		padding:0;
 		margin:0;
@@ -43,6 +49,11 @@ footer#footer-scene-2{
 	position:relative;
 	background-image:url('../images/footer-scene-2.png');
 	background-position: left top;
+	@media screen and (min-width: $break-point) {
+		background-image:url('../images/footer-scene-2-tablet.png');
+		height:268px;
+		@include abs-pos(auto,auto,-10px,0);
+	}
 	a{
 		@include abs-pos(0,0,0,0);
 		@extend %ir;	

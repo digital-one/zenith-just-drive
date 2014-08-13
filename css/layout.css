@@ -645,7 +645,6 @@ p {
   position: absolute; }
 
 h3 {
-  width: 60%;
   top: 40%;
   right: auto;
   bottom: auto;
@@ -945,7 +944,7 @@ form#calculator {
       position: absolute;
       width: 433px;
       height: 390px;
-      margin-left: 200px; }
+      margin-left: 160px; }
       form#calculator section#age h2 {
         top: auto;
         right: auto;

@@ -7,9 +7,19 @@ header#header-scene-3{
 	background-image: url('../images/header-scene-3.png');
 	margin-bottom:20px;
 	margin-top:62px;
+	@media screen and (min-width: $break-point) {
+		height:244px;
+		background-image: url('../images/header-scene-3-tablet.png');
+	}
 }
 form#calculator{
 	text-align: center;
+	h3{
+		margin-bottom: 20px;
+	}
+	input[type=radio]{
+		display: none;
+	}
 	section{
 		margin: 0 20px 30px 20px;
 		@extend .clearfix;
@@ -77,9 +87,11 @@ form#calculator{
 		font-family: $interstate-bold;
 		display: block;
 		small{
-			@include font-size(14);
+			@include font-size(12);
 			font-family: $interstate-light;
 			display: block;
+			margin: 5px 0 0;
+			line-height: 110% !important;
 		}
 	}
 	a.radio{
@@ -89,6 +101,7 @@ form#calculator{
 		background-image:url('../images/radio-button.png');
 		background-position: left top;
 		background-repeat: no-repeat;
+		margin:0 auto;
 		cursor: pointer;
 		@extend %ir;
 		&.checked{
@@ -105,6 +118,10 @@ form#calculator{
 			height:227px;
 			border:none;
 			background:url('../images/footer-scene-3.png') left top no-repeat;
+			@media screen and (min-width: $break-point) {
+				background:url('../images/footer-scene-3-tablet.png') left top no-repeat;
+				height:241px;
+			}
 		}
 	}
 }

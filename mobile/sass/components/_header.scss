@@ -5,6 +5,10 @@
 	display: block;
 	width: 100%;
 	z-index:999;
+	max-width:768px;
+	@media screen and (min-width: $break-point) {
+		background: white url('../images/header-rule-tablet.jpg') left bottom repeat-x;
+	}
 }
 #home-link{
 	@extend %ir;

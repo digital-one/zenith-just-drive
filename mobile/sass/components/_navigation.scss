@@ -1,8 +1,9 @@
 nav#nav{
-	position: fixed;
+	position:fixed;
 	top: 63px;
-	left:0;
+	left:auto;
 	width: 100%;
+	max-width:768px;
 	margin:0 auto;
 	display:block;
 	background-color: white;
@@ -11,6 +12,7 @@ nav#nav{
 	ul{
 		padding:0;
 		margin:0;
+		list-style-type: none;
 		a:link, a:visited{
 			@include font-size(14);
 			height:40px;
