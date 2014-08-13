@@ -9,6 +9,8 @@
 	@extend %center;
 	background-color: #8ebedd;
 	@extend .clearfix;
+	position: relative;
+	overflow: hidden;
 }
 #main{
 	@extend %full-width;

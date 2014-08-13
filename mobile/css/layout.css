@@ -440,11 +440,11 @@ form#calculator section#tax div:after {
 /*
 .box-shadow ($string: 0px 0px 5px 0px rgba(50, 50, 50, 0.75));
 */
-#header, #main, header#header-scene-1, footer#footer-scene-1, footer#footer-scene-1 #road, header#header-scene-2, footer#footer-scene-2, header#header-scene-3, form#calculator footer, form#calculator footer button, header#header-scene-4, footer#footer-scene-4, header#header-scene-5, footer#footer-scene-5, header#header-scene-6, footer#footer-scene-6 {
+#main, header#header-scene-1, footer#footer-scene-1, footer#footer-scene-1 #road, header#header-scene-2, footer#footer-scene-2, header#header-scene-3, form#calculator footer, form#calculator footer button, header#header-scene-4, footer#footer-scene-4, header#header-scene-5, footer#footer-scene-5, header#header-scene-6, footer#footer-scene-6 {
   width: 100%;
   display: block; }
 
-#home-link, header#header-scene-1, footer#footer-scene-1 a#sign-no, footer#footer-scene-1 a#sign-yes, header#header-scene-2, footer#footer-scene-2 a, header#header-scene-3, form#calculator a.radio, form#calculator footer button, header#header-scene-4, footer#footer-scene-4 a, header#header-scene-5, footer#footer-scene-5 a, header#header-scene-6, footer#footer-scene-6 a {
+#home-link, a#menu, header#header-scene-1, footer#footer-scene-1 a#sign-no, footer#footer-scene-1 a#sign-yes, header#header-scene-2, footer#footer-scene-2 a, header#header-scene-3, form#calculator a.radio, form#calculator footer button, header#header-scene-4, footer#footer-scene-4 a, header#header-scene-5, footer#footer-scene-5 a, header#header-scene-6, footer#footer-scene-6 a {
   text-indent: -10000px;
   overflow: hidden; }
 
@@ -469,12 +469,16 @@ body, html {
 
 body {
   font-size: 14px;
-  font-size: 1.4rem; }
+  font-size: 1.4rem;
+  line-height: 120%; }
 
 #header {
   height: 63px;
   background: white url("../images/header-rule.jpg") left bottom repeat-x;
-  position: relative; }
+  position: fixed;
+  display: block;
+  width: 100%;
+  z-index: 999; }
 
 #home-link {
   width: 88px;
@@ -487,6 +491,44 @@ body {
   left: 20px;
   position: absolute;
   background-image: url("../images/zenith.jpg"); }
+
+a#menu {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: url("../images/menu-icon.jpg") left top no-repeat;
+  top: 20px;
+  right: 20px;
+  bottom: auto;
+  left: auto;
+  position: absolute;
+  z-index: 999;
+  cursor: pointer; }
+
+nav#nav {
+  position: fixed;
+  top: 63px;
+  left: 0;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  background-color: white;
+  display: none;
+  z-index: 999; }
+  nav#nav ul {
+    padding: 0;
+    margin: 0; }
+    nav#nav ul a:link, nav#nav ul a:visited {
+      font-size: 14px;
+      font-size: 1.4rem;
+      height: 40px;
+      line-height: 40px;
+      display: block;
+      padding: 0 20px;
+      text-decoration: none;
+      color: #1d1e4b; }
+    nav#nav ul a:active {
+      background-color: #edefef; }
 
 h1, h2, h3, h4, h5 {
   font-size: 21px;
@@ -515,14 +557,16 @@ small {
   max-width: 320px;
   min-height: 568px;
   display: block;
-  background-position: center center;
+  background-position: center top;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   background-image: url("../images/mobile-bg.jpg");
-  background-color: #8ebedd; }
+  background-color: #8ebedd;
+  position: relative;
+  overflow: hidden; }
 
 #main {
   padding: 0 20px 50px; }
@@ -541,6 +585,7 @@ header#header-scene-1, footer#footer-scene-1, footer#footer-scene-1 #road, foote
 
 header#header-scene-1 {
   height: 150px;
+  margin-top: 62px;
   background-image: url("../images/header-scene-1.png"); }
 
 .scene-1 h3 {
@@ -589,7 +634,8 @@ footer#footer-scene-1 {
 header#header-scene-2 {
   height: 287px;
   text-align: center;
-  background-image: url("../images/header-scene-2.png"); }
+  background-image: url("../images/header-scene-2.png");
+  margin-top: 62px; }
 
 #accordion dl {
   padding: 0;
@@ -636,7 +682,8 @@ header#header-scene-3 {
   height: 185px;
   text-align: center;
   background-image: url("../images/header-scene-3.png");
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  margin-top: 62px; }
 
 form#calculator {
   text-align: center; }
@@ -724,7 +771,8 @@ form#calculator {
 header#header-scene-4 {
   height: 146px;
   text-align: center;
-  background-image: url("../images/header-scene-4.png"); }
+  background-image: url("../images/header-scene-4.png");
+  margin-top: 62px; }
 
 footer#footer-scene-4 {
   height: 204px;
@@ -827,7 +875,8 @@ footer#footer-scene-4 {
 header#header-scene-5 {
   height: 185px;
   text-align: center;
-  background-image: url("../images/header-scene-5.png"); }
+  background-image: url("../images/header-scene-5.png");
+  margin-top: 62px; }
 
 footer#footer-scene-5 {
   height: 163px;
@@ -877,7 +926,8 @@ table {
 header#header-scene-6 {
   height: 212px;
   text-align: center;
-  background-image: url("../images/header-scene-6.png"); }
+  background-image: url("../images/header-scene-6.png");
+  margin-top: 62px; }
 
 #useful-info {
   text-align: center;
