@@ -3,3 +3,7 @@
   //font-size: (0.125 * $sizeValue) + rem;
   font-size: (($sizeValue/100)*10) + rem;
 }
+@mixin line-height($sizeValue: 12 ){
+	line-height: $sizeValue + px;
+	line-height: (($sizeValue/100)*10) + rem;
+	}

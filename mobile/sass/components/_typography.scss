@@ -2,13 +2,18 @@ h1,h2,h3,h4,h5{
 	@include font-size(21);
 	font-family: $interstate-bold;
 	line-height: 110%;
-	margin: 0 0 25px;
+	margin: 0 0 10px;
 	letter-spacing: -1px;
 	color: $blue;
+	font-weight: normal;
 }
 p{
 	margin: 0 0 12px;
 	span{
 		@include font-size(18);
 	}
+}
+small{
+	@include font-size(11);
+	line-height:80% !important;
 }

@@ -1,0 +1,100 @@
+header#header-scene-6{
+	@extend %full-width;
+	height:212px;
+	@extend %element;
+	@extend %ir;
+	text-align:center;
+	background-image: url('../images/header-scene-6.png');
+}
+#useful-info{
+	text-align:center;
+	margin: 10px 0;
+	ul{
+		list-style-type: none;
+		margin:0;
+		padding:0;
+		li{
+			margin-bottom: 15px;
+			a:link, a:visited{
+				@include border-radius(6px);
+				background-color: $green;
+				text-decoration: none;
+				color: white;
+				@include font-size(16);
+				display: block;
+				width: 100%;
+				max-width: 280px;
+				padding: 15px 0;
+			}
+			a:active{
+				background-color: $blue;
+			}
+		}
+	}
+}
+footer#footer-scene-6{
+	@extend %full-width;
+	@extend %element;
+	position:relative;
+	background-image:url('../images/footer-scene-6.png');
+	background-position: left bottom;
+	background-color: transparent;
+	height:316px;
+	display:block;
+	ul{
+		list-style-type: none;
+		padding:0;
+		margin:0;
+	}
+	a{
+		display: block;
+		width:100%;
+		background-position: 0 0;
+		background-repeat: no-repeat;
+		@extend %ir;
+		&.link-1{
+			height:65px;
+			background-image:url('../images/sign-book-service.png');
+			@include abs-pos(0,auto,auto,0);
+		}
+		&.link-2{
+			height:65px;
+			background-image:url('../images/sign-book-tyre-replacement.png');
+			@include abs-pos(65px,auto,auto,0);
+		}
+		&.link-3{
+			background-image:url('../images/sign-review-details.png');
+			height: 61px;
+			@include abs-pos(130px,auto,auto,0);
+		}
+	}
+	&.version-2{
+		background-image:url('../images/footer-scene-6-v2.png');
+		height:366px;
+		a{
+			&.link-1{
+				background-image:url('../images/sign-order-2nd-car-v2.png');
+				height: 73px;
+				@include abs-pos(0,auto,auto,0);
+			}
+			&.link-2{
+				height:58px;
+				background-image:url('../images/sign-book-service-v2.png');
+				@include abs-pos(73px,auto,auto,0);
+			}
+			&.link-3{
+				height:66px;
+				background-image:url('../images/sign-book-tyre-replacement-v2.png');
+				@include abs-pos(131px,auto,auto,0);
+			}
+			&.link-4{
+				background-image:url('../images/sign-review-details-v2.png');
+				height: 65px;
+				@include abs-pos(197px,auto,auto,0);
+			}
+		
+		}
+	}
+}
+
+

@@ -440,13 +440,17 @@ form#calculator section#tax div:after {
 /*
 .box-shadow ($string: 0px 0px 5px 0px rgba(50, 50, 50, 0.75));
 */
-#header, #main, header#header-scene-1, footer#footer-scene-1, footer#footer-scene-1 #road, header#header-scene-2, footer#footer-scene-2, header#header-scene-3, form#calculator footer, form#calculator footer button {
+#header, #main, header#header-scene-1, footer#footer-scene-1, footer#footer-scene-1 #road, header#header-scene-2, footer#footer-scene-2, header#header-scene-3, form#calculator footer, form#calculator footer button, header#header-scene-4, footer#footer-scene-4, header#header-scene-5, footer#footer-scene-5, header#header-scene-6, footer#footer-scene-6 {
   width: 100%;
   display: block; }
 
-#home-link, header#header-scene-1, footer#footer-scene-1 a#sign-no, footer#footer-scene-1 a#sign-yes, header#header-scene-2, footer#footer-scene-2 a, header#header-scene-3, form#calculator a.radio, form#calculator footer button {
+#home-link, header#header-scene-1, footer#footer-scene-1 a#sign-no, footer#footer-scene-1 a#sign-yes, header#header-scene-2, footer#footer-scene-2 a, header#header-scene-3, form#calculator a.radio, form#calculator footer button, header#header-scene-4, footer#footer-scene-4 a, header#header-scene-5, footer#footer-scene-5 a, header#header-scene-6, footer#footer-scene-6 a {
   text-indent: -10000px;
   overflow: hidden; }
+
+#quote dl dt a.tooltip-btn img {
+  width: 100%;
+  height: auto; }
 
 #container {
   position: relative;
@@ -465,8 +469,7 @@ body, html {
 
 body {
   font-size: 14px;
-  font-size: 1.4rem;
-  line-height: 130%; }
+  font-size: 1.4rem; }
 
 #header {
   height: 63px;
@@ -490,15 +493,21 @@ h1, h2, h3, h4, h5 {
   font-size: 2.1rem;
   font-family: "interstatebold", Helvetica, Arial, sans-serif;
   line-height: 110%;
-  margin: 0 0 25px;
+  margin: 0 0 10px;
   letter-spacing: -1px;
-  color: #1d1e4b; }
+  color: #1d1e4b;
+  font-weight: normal; }
 
 p {
   margin: 0 0 12px; }
   p span {
     font-size: 18px;
     font-size: 1.8rem; }
+
+small {
+  font-size: 11px;
+  font-size: 1.1rem;
+  line-height: 80% !important; }
 
 #container {
   width: 100%;
@@ -517,8 +526,10 @@ p {
 
 #main {
   padding: 0 20px 50px; }
+  .scene-4 #main {
+    padding-bottom: 0; }
 
-header#header-scene-1, footer#footer-scene-1, footer#footer-scene-1 #road, footer#footer-scene-1 a#sign-no, footer#footer-scene-1 a#sign-yes, header#header-scene-2, footer#footer-scene-2, header#header-scene-3 {
+header#header-scene-1, footer#footer-scene-1, footer#footer-scene-1 #road, footer#footer-scene-1 a#sign-no, footer#footer-scene-1 a#sign-yes, header#header-scene-2, footer#footer-scene-2, header#header-scene-3, header#header-scene-4, footer#footer-scene-4, header#header-scene-5, footer#footer-scene-5, header#header-scene-6, footer#footer-scene-6 {
   display: block;
   background-position: center top;
   background-repeat: no-repeat;
@@ -580,10 +591,10 @@ header#header-scene-2 {
   text-align: center;
   background-image: url("../images/header-scene-2.png"); }
 
-dl {
+#accordion dl {
   padding: 0;
   margin: 0; }
-  dl dt {
+  #accordion dl dt {
     position: relative;
     height: 21px;
     display: block;
@@ -593,7 +604,7 @@ dl {
     display: block;
     cursor: pointer;
     margin-bottom: 20px; }
-    dl dt:after {
+    #accordion dl dt:after {
       content: "";
       display: block;
       top: 0;
@@ -604,7 +615,7 @@ dl {
       background: url("../images/icon-expand.png") center center no-repeat;
       height: 22px;
       width: 22px; }
-  dl dd {
+  #accordion dl dd {
     padding: 0;
     margin: 0 0 40px;
     display: none; }
@@ -709,3 +720,265 @@ form#calculator {
       height: 227px;
       border: none;
       background: url("../images/footer-scene-3.png") left top no-repeat; }
+
+header#header-scene-4 {
+  height: 146px;
+  text-align: center;
+  background-image: url("../images/header-scene-4.png"); }
+
+footer#footer-scene-4 {
+  height: 204px;
+  position: relative;
+  background-image: url("../images/footer-scene-4.png");
+  background-position: left top; }
+  footer#footer-scene-4 a {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute; }
+
+#quote dl {
+  text-align: center; }
+  #quote dl dt {
+    background-color: #92a65c;
+    color: white;
+    height: 38px;
+    line-height: 38px;
+    -webkit-border-top-right-radius: 10px;
+    -webkit-border-bottom-right-radius: 0;
+    -webkit-border-bottom-left-radius: 0;
+    -webkit-border-top-left-radius: 10px;
+    -moz-border-radius-topright: 10px;
+    -moz-border-radius-bottomright: 0;
+    -moz-border-radius-bottomleft: 0;
+    -moz-border-radius-topleft: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 10px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #92a65c;
+    border-bottom: none;
+    position: relative;
+    font-size: 14px;
+    font-size: 1.4rem; }
+    #quote dl dt.total {
+      background-color: #e3e5dc;
+      font-size: 18px;
+      font-size: 1.8rem;
+      font-family: "interstatebold", Helvetica, Arial, sans-serif;
+      color: #535353;
+      line-height: 52px; }
+    #quote dl dt a.tooltip-btn {
+      display: block;
+      width: 60px;
+      height: 51px;
+      cursor: pointer;
+      top: -4px;
+      right: -25px;
+      bottom: auto;
+      left: auto;
+      position: absolute; }
+  #quote dl dd {
+    margin: 0;
+    -webkit-border-top-right-radius: 0;
+    -webkit-border-bottom-right-radius: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+    -webkit-border-top-left-radius: 0;
+    -moz-border-radius-topright: 0;
+    -moz-border-radius-bottomright: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    -moz-border-radius-topleft: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 0;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    background-color: #e3e5dc;
+    border: 1px solid #92a65c;
+    border-top: none;
+    margin-bottom: 20px; }
+    #quote dl dd span {
+      font-size: 39px;
+      font-size: 3.9rem;
+      font-family: "interstatebold", Helvetica, Arial, sans-serif;
+      color: #535353;
+      line-height: 60px;
+      height: 60px;
+      display: block; }
+      #quote dl dd span.total {
+        line-height: 50px; }
+    #quote dl dd p.tooltip {
+      background-color: white;
+      display: none;
+      font-size: 14px;
+      font-size: 1.4rem;
+      line-height: 100%;
+      font-family: "interstatelight", Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 8px 0;
+      border-bottom: 1px solid #92a65c; }
+
+header#header-scene-5 {
+  height: 185px;
+  text-align: center;
+  background-image: url("../images/header-scene-5.png"); }
+
+footer#footer-scene-5 {
+  height: 163px;
+  position: relative;
+  background-image: url("../images/footer-scene-5.png");
+  background-position: left top; }
+  footer#footer-scene-5 a {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute; }
+
+table {
+  border-collapse: separate;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  overflow: hidden;
+  border: 1px solid #a32121; }
+  table th {
+    background-color: #a32121;
+    font-size: 15px;
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: white;
+    padding: 10px; }
+  table td {
+    background-color: #e3e5dc;
+    padding: 15px;
+    color: #535353;
+    font-size: 16px;
+    font-size: 1.6rem;
+    border-top: 1px solid #a32121; }
+    table td:nth-child(2) {
+      border-left: 1px solid #a32121; }
+    table td span {
+      font-size: 28px;
+      font-size: 2.8rem; }
+
+header#header-scene-6 {
+  height: 212px;
+  text-align: center;
+  background-image: url("../images/header-scene-6.png"); }
+
+#useful-info {
+  text-align: center;
+  margin: 10px 0; }
+  #useful-info ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+    #useful-info ul li {
+      margin-bottom: 15px; }
+      #useful-info ul li a:link, #useful-info ul li a:visited {
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        border-radius: 6px;
+        -moz-background-clip: padding;
+        -webkit-background-clip: padding-box;
+        background-clip: padding-box;
+        background-color: #92a65c;
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        font-size: 1.6rem;
+        display: block;
+        width: 100%;
+        max-width: 280px;
+        padding: 15px 0; }
+      #useful-info ul li a:active {
+        background-color: #1d1e4b; }
+
+footer#footer-scene-6 {
+  position: relative;
+  background-image: url("../images/footer-scene-6.png");
+  background-position: left bottom;
+  background-color: transparent;
+  height: 316px;
+  display: block; }
+  footer#footer-scene-6 ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; }
+  footer#footer-scene-6 a {
+    display: block;
+    width: 100%;
+    background-position: 0 0;
+    background-repeat: no-repeat; }
+    footer#footer-scene-6 a.link-1 {
+      height: 65px;
+      background-image: url("../images/sign-book-service.png");
+      top: 0;
+      right: auto;
+      bottom: auto;
+      left: 0;
+      position: absolute; }
+    footer#footer-scene-6 a.link-2 {
+      height: 65px;
+      background-image: url("../images/sign-book-tyre-replacement.png");
+      top: 65px;
+      right: auto;
+      bottom: auto;
+      left: 0;
+      position: absolute; }
+    footer#footer-scene-6 a.link-3 {
+      background-image: url("../images/sign-review-details.png");
+      height: 61px;
+      top: 130px;
+      right: auto;
+      bottom: auto;
+      left: 0;
+      position: absolute; }
+  footer#footer-scene-6.version-2 {
+    background-image: url("../images/footer-scene-6-v2.png");
+    height: 366px; }
+    footer#footer-scene-6.version-2 a.link-1 {
+      background-image: url("../images/sign-order-2nd-car-v2.png");
+      height: 73px;
+      top: 0;
+      right: auto;
+      bottom: auto;
+      left: 0;
+      position: absolute; }
+    footer#footer-scene-6.version-2 a.link-2 {
+      height: 58px;
+      background-image: url("../images/sign-book-service-v2.png");
+      top: 73px;
+      right: auto;
+      bottom: auto;
+      left: 0;
+      position: absolute; }
+    footer#footer-scene-6.version-2 a.link-3 {
+      height: 66px;
+      background-image: url("../images/sign-book-tyre-replacement-v2.png");
+      top: 131px;
+      right: auto;
+      bottom: auto;
+      left: 0;
+      position: absolute; }
+    footer#footer-scene-6.version-2 a.link-4 {
+      background-image: url("../images/sign-review-details-v2.png");
+      height: 65px;
+      top: 197px;
+      right: auto;
+      bottom: auto;
+      left: 0;
+      position: absolute; }
