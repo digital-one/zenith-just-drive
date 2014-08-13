@@ -412,22 +412,25 @@ th {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-.clearfix:before, #container:before,
+.clearfix:before, #container:before, form#calculator section:before, form#calculator section#age div:before, form#calculator section#tax div:before,
 .clearfix:after,
-#container:after {
+#container:after,
+form#calculator section:after,
+form#calculator section#age div:after,
+form#calculator section#tax div:after {
   content: " ";
   /* 1 */
   display: table;
   /* 2 */ }
 
-.clearfix:after, #container:after {
+.clearfix:after, #container:after, form#calculator section:after, form#calculator section#age div:after, form#calculator section#tax div:after {
   clear: both; }
 
 /**
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-.clearfix, #container {
+.clearfix, #container, form#calculator section, form#calculator section#age div, form#calculator section#tax div {
   *zoom: 1; }
 
 .fit-grid {
@@ -441,7 +444,7 @@ th {
   width: 100%;
   display: block; }
 
-#home-link, header#header-scene-1, footer#footer-scene-1 a#sign-no, footer#footer-scene-1 a#sign-yes, header#header-scene-2, footer#footer-scene-2 a, header#header-scene-3, form#calculator footer button {
+#home-link, header#header-scene-1, footer#footer-scene-1 a#sign-no, footer#footer-scene-1 a#sign-yes, header#header-scene-2, footer#footer-scene-2 a, header#header-scene-3, form#calculator a.radio, form#calculator footer button {
   text-indent: -10000px;
   overflow: hidden; }
 
@@ -621,12 +624,88 @@ footer#footer-scene-2 {
 header#header-scene-3 {
   height: 185px;
   text-align: center;
-  background-image: url("../images/header-scene-3.png"); }
+  background-image: url("../images/header-scene-3.png");
+  margin-bottom: 20px; }
 
-form#calculator footer {
-  height: 227px;
-  position: relative; }
-  form#calculator footer button {
+form#calculator {
+  text-align: center; }
+  form#calculator section {
+    margin: 0 20px 30px 20px; }
+    form#calculator section:after {
+      content: "";
+      background-color: white;
+      display: block;
+      width: 70%;
+      height: 1px;
+      margin: 0 auto; }
+    form#calculator section#age {
+      margin-bottom: 0; }
+      form#calculator section#age:after {
+        display: none; }
+    form#calculator section#age div, form#calculator section#tax div {
+      width: 100%;
+      position: relative;
+      margin-bottom: 25px; }
+      form#calculator section#age div ul, form#calculator section#tax div ul {
+        clear: left;
+        float: left;
+        position: relative;
+        left: 50%;
+        text-align: center; }
+        form#calculator section#age div ul li, form#calculator section#tax div ul li {
+          display: block;
+          float: left;
+          position: relative;
+          right: 50%; }
+    form#calculator section#age li, form#calculator section#tax li {
+      margin: 0 20px; }
+      form#calculator section#age li label, form#calculator section#tax li label {
+        margin-bottom: 5px;
+        font-family: "interstatelight", Helvetica, Arial, sans-serif; }
+    form#calculator section#age div {
+      margin-bottom: 0; }
+    form#calculator section#car label {
+      padding-bottom: 90px; }
+    form#calculator section#car li {
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      margin-bottom: 30px; }
+      form#calculator section#car li:last-child {
+        margin-bottom: 25px; }
+      form#calculator section#car li.option-1 label {
+        background: url("../images/small-car.png") center bottom no-repeat; }
+      form#calculator section#car li.option-2 label {
+        background: url("../images/small-family-car.png") center bottom no-repeat; }
+      form#calculator section#car li.option-3 label {
+        background: url("../images/large-family-car.png") center bottom no-repeat; }
+  form#calculator ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+  form#calculator label {
+    font-size: 16px;
+    font-size: 1.6rem;
+    font-family: "interstatebold", Helvetica, Arial, sans-serif;
+    display: block; }
+    form#calculator label small {
+      font-size: 14px;
+      font-size: 1.4rem;
+      font-family: "interstatelight", Helvetica, Arial, sans-serif;
+      display: block; }
+  form#calculator a.radio {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url("../images/radio-button.png");
+    background-position: left top;
+    background-repeat: no-repeat;
+    cursor: pointer; }
+    form#calculator a.radio.checked {
+      background-position: right top; }
+  form#calculator footer {
     height: 227px;
-    border: none;
-    background: url("../images/footer-scene-3.png") left top no-repeat; }
+    position: relative; }
+    form#calculator footer button {
+      height: 227px;
+      border: none;
+      background: url("../images/footer-scene-3.png") left top no-repeat; }

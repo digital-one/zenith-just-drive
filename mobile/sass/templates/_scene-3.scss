@@ -5,8 +5,95 @@ header#header-scene-3{
 	@extend %ir;
 	text-align:center;
 	background-image: url('../images/header-scene-3.png');
+	margin-bottom:20px;
 }
 form#calculator{
+	text-align: center;
+	section{
+		margin: 0 20px 30px 20px;
+		@extend .clearfix;
+		&:after{
+			content:"";
+			background-color: white;
+			display: block;
+			width: 70%;
+			height:1px;
+			margin: 0 auto;
+		}
+		&#age{
+			margin-bottom: 0;
+			&:after{
+				display: none;
+			}
+		}
+		&#age, &#tax{
+			div{
+				@include centered-menu;
+				@extend .clearfix;
+				margin-bottom: 25px;
+			}
+			li{
+				margin: 0 20px;
+				label{
+					margin-bottom: 5px;
+					font-family: $interstate-light;
+				}
+			}
+		}
+		&#age div{
+			margin-bottom: 0;
+		}
+		&#car{
+			label{
+				padding-bottom:90px;
+			}
+			li{
+				background-position: center bottom;
+				background-repeat: no-repeat;
+				margin-bottom: 30px;
+				&:last-child{
+					margin-bottom: 25px;
+				}
+				&.option-1 label{
+					background:url('../images/small-car.png') center bottom no-repeat;
+				}
+				&.option-2 label{
+					background:url('../images/small-family-car.png') center bottom no-repeat;
+				}
+				&.option-3 label{
+					background:url('../images/large-family-car.png') center bottom no-repeat;
+				}
+			}
+		}
+	}
+	ul{
+		list-style-type: none;
+		margin:0;
+		padding:0;
+	}
+	label{
+		@include font-size(16);
+		font-family: $interstate-bold;
+		display: block;
+		small{
+			@include font-size(14);
+			font-family: $interstate-light;
+			display: block;
+		}
+	}
+	a.radio{
+		display: block;
+		width:30px;
+		height:30px;
+		background-image:url('../images/radio-button.png');
+		background-position: left top;
+		background-repeat: no-repeat;
+		cursor: pointer;
+		@extend %ir;
+		&.checked{
+			background-position: right top;
+		}
+	}
 	footer{
 		@extend %full-width;
 		height:227px;
