@@ -24,7 +24,6 @@ nav#main{
 				padding: 62px 0 0;
 				&.content{
 					padding-top:0;
-					display: none;
 				}
 			}
 		}
@@ -125,7 +124,6 @@ nav#main{
 	margin-left:400px;
 }
 .content{
-	display:none;
 	&.easy,&.saving{
 		@include abs-pos(320px,auto,auto,50%);
 		width: 430px;

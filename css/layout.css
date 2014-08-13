@@ -441,6 +441,10 @@ th {
 /*
 .box-shadow ($string: 0px 0px 5px 0px rgba(50, 50, 50, 0.75));
 */
+#scene-6-hills {
+  width: 100%;
+  display: block; }
+
 #sign-yes, #sign-no, #zenith-cloud, #title-cloud, #balloon, #sign-save, form#calculator button, a#show-me-sign, #poster-tree #poster #main span a, #sign-get-a-quote {
   text-indent: -10000px;
   overflow: hidden; }
@@ -517,7 +521,7 @@ p {
   #container.scene-4 {
     background-image: url("../images/bg-scene-4.jpg"); }
 
-#hills, #road, #car, #sign-yes, #sign-no, #zenith-cloud, #title-cloud, #balloon, nav#main .balloon, #car-shadow, #sign-save, #sun, #small-cloud, #fg-hills, #bg-hills, #tree-wrapper, #tree-wrapper #top, #tree-wrapper #base, form#calculator section#age .shadow, form#calculator section div, form#calculator button, #sign-off, a#show-me-sign, #hills-scene-4, #deer, .big-cloud, #poster-tree #poster, #kite, #sign-get-a-quote, #deer-left {
+#hills, #road, #car, #sign-yes, #sign-no, #zenith-cloud, #title-cloud, #balloon, nav#main .balloon, #car-shadow, #sign-save, #sun, #small-cloud, #fg-hills, #bg-hills, #tree-wrapper, #tree-wrapper #top, #tree-wrapper #base, form#calculator section#age .shadow, form#calculator section div, form#calculator button, #sign-off, a#show-me-sign, #hills-scene-4, #deer, .big-cloud, #poster-tree #poster, #kite, #sign-get-a-quote, #deer-left, #scene-6-hills, #large-cloud, #sign, #scene-6-balloon {
   display: block;
   top: 0;
   right: auto;
@@ -617,15 +621,15 @@ p {
   position: absolute;
   margin-left: -350px; }
   #title-cloud.small {
-    width: 260px;
-    height: 82px;
+    width: 289px;
+    height: 109px;
     background-image: url("../images/just-drive-cloud-small.png");
     top: 180px;
     right: auto;
     bottom: auto;
     left: 50%;
     position: absolute;
-    margin-left: -580px; }
+    margin-left: -600px; }
     .scene-3 #title-cloud.small {
       top: 140px;
       right: 60px;
@@ -633,6 +637,14 @@ p {
       left: auto;
       position: absolute;
       z-index: 2; }
+    .scene-6 #title-cloud.small {
+      top: 20px;
+      right: auto;
+      bottom: auto;
+      left: 50%;
+      position: absolute;
+      z-index: 2;
+      margin-left: -6%; }
 
 #balloon {
   width: 393px;
@@ -679,8 +691,7 @@ nav#main .balloon {
     nav#main .balloon.red div {
       padding: 62px 0 0; }
       nav#main .balloon.red div.content {
-        padding-top: 0;
-        display: none; }
+        padding-top: 0; }
   nav#main .balloon.green, nav#main .balloon.yellow {
     z-index: 2; }
     nav#main .balloon.green h2, nav#main .balloon.yellow h2 {
@@ -812,20 +823,18 @@ nav#main a {
   position: absolute;
   margin-left: 400px; }
 
-.content {
-  display: none; }
-  .content.easy, .content.saving {
-    top: 320px;
-    right: auto;
-    bottom: auto;
-    left: 50%;
-    position: absolute;
-    width: 430px;
-    margin-left: -560px; }
-  .content.easy {
-    text-align: right; }
-  .content.saving {
-    margin-left: 100px; }
+.content.easy, .content.saving {
+  top: 320px;
+  right: auto;
+  bottom: auto;
+  left: 50%;
+  position: absolute;
+  width: 430px;
+  margin-left: -560px; }
+.content.easy {
+  text-align: right; }
+.content.saving {
+  margin-left: 100px; }
 
 .preload {
   background-image: url("../images/red-balloon.png"); }
@@ -1523,3 +1532,78 @@ a#show-me-sign {
   left: -11%;
   position: absolute;
   z-index: 4; }
+
+#scene-6-hills {
+  height: 447px;
+  background-image: url("../images/scene-6-hills.png");
+  top: auto;
+  right: auto;
+  bottom: 0;
+  left: 0;
+  position: absolute; }
+
+#large-cloud {
+  width: 620px;
+  height: 478px;
+  background-image: url("../images/large-cloud.png");
+  top: 40px;
+  right: auto;
+  bottom: auto;
+  left: 50%;
+  position: absolute;
+  margin-left: -48%;
+  padding: 120px 0 0 180px; }
+  #large-cloud h2 {
+    font-family: "interstateregular", Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    font-size: 2.4rem;
+    font-weight: normal;
+    color: #535353; }
+
+#sign {
+  width: 447px;
+  height: 290px;
+  top: auto;
+  right: auto;
+  bottom: 0;
+  left: 2%;
+  position: absolute;
+  background-image: url("../images/sign.png");
+  z-index: 10; }
+  #sign h2 {
+    font-family: "interstateregular", Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    font-size: 2.4rem;
+    font-weight: normal; }
+
+#scene-6-balloon {
+  width: 416px;
+  height: 435px;
+  background-image: url("../images/balloon-scene-6.png");
+  top: 0;
+  right: 1%;
+  bottom: auto;
+  left: auto;
+  position: absolute;
+  font-size: 14px;
+  font-size: 1.4rem;
+  text-align: center;
+  padding: 50px 0 0; }
+  #scene-6-balloon .content {
+    margin-left: -25px; }
+  #scene-6-balloon h2 {
+    font-family: "interstateregular", Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    font-size: 2.4rem;
+    font-weight: normal; }
+  #scene-6-balloon ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center; }
+    #scene-6-balloon ul li {
+      margin-bottom: 15px; }
+    #scene-6-balloon ul a:link, #scene-6-balloon ul a:visited {
+      color: white;
+      text-decoration: none; }
+    #scene-6-balloon ul a:hover, #scene-6-balloon ul a:active {
+      text-decoration: underline; }

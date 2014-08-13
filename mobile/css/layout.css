@@ -465,7 +465,8 @@ body, html {
   overflow-y: scroll;
   overflow-x: hidden;
   color: #1d1e4b;
-  font-family: "interstatelight", Helvetica, Arial, sans-serif; }
+  font-family: "interstatelight", Helvetica, Arial, sans-serif;
+  background-color: #e1e1e1; }
 
 body {
   font-size: 14px;

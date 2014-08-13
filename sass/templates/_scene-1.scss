@@ -64,14 +64,19 @@
 	@include abs-pos(10%,auto,auto,50%);
 	margin-left: -350px;
 	&.small{
-		width: 260px;
-		height: 82px;
+		width: 289px;
+		height: 109px;
 		background-image: url('../images/just-drive-cloud-small.png');
 		@include abs-pos(180px,auto,auto,50%);
-		margin-left: -580px;
+		margin-left: -600px;
 		.scene-3 &{
 			@include abs-pos(140px,60px,auto,auto);
 			z-index: 2;
+		}
+		.scene-6 &{
+			@include abs-pos(20px,auto,auto,50%);
+			z-index: 2;
+			margin-left: -6%;
 		}
 	}
 }

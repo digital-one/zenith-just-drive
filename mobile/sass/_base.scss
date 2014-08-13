@@ -8,6 +8,7 @@ body,html{
 	overflow-x: hidden;
 	color: $blue;
 	font-family: $interstate-light;
+	background-color: #e1e1e1;
 }
 body{
 	@include font-size(14);

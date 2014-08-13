@@ -107,12 +107,12 @@ function setHistoryLink(){
 // balloon content regions
 
 function scene2JS(){
-	if(console) console.log('scene2');
+/*	if(console) console.log('scene2');
 $('a.balloon-link').on('click',function(e){
 	e.preventDefault();
 	$('.content').fadeOut();
 	$('.'+$(this).attr('rel')).fadeToggle();
-})
+}) */
 }
 // tax and age radio buttons
 
