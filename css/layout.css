@@ -532,9 +532,11 @@ p {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
   background-color: white;
-  padding: 20px;
+  padding: 0 20px;
   position: absolute;
   display: block;
+  font-family: "interstateregular", Helvetica, Arial, sans-serif;
+  color: #535353;
   left: 0;
   top: 0;
   z-index: 999; }
