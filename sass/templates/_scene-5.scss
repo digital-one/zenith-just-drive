@@ -7,66 +7,48 @@
 	z-index: 5;
 	margin-left: -80px;
 	color: white;
-	padding: 120px 0 0 130px;
+	padding: 130px 0 0 105px;
+	font-family: $interstate-light;
+	@include font-size(16);
 	header{
 		@extend .clearfix;
-		margin-bottom: 30px;
+		margin-bottom: 25px;
 		position: relative;
-		span{
-			&.left{
-				width: 50%;
-				@include abs-pos(auto,auto,10px,0);
-				@include font-size(27);
-				font-weight: bold;
-			}
-			&.right{
-				font-family: $marydale;
-				@include font-size(27);
-				width: 50%;
-				float: right;
-				line-height: 110%;
-			}
+		text-align: center;
+		h3{
+			@include font-size(38);
+			line-height: 120%;
+			margin-bottom: 0;
 		}
+		
 	}
 	p{
 		@extend .clearfix;
 		margin-bottom: 25px;
-		margin-left: -18px;
+
+		span{
+			@include font-size(21);
+		}
+		&:nth-child(2){
+			margin-left:30px;
+		}
 		&:nth-child(3){
-			margin-left: -24px;
-			span.left{
-				width: 59%;
-			}
+			margin-left:25px;
 		}
 		&:nth-child(4){
-			margin-left: -30px;
-			span.left{
-				width: 58.5%;
-			}
+			margin-left:20px;	
 		}
 		&:nth-child(5){
-			margin-left: -36px;
-			span.left{
-				width: 58%;
-			}
+			margin-left:15px;
 		}
 		&:nth-child(6){
-			margin-left: -42px;
-			span.left{
-				width: 57.5%;
-			}
+			margin-left:10px;
 		}
 		&:nth-child(7){
-			margin-left: -48px;
-			span.left{
-				width: 57%;
-			}
+			margin-left:5px;
 		}
 		&:nth-child(8){
-			margin-left: -54px;
-			span.left{
-				width: 56.5%;
-			}
+			
 		}
 		span{
 			&.left{

@@ -99,24 +99,24 @@ function maintainPagePromptPosition(status){
 
 function preloadImages(list,callback) {
 
+
    		var $imageCount = list.length,
     		$loaded=0;
-    		
-
-
-   // if (!preloadImages.cache) {
-   // preloadImages.cache = [];
-//}
 for (var i = 0; i < $imageCount; i++) {
-    //$img = new Image();
-    //$img.src = list[i];
-   //console.log(list[i]);
-     $('<img>').attr({ src: list[i] }).load(function() {
+
+var $image = new Image();
+$image.onload = function(){ 
+    	if(++$loaded==$imageCount){
+    		callback();
+    	}
+}
+$image.src = list[i];
+     /*$('<img>').attr({ src: list[i] }).load(function() {
 
     	if(++$loaded==$imageCount){
     		callback();
     	}
-    })
+    }) */
     //preloadImages.cache.push(img);
 }
 }
@@ -133,7 +133,7 @@ for (var i = 0; i < $imageCount; i++) {
 	  		//if(console) console.log(State.url);
 	  		showPagePrompt('LOADING','load');
 			$.get(State.url, function(data) {
-	  	 		hidePagePrompt();
+	  	 	
 	  	 		var $images=[],
 	  	 			$preloads = $('.preload',data),
 	  	 			$preloads_src = $('img',data);
@@ -146,12 +146,15 @@ for (var i = 0; i < $imageCount; i++) {
 	  	 				$images.push($(this).attr('src'));
 	  	 			});
 				}
-	  	 	//if(console) console.log($images);
+
 	  	 	var $page = $(data).find('#container').html();
 	  	 	var $sceneClass = $(data).find('#container').attr('class');
 	  	 
 	  	 	preloadImages($images,function(){
+
+	  	 			hidePagePrompt();
 	  	 		$("#container").attr('class','').addClass($sceneClass).html($page);
+	  	 		
 	  	 		scene2JS();
 	  	 		scene3JS();
 	  	 		scene4JS();
@@ -273,7 +276,7 @@ function submitForm(){
 		if($tax && $age && $car){
 			showPagePrompt('LOADING','load');
 			$.get('scene-4.php', {tax:$tax,age:$age,car:$car},function(data) {
-				hidePagePrompt();
+				
 				//loaded page, preload images then show
 	  	 		var $images=[],
 	  	 			$preloads = $('.preload',data),
@@ -287,12 +290,14 @@ function submitForm(){
 						$images.push($(this).attr('src'));
 					})
 					
-				//if(console) console.log($images);
-
+				
 				var $page = $(data).find('#container').html();
+				
 	  	 		var $sceneClass = $(data).find('#container').attr('class');
 
 	  	 		preloadImages($images,function(){
+
+	  	 			hidePagePrompt();
 	  	 		$("#container").attr('class','').addClass($sceneClass).html($page);
 	  	 		resizeTree();
 	  	 		scene4JS();
@@ -300,7 +305,7 @@ function submitForm(){
 
 	  	 	})
 
-				});
+				},'html');
 		} else {
 			showPagePrompt('Please select all fields');
 		}

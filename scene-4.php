@@ -6,7 +6,6 @@ $car = $_GET['car'];
 //calculations here
 endif;
 ?>
-
 <!doctype html>
 <html class="no-js page-home logged ">
     <head>
@@ -26,8 +25,7 @@ endif;
     </head>
     <body>
         <div id="content">
-<div id="container" class="scene-4 preload"  style="background-image: url('images/bg-scene-4.jpg');">
-      &nbsp;
+<div id="container" class="scene-4 preload" style="background-image: url('images/bg-scene-4.jpg');">
     <div id="sun"></div>
     <div id="deer" class="preload" style="background-image: url('images/deer.png');"></div>
    <div id="hills-scene-4" class="preload"  style="background-image: url('images/scene-4-hills.png');"></div>
@@ -45,7 +43,7 @@ and paying 40% tax</span>
 <span class="right">
 Contract term: 24 months
 Annual mileage: 18,000
-</pan>
+</span>
             </header>
             <div id="main" role="main">
                 <p><span class="left"><span class="label">Monthly gross salary sacrifice:</span><a  class="tooltip-btn"><img src="images/tooltip-btn.png" /></a></span><span class="right">&pound;390.00</span><span class="tooltip preload"  style="background-image: url('images/tooltip-1.png');">The amount you ‘sacrifice’ from your monthly salary</span></p>

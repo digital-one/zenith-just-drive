@@ -362,40 +362,55 @@ td,
 th {
   padding: 0; }
 
+/*
 @font-face {
-  font-family: "marydale";
+    font-family: "marydale-webfont";
+    src: url('../fonts/marydale-webfont.eot');
+    src: url('../fonts/marydale-webfont?#iefix') format('eot'),
+         url('../fonts/marydale-webfont.woff') format('woff'),
+         url('../fonts/marydale-webfont.ttf') format('truetype'),
+         url('../fonts/marydale-webfont.svg#marydale-webfont') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+*/
+@font-face {
+  font-family: "marydale-webfont";
   src: url("../fonts/marydale-webfont.eot");
-  src: url("../fonts/marydale-webfont?#iefix") format("embedded-opentype"), url("../fonts/marydale-webfont.woff") format("woff"), url("../fonts/marydale-webfont.ttf") format("truetype"), url("../fonts/marydale-webfont.svg#marydale") format("svg");
+  /* this line made the difference */
+  src: url("../fonts/marydale-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/marydale-webfont.woff") format("woff"), url("../fonts/marydale-webfont.ttf") format("truetype"), url("../fonts/marydale-webfont.svg#marydale-webfont") format("svg");
   font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: "marydale-bold";
+  font-family: "marydale-bold-webfont";
   src: url("../fonts/marydale-bold-webfont.eot");
-  src: url("../fonts/marydale-bold-webfont?#iefix") format("embedded-opentype"), url("../fonts/marydale-bold-webfont.woff") format("woff"), url("../fonts/marydale-bold-webfont.ttf") format("truetype"), url("../fonts/marydale-bold-webfont.svg#marydale-bold") format("svg");
+  src: url("../fonts/marydale-bold-webfont?#iefix") format("embedded-opentype"), url("../fonts/marydale-bold-webfont.woff") format("woff"), url("../fonts/marydale-bold-webfont.ttf") format("truetype"), url("../fonts/marydale-bold-webfont.svg#marydale-bold-webfont") format("svg");
   font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: "interstateblack";
+  font-family: "interstateblack-webfont";
   src: url("../fonts/interstateblack-webfont.eot");
-  src: url("../fonts/interstateblack-webfont?#iefix") format("embedded-opentype"), url("../fonts/interstateblack-webfont.woff") format("woff"), url("../fonts/interstateblack-webfont.ttf") format("truetype"), url("../fonts/interstateblack-webfont.svg#interstateblack") format("svg");
+  /* this line made the difference */
+  src: url("../fonts/interstateblack-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/interstateblack-webfont.woff") format("woff"), url("../fonts/interstateblack-webfont.ttf") format("truetype"), url("../fonts/interstateblack-webfont.svg#interstateblack-webfont") format("svg");
   font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: "interstatelight";
+  font-family: "interstatelight-webfont";
   src: url("../fonts/interstatelight-webfont.eot");
-  src: url("../fonts/interstatelight-webfont?#iefix") format("embedded-opentype"), url("../fonts/interstatelight-webfont.woff") format("woff"), url("../fonts/interstatelight-webfont.ttf") format("truetype"), url("../fonts/interstatelight-webfont.svg#interstatelight") format("svg");
+  /* this line made the difference */
+  src: url("../fonts/interstatelight-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/interstatelight-webfont.woff") format("woff"), url("../fonts/interstatelight-webfont.ttf") format("truetype"), url("../fonts/interstatelight-webfont.svg#interstatelight-webfont") format("svg");
   font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: "interstateregular";
+  font-family: "interstateregular-webfont";
   src: url("../fonts/interstateregular-webfont.eot");
-  src: url("../fonts/interstateregular-webfont?#iefix") format("embedded-opentype"), url("../fonts/interstateregular-webfont.woff") format("woff"), url("../fonts/interstateregular-webfont.ttf") format("truetype"), url("../fonts/interstateregular-webfont.svg#interstateregular") format("svg");
+  src: url("../fonts/interstateregular-webfont?#iefix") format("embedded-opentype"), url("../fonts/interstateregular-webfont.woff") format("woff"), url("../fonts/interstateregular-webfont.ttf") format("truetype"), url("../fonts/interstateregular-webfont.svg#interstateregular-webfont") format("svg");
   font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: "interstatebold";
+  font-family: "interstate_bold-webfont";
   src: url("../fonts/interstate_bold-webfont.eot");
-  src: url("../fonts/interstate_bold-webfont?#iefix") format("embedded-opentype"), url("../fonts/interstate_bold-webfont.woff") format("woff"), url("../fonts/interstate_bold-webfont.ttf") format("truetype"), url("../fonts/interstate_bold-webfont.svg#interstatebold") format("svg");
+  src: url("../fonts/interstate_bold-webfont?#iefix") format("embedded-opentype"), url("../fonts/interstate_bold-webfont.woff") format("woff"), url("../fonts/interstate_bold-webfont.ttf") format("truetype"), url("../fonts/interstate_bold-webfont.svg#interstate_bold-webfont") format("svg");
   font-weight: normal;
   font-style: normal; }
 * {
@@ -474,7 +489,7 @@ body {
 h1, h2, h3, h4, h5 {
   font-size: 40px;
   font-size: 4rem;
-  font-family: "marydale", Helvetica, Arial, sans-serif;
+  font-family: "marydale-webfont", Helvetica, Arial, sans-serif;
   line-height: 100%;
   margin: 0 0 25px;
   letter-spacing: -1px;
@@ -536,7 +551,7 @@ p {
   position: absolute;
   display: block;
   text-align: center;
-  font-family: "interstateregular", Helvetica, Arial, sans-serif;
+  font-family: "interstateregular-webfont", Helvetica, Arial, sans-serif;
   color: #535353;
   left: 0;
   font-size: 18px;
@@ -711,7 +726,7 @@ nav#main .balloon {
     display: block;
     width: 100%; }
   nav#main .balloon h2 {
-    font-family: "marydale", Helvetica, Arial, sans-serif;
+    font-family: "marydale-webfont", Helvetica, Arial, sans-serif;
     font-size: 62px;
     font-size: 6.2rem;
     font-weight: normal; }
@@ -1193,11 +1208,11 @@ form#calculator {
         left: 0;
         position: absolute;
         text-align: center;
-        font-family: "interstatelight", Helvetica, Arial, sans-serif;
+        font-family: "interstatelight-webfont", Helvetica, Arial, sans-serif;
         font-size: 18px;
         font-size: 1.8rem; }
       form#calculator section div.selected span {
-        font-family: "interstateblack", Helvetica, Arial, sans-serif;
+        font-family: "interstateblack-webfont", Helvetica, Arial, sans-serif;
         color: white; }
   form#calculator button {
     width: 331px;
@@ -1213,7 +1228,7 @@ form#calculator {
     margin-left: 200px; }
 
 .scene-4 h1, .scene-5 h1 {
-  font-family: "interstatelight", Helvetica, Arial, sans-serif;
+  font-family: "interstatelight-webfont", Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-size: 30px;
   font-size: 3rem;
@@ -1249,7 +1264,7 @@ form#calculator {
     position: relative;
     margin: 0;
     left: auto;
-    font-family: "interstatelight", Helvetica, Arial, sans-serif;
+    font-family: "interstatelight-webfont", Helvetica, Arial, sans-serif;
     font-size: 30px;
     font-size: 3rem;
     font-weight: normal;
@@ -1357,7 +1372,7 @@ a#show-me-sign {
         font-size: 26px;
         font-size: 2.6rem;
         line-height: 120%;
-        font-family: "interstatelight", Helvetica, Arial, sans-serif; }
+        font-family: "interstatelight-webfont", Helvetica, Arial, sans-serif; }
       #poster-tree #poster header span.right {
         width: 40%;
         font-size: 14px;
@@ -1377,7 +1392,7 @@ a#show-me-sign {
           bottom: auto;
           left: -20px;
           position: absolute;
-          font-family: "interstatebold", Helvetica, Arial, sans-serif;
+          font-family: "interstate_bold-webfont", Helvetica, Arial, sans-serif;
           font-size: 14px;
           font-size: 1.4rem;
           color: #535353;
@@ -1411,7 +1426,7 @@ a#show-me-sign {
         line-height: 50px;
         height: 50px;
         float: left;
-        font-family: "interstatelight", Helvetica, Arial, sans-serif;
+        font-family: "interstatelight-webfont", Helvetica, Arial, sans-serif;
         font-size: 18px;
         font-size: 1.8rem;
         color: #535353; }
@@ -1428,7 +1443,7 @@ a#show-me-sign {
       z-index: 2; }
       #poster-tree #poster footer span.left {
         width: 65%;
-        font-family: "marydale", Helvetica, Arial, sans-serif;
+        font-family: "marydale-webfont", Helvetica, Arial, sans-serif;
         font-size: 42px;
         font-size: 4.2rem;
         text-indent: 10px; }
@@ -1493,56 +1508,38 @@ a#show-me-sign {
   z-index: 5;
   margin-left: -80px;
   color: white;
-  padding: 120px 0 0 130px; }
+  padding: 130px 0 0 105px;
+  font-family: "interstatelight-webfont", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-size: 1.6rem; }
   #kite header {
-    margin-bottom: 30px;
-    position: relative; }
-    #kite header span.left {
-      width: 50%;
-      top: auto;
-      right: auto;
-      bottom: 10px;
-      left: 0;
-      position: absolute;
-      font-size: 27px;
-      font-size: 2.7rem;
-      font-weight: bold; }
-    #kite header span.right {
-      font-family: "marydale", Helvetica, Arial, sans-serif;
-      font-size: 27px;
-      font-size: 2.7rem;
-      width: 50%;
-      float: right;
-      line-height: 110%; }
-  #kite p {
     margin-bottom: 25px;
-    margin-left: -18px; }
+    position: relative;
+    text-align: center; }
+    #kite header h3 {
+      font-size: 38px;
+      font-size: 3.8rem;
+      line-height: 120%;
+      margin-bottom: 0; }
+  #kite p {
+    margin-bottom: 25px; }
+    #kite p span {
+      font-size: 21px;
+      font-size: 2.1rem; }
+    #kite p:nth-child(2) {
+      margin-left: 30px; }
     #kite p:nth-child(3) {
-      margin-left: -24px; }
-      #kite p:nth-child(3) span.left {
-        width: 59%; }
+      margin-left: 25px; }
     #kite p:nth-child(4) {
-      margin-left: -30px; }
-      #kite p:nth-child(4) span.left {
-        width: 58.5%; }
+      margin-left: 20px; }
     #kite p:nth-child(5) {
-      margin-left: -36px; }
-      #kite p:nth-child(5) span.left {
-        width: 58%; }
+      margin-left: 15px; }
     #kite p:nth-child(6) {
-      margin-left: -42px; }
-      #kite p:nth-child(6) span.left {
-        width: 57.5%; }
+      margin-left: 10px; }
     #kite p:nth-child(7) {
-      margin-left: -48px; }
-      #kite p:nth-child(7) span.left {
-        width: 57%; }
-    #kite p:nth-child(8) {
-      margin-left: -54px; }
-      #kite p:nth-child(8) span.left {
-        width: 56.5%; }
+      margin-left: 5px; }
     #kite p span.left {
-      font-family: "interstateregular", Helvetica, Arial, sans-serif;
+      font-family: "interstateregular-webfont", Helvetica, Arial, sans-serif;
       font-size: 15px;
       font-size: 1.5rem;
       width: 60%;
@@ -1598,7 +1595,7 @@ a#show-me-sign {
   margin-left: -48%;
   padding: 120px 0 0 180px; }
   #large-cloud h2 {
-    font-family: "interstateregular", Helvetica, Arial, sans-serif;
+    font-family: "interstateregular-webfont", Helvetica, Arial, sans-serif;
     font-size: 24px;
     font-size: 2.4rem;
     font-weight: normal;
@@ -1651,7 +1648,7 @@ a#show-me-sign {
       font-size: 1.6rem;
       color: #535353; }
   #sign h2 {
-    font-family: "interstateregular", Helvetica, Arial, sans-serif;
+    font-family: "interstateregular-webfont", Helvetica, Arial, sans-serif;
     font-size: 24px;
     font-size: 2.4rem;
     font-weight: normal; }
@@ -1672,7 +1669,7 @@ a#show-me-sign {
   #scene-6-balloon .content {
     margin-left: -25px; }
   #scene-6-balloon h2 {
-    font-family: "interstateregular", Helvetica, Arial, sans-serif;
+    font-family: "interstateregular-webfont", Helvetica, Arial, sans-serif;
     font-size: 24px;
     font-size: 2.4rem;
     font-weight: normal; }
