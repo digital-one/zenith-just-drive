@@ -27,9 +27,10 @@
 		min-height: 100%;
 	}*/
 }
-#loader{
-	width: 200px;
-	height: 200px;
+#prompt{
+	width: 250px;
+	height: 40px;
+	line-height:40px;
 	@include border-radius(10px);
 	background-color: white;
 	padding:20px;
@@ -38,6 +39,16 @@
 	left:0;
 	top:0;
 	z-index: 999;
+	&.loader{
+		&:after{
+			content:"",
+			width:150px;
+			width:32px;
+			height:32px;
+			background:url('../images/loader.gif') center center no-repeat;
+			@include abs-pos(4px,10px,auto,auto);
+		}
+	}
 }
 %element{
 	display: block;

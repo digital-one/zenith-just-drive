@@ -17,11 +17,10 @@ scene3JS();
 scene4JS();
 resizeTree();
 
-
-
-function showPageLoader(){
-	if(console) console.log('loading page');
-	$('body').append('<div id="loading-overlay" />');
+function loadingOverlay(state){
+	switch(state){
+		case 'show':
+		$('body').append('<div id="loading-overlay" />');
 	$("#loading-overlay").css({
 				position: 'absolute',
 				zIndex: 100,
@@ -30,36 +29,52 @@ function showPageLoader(){
 				width: '100%',
 				height: $(document).height(),
 				background: '#000',
-				opacity: '.4'
+				opacity: '.2'
 	});
-	$("#loading-overlay").append('<div id="loader">LOADING</div>');
-	maintainPageLoaderPosition(true);
+		break;
+		case 'hide':
+		$('#loading-overlay').remove();
+		break;
+	}
 }
-function hidePageLoader(){
+
+function showPagePrompt(type,msg){
+	if(console) console.log('loading page');
+	
+	$('body').append('<div id="prompt">'+msg+'</div>');
+
+	if(type=='load'){
+		loadingOverlay('show');
+		$('#prompt').addClass('loader');
+	}
+	maintainPagePromptPosition(true);
+}
+function hidePagePrompt(){
 	if(console) console.log('loaded page');
-	$("#loading-overlay").remove();
-	maintainPageLoaderPosition(false);
+	loadingOverlay('hide');
+	$('#prompt').remove();
+	maintainPagePromptPosition(false);
 }
-function repositionPageLoader(){
-	var $top = (($(window).height() / 2) - ($("#loader").outerHeight() / 2)),
-		$left = (($(window).width() / 2) - ($("#loader").outerWidth() / 2));
+function repositionPagePrompt(){
+	var $top = (($(window).height() / 2) - ($("#prompt").outerHeight() / 2)),
+		$left = (($(window).width() / 2) - ($("#prompt").outerWidth() / 2));
 		if( $top < 0 ) $top = 0;
 		if( $left < 0 ) $left = 0;
-		$("#loader").css({
+		$("#prompt").css({
 			top: $top + 'px',
 			left: $left + 'px'
 		});
 		$("#loading-overlay").height( $(document).height());		
 }
-function maintainPageLoaderPosition(status){
+function maintainPagePromptPosition(status){
 	switch(status){
 		case true:
-			$(window).bind('resize', repositionPageLoader());
-			$(window).bind('scroll', repositionPageLoader());
+			$(window).bind('resize', repositionPagePrompt());
+			$(window).bind('scroll', repositionPagePrompt());
 			break;
 		case false:
-			$(window).unbind('resize', repositionPageLoader());
-			$(window).unbind('scroll', repositionPageLoader());
+			$(window).unbind('resize', repositionPagePrompt());
+			$(window).unbind('scroll', repositionPagePrompt());
 		}
 
 }
@@ -99,7 +114,7 @@ for (var i = 0; i < $imageCount; i++) {
 	  	 var State = History.getState();
 	  	// $('#content').load(State.url + ' #container',function(){
 	  		if(console) console.log(State.url);
-	  		showPageLoader();
+	  		showPageLoader('load','LOADING');
 			$.get(State.url, function(data) {
 	  	 		//hidePageLoader();
 	  	 		var $images=[],
