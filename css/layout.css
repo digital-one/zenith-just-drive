@@ -538,11 +538,13 @@ p {
   font-family: "interstateregular", Helvetica, Arial, sans-serif;
   color: #535353;
   left: 0;
+  font-size: 18px;
+  font-size: 1.8rem;
   top: 0;
   z-index: 999; }
   #prompt.loader:after {
     content: "";
-    width: 120px;
+    width: 100px;
     width: 32px;
     height: 32px;
     background: url("../images/loader.gif") center center no-repeat;
