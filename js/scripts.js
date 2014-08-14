@@ -23,7 +23,7 @@ function showPageLoader(){
 	$('body').append('<div id="loading-overlay" />');
 	$("#loading-overlay").css({
 				position: 'absolute',
-				zIndex: 9999
+				zIndex: 9999,
 				top: '0px',
 				left: '0px',
 				width: '100%',
