@@ -23,7 +23,6 @@
 	&.with-shadow{
 		width: 276px;
 		height: 227px;
-		//background-image: url('../images/car-rotated.png');
 		@include abs-pos(420px,auto,auto,50%);
 	}
 }
@@ -88,8 +87,11 @@
 	background-image: url('../images/balloon.png');
 	@include abs-pos(-100px,auto,auto,66%);
 }
-h3{
-	@include abs-pos(40%,auto,auto,50%);
-	margin-left: -30%;
-	text-align: center;
+.scene-1{
+	h3{
+		@include abs-pos(40%,auto,auto,auto);
+		text-align: center;
+		width: 100%;
+		@include font-size(38);
+	}
 }

@@ -13,7 +13,6 @@
 	@include abs-pos(40px,auto,auto,50%);
 	margin-left:-48%;
 	padding:120px 0 0 180px;
-	.content{}
 	h2{
 		font-family: $interstate-regular;
 		@include font-size(24);
@@ -24,6 +23,46 @@
 #sign{
 	width: 447px;
 	height: 290px;
+	padding: 55px 0 0 55px;
+	ul{
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+		li{
+			margin-bottom: 5px;
+		}
+		a:link, a:visited{
+			text-decoration: none;
+			line-height: 45px;
+			color: white;
+			display: block;
+		}
+	}
+	time{
+		height:40px;
+		width:45px;
+		display: block;
+		background-color:white;
+		float: left;
+		margin-right: 15px;
+		header{
+			height: 18px;
+			line-height: 18px;
+			background-color:#bd191a;
+			color:white;
+			@include font-size(11);
+			text-align: center;
+			display: block;
+		}
+		span{
+			display: block;
+			text-align: center;
+			height:22px;
+			line-height: 22px;
+			@include font-size(16);
+			color: $grey;
+		}
+	}
 	@extend %element;
 	@include abs-pos(auto,auto,0,2%);
 	background-image: url('../images/sign.png');
@@ -73,17 +112,34 @@
 	@extend %element;
 	background-image: url('../images/signpost.png');
 	background-position: left bottom;
-	@include abs-pos(auto,2%,40px,auto);
+	@include abs-pos(auto,2%,10px,auto);
 	ul{
 		list-style-type: none;
 		padding:0;
-	}
-	&.version-2{
-		background-image: url('../images/signpost-v2.png');
 		a{
 			display: block;
 			@extend %ir;
 			@extend %element;
+			&.link-1{
+				height:95px;
+				background-image:url('../images/sign-book-service.png');
+				@include abs-pos(0,auto,auto,0);
+			}
+			&.link-2{
+				height:95px;
+				background-image:url('../images/sign-book-tyres.png');
+				@include abs-pos(95px,auto,auto,0);
+			}
+			&.link-3{
+				height:95px;
+				background-image:url('../images/sign-review-details.png');
+				@include abs-pos(190px,auto,auto,0);
+			}
+		}
+	}
+	&.version-2{
+		background-image: url('../images/signpost-v2.png');
+		a{
 			&.link-1{
 				height:95px;
 				background-image:url('../images/sign-order-2nd-car.png');
@@ -107,5 +163,6 @@
 		}
 	}
 }
-
-
+#order-form td{
+	padding:0 30px 10px 0;
+}

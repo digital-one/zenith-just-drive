@@ -17,6 +17,25 @@ scene3JS();
 scene4JS();
 resizeTree();
 
+
+function showPageLoader(){
+	$('body').append('<div id="loading-overlay" />');
+	$("#loading-overlay").css({
+				position: 'absolute',
+				zIndex: 9999
+				top: '0px',
+				left: '0px',
+				width: '100%',
+				height: $(document).height(),
+				background: '#000',
+				opacity: '.4'
+	});
+	$("loading-overlay").append('<div id="loading"></div>');
+}
+function hidePageLoader(){
+	$("#loading-overlay").remove();
+}
+
 // image preloader
 
 function preloadImages(list,callback) {
@@ -52,10 +71,10 @@ for (var i = 0; i < $imageCount; i++) {
 	  	if(console) console.log('change state');
 	  	 var State = History.getState();
 	  	// $('#content').load(State.url + ' #container',function(){
-	  		console.log(State.url);
-	  		
+	  		if(console) console.log(State.url);
+	  		showPageLoader();
 			$.get(State.url, function(data) {
-	  	 		
+	  	 		hidePageLoader();
 	  	 		var $images=[],
 	  	 			$preloads = $('.preload',data),
 	  	 			$preloads_src = $('img',data);
