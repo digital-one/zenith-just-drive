@@ -3,8 +3,11 @@ $(window).on('resize',function(){
 });
 
 function resizeTree(){
+	if($('#poster-tree').length){
 	var $width = $('#poster-tree img.trunk').width();
 	$('#poster-tree').width($width);
+
+}
 }
 
 
@@ -16,6 +19,8 @@ scene2JS();
 scene3JS();
 scene4JS();
 resizeTree();
+
+
 
 function showOverlay(state,hide){
 	switch(state){
@@ -151,6 +156,9 @@ for (var i = 0; i < $imageCount; i++) {
 	  	 		scene3JS();
 	  	 		scene4JS();
 	  	 		resizeTree();
+	  	 		$(window).bind('resize',function(){
+	  	 			resizeTree();
+	  	 		});
 	  	 		setHistoryLink();
 
 	  	 	})

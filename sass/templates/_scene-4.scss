@@ -233,10 +233,14 @@ a#show-me-sign{
 					margin: 0 0 20px;
 				}
 				span{
+					&.left{
+						width: 80%;
+					}
 					&.right{
 						@include font-size(21);
 						line-height: 40px;
 						height: 40px;
+						width:20%;
 					}
 					&.label{
 						@include font-size(15);
