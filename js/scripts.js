@@ -49,7 +49,7 @@ function showOverlay(state,hide){
 }
 
 function showPagePrompt(msg,type){
-	if(console) console.log('loading page');
+	//if(console) console.log('loading page');
 	
 	$('body').append('<div id="prompt">'+msg+'</div>');
 	
@@ -64,7 +64,7 @@ function showPagePrompt(msg,type){
 	maintainPagePromptPosition(true);
 }
 function hidePagePrompt($delay){
-	if(console) console.log('loaded page');
+	//if(console) console.log('loaded page');
 	//showOverlay(false);
 	if(!$delay) $delay=200;
 	$('#prompt').delay($delay).fadeOut(200,function(){
@@ -127,10 +127,10 @@ for (var i = 0; i < $imageCount; i++) {
 //History.pushState(null, '', 'index.html');
 
 	  History.Adapter.bind(window,'statechange',function() {
-	  	if(console) console.log('change state');
+	  	//if(console) console.log('change state');
 	  	 var State = History.getState();
 	  	// $('#content').load(State.url + ' #container',function(){
-	  		if(console) console.log(State.url);
+	  		//if(console) console.log(State.url);
 	  		showPagePrompt('LOADING','load');
 			$.get(State.url, function(data) {
 	  	 		hidePagePrompt();
