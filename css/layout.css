@@ -445,7 +445,7 @@ th {
   width: 100%;
   display: block; }
 
-#sign-yes, #sign-no, #zenith-cloud, #title-cloud, #balloon, #sign-save, form#calculator button, a#show-me-sign, #poster-tree #poster #main span a, #sign-get-a-quote {
+#sign-yes, #sign-no, #zenith-cloud, #title-cloud, #balloon, #sign-save, form#calculator button, a#show-me-sign, #poster-tree #poster #main span a, #sign-get-a-quote, #road-sign.version-2 a {
   text-indent: -10000px;
   overflow: hidden; }
 
@@ -521,7 +521,7 @@ p {
   #container.scene-4 {
     background-image: url("../images/bg-scene-4.jpg"); }
 
-#hills, #road, #car, #sign-yes, #sign-no, #zenith-cloud, #title-cloud, #balloon, nav#main .balloon, #car-shadow, #sign-save, #sun, #small-cloud, #fg-hills, #bg-hills, #tree-wrapper, #tree-wrapper #top, #tree-wrapper #base, form#calculator section#age .shadow, form#calculator section div, form#calculator button, #sign-off, a#show-me-sign, #hills-scene-4, #deer, .big-cloud, #poster-tree #poster, #kite, #sign-get-a-quote, #deer-left, #scene-6-hills, #large-cloud, #sign, #scene-6-balloon {
+#hills, #road, #car, #sign-yes, #sign-no, #zenith-cloud, #title-cloud, #balloon, nav#main .balloon, #car-shadow, #sign-save, #sun, #small-cloud, #fg-hills, #bg-hills, #tree-wrapper, #tree-wrapper #top, #tree-wrapper #base, form#calculator section#age .shadow, form#calculator section div, form#calculator button, #sign-off, a#show-me-sign, #hills-scene-4, #deer, .big-cloud, #poster-tree #poster, #kite, #sign-get-a-quote, #deer-left, #scene-6-hills, #large-cloud, #sign, #scene-6-balloon, #road-sign, #road-sign.version-2 a {
   display: block;
   top: 0;
   right: auto;
@@ -1607,3 +1607,53 @@ a#show-me-sign {
       text-decoration: none; }
     #scene-6-balloon ul a:hover, #scene-6-balloon ul a:active {
       text-decoration: underline; }
+
+#road-sign {
+  width: 388px;
+  height: 402px;
+  background-image: url("../images/signpost.png");
+  background-position: left bottom;
+  top: auto;
+  right: 2%;
+  bottom: 40px;
+  left: auto;
+  position: absolute; }
+  #road-sign ul {
+    list-style-type: none;
+    padding: 0; }
+  #road-sign.version-2 {
+    background-image: url("../images/signpost-v2.png"); }
+    #road-sign.version-2 a {
+      display: block; }
+      #road-sign.version-2 a.link-1 {
+        height: 95px;
+        background-image: url("../images/sign-order-2nd-car.png");
+        top: 0;
+        right: auto;
+        bottom: auto;
+        left: 0;
+        position: absolute; }
+      #road-sign.version-2 a.link-2 {
+        height: 57px;
+        background-image: url("../images/sign-book-service-v2.png");
+        top: 95px;
+        right: auto;
+        bottom: auto;
+        left: 0;
+        position: absolute; }
+      #road-sign.version-2 a.link-3 {
+        height: 80px;
+        background-image: url("../images/sign-book-tyres-v2.png");
+        top: 152px;
+        right: auto;
+        bottom: auto;
+        left: 0;
+        position: absolute; }
+      #road-sign.version-2 a.link-4 {
+        height: 73px;
+        background-image: url("../images/sign-review-details-v2.png");
+        top: 232px;
+        right: auto;
+        bottom: auto;
+        left: 0;
+        position: absolute; }

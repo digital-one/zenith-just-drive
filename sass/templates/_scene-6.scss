@@ -67,3 +67,45 @@
 		}
 	}
 }
+#road-sign{
+	width:388px;
+	height:402px;
+	@extend %element;
+	background-image: url('../images/signpost.png');
+	background-position: left bottom;
+	@include abs-pos(auto,2%,40px,auto);
+	ul{
+		list-style-type: none;
+		padding:0;
+	}
+	&.version-2{
+		background-image: url('../images/signpost-v2.png');
+		a{
+			display: block;
+			@extend %ir;
+			@extend %element;
+			&.link-1{
+				height:95px;
+				background-image:url('../images/sign-order-2nd-car.png');
+				@include abs-pos(0,auto,auto,0);
+			}
+			&.link-2{
+				height:57px;
+				background-image:url('../images/sign-book-service-v2.png');
+				@include abs-pos(95px,auto,auto,0);
+			}
+			&.link-3{
+				height:80px;
+				background-image:url('../images/sign-book-tyres-v2.png');
+				@include abs-pos(152px,auto,auto,0);
+			}
+			&.link-4{
+				height:73px;
+				background-image:url('../images/sign-review-details-v2.png');
+				@include abs-pos(232px,auto,auto,0);
+			}
+		}
+	}
+}
+
+
