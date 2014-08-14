@@ -59,7 +59,7 @@ function showPagePrompt(msg,type){
 function hidePagePrompt(){
 	if(console) console.log('loaded page');
 	showOverlay(false);
-	$('#prompt').delay(600).fadeOut(200,function(){
+	$('#prompt').delay(200).fadeOut(200,function(){
 		$(this).remove();
 	});
 	maintainPagePromptPosition(false);
