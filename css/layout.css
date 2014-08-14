@@ -595,6 +595,9 @@ p {
   -moz-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out; }
 
+button:focus {
+  outline: 0; }
+
 #hills {
   height: 379px;
   background-image: url("../images/hills.png");
