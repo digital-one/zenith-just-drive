@@ -38,7 +38,7 @@ function loadingOverlay(state){
 	}
 }
 
-function showPagePrompt(type,msg){
+function showPagePrompt(msg,type){
 	if(console) console.log('loading page');
 	
 	$('body').append('<div id="prompt">'+msg+'</div>');
@@ -114,7 +114,7 @@ for (var i = 0; i < $imageCount; i++) {
 	  	 var State = History.getState();
 	  	// $('#content').load(State.url + ' #container',function(){
 	  		if(console) console.log(State.url);
-	  		showPagePrompt('load','LOADING');
+	  		showPagePrompt('LOADING','load');
 			$.get(State.url, function(data) {
 	  	 		hidePagePrompt();
 	  	 		var $images=[],
@@ -280,7 +280,7 @@ function submitForm(){
 
 				});
 		} else {
-			console.log('all not filled');
+			showPagePrompt('Please select all fields');
 		}
 		
 }
