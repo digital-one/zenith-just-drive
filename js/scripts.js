@@ -50,16 +50,19 @@ function showPagePrompt(msg,type){
 	
 	var hideOverlay=true;
 	if(type=='load'){
-		hideOverlay=false;
 		$('#prompt').addClass('loader');
+	} else {
+		//form prompt, remove after a few seconds
+		hidePagePrompt(2000);
 	}
-	showOverlay(true,hideOverlay);
+	//showOverlay(true,hideOverlay);
 	maintainPagePromptPosition(true);
 }
-function hidePagePrompt(){
+function hidePagePrompt($delay){
 	if(console) console.log('loaded page');
-	showOverlay(false);
-	$('#prompt').delay(200).fadeOut(200,function(){
+	//showOverlay(false);
+	if(!$delay) $delay=200;
+	$('#prompt').delay($delay).fadeOut(200,function(){
 		$(this).remove();
 	});
 	maintainPagePromptPosition(false);
