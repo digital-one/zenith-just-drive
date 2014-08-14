@@ -542,17 +542,18 @@ p {
   font-size: 1.8rem;
   top: 0;
   z-index: 999; }
-  #prompt.loader:after {
-    content: "";
-    width: 100px;
-    width: 32px;
-    height: 32px;
-    background: url("../images/loader.gif") center center no-repeat;
-    top: 9px;
-    right: 12px;
-    bottom: auto;
-    left: auto;
-    position: absolute; }
+  #prompt.loader {
+    width: 120px; }
+    #prompt.loader:after {
+      content: "";
+      width: 32px;
+      height: 32px;
+      background: url("../images/loader.gif") center center no-repeat;
+      top: 9px;
+      right: 12px;
+      bottom: auto;
+      left: auto;
+      position: absolute; }
 
 #hills, #road, #car, #sign-yes, #sign-no, #zenith-cloud, #title-cloud, #balloon, nav#main .balloon, #car-shadow, #sign-save, #sun, #small-cloud, #fg-hills, #bg-hills, #tree-wrapper, #tree-wrapper #top, #tree-wrapper #base, form#calculator section#age .shadow, form#calculator section div, form#calculator button, #sign-off, a#show-me-sign, #hills-scene-4, #deer, .big-cloud, #poster-tree #poster, #kite, #sign-get-a-quote, #deer-left, #scene-6-hills, #large-cloud, #sign, #scene-6-balloon, #road-sign, #road-sign ul a {
   display: block;
