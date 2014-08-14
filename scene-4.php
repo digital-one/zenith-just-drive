@@ -20,8 +20,8 @@ endif;
         <link rel="stylesheet" href="css/layout.css">
                 <script src="js/modernizr.js"></script>
         <!--[if lte IE 9]>
-            <link rel="stylesheet" href="/css/ie.css">
-            <script src="/js/vendor/respond.min.js"></script>
+            <script src="js/selectivizr.min.js"></script>
+            <script src="js/respond.min.js"></script>
         <![endif]-->
     </head>
     <body>
