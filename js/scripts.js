@@ -19,6 +19,7 @@ resizeTree();
 
 
 function showPageLoader(){
+	console.log('load');
 	$('body').append('<div id="loading-overlay" />');
 	$("#loading-overlay").css({
 				position: 'absolute',
@@ -33,6 +34,7 @@ function showPageLoader(){
 	$("loading-overlay").append('<div id="loading"></div>');
 }
 function hidePageLoader(){
+	console.log('loaded');
 	$("#loading-overlay").remove();
 }
 
