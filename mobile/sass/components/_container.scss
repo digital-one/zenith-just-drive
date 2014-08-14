@@ -38,6 +38,22 @@
 	width: 100%;
 	@include transition (all 0.1s ease-in-out);
 }
-
+#prompt{
+	width: 250px;
+	height: 50px;
+	line-height:50px;
+	@include border-radius(10px);
+	background-color: white;
+	padding:0 12px;
+	position:absolute;
+	display: block;
+	text-align:center;
+	font-family: $interstate-regular;
+	color: $grey;
+	left:0;
+	@include font-size(18);
+	top:0;
+	z-index: 999;
+}
 
 

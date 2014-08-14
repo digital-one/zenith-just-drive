@@ -59,9 +59,59 @@ $(document).ready(function(){
 		if($tax && $age && $car){
 			$('#calculator').unbind().submit();
 		} else {
-			if(console) console.log('select all fields')
+			showPagePrompt('Please select all fields');
 		}
 	
 	});
+
+	// form validation prompt
+
+	function showPagePrompt(msg,type){
+	if(console) console.log('loading page');
+	
+	$('body').append('<div id="prompt">'+msg+'</div>');
+	
+	var hideOverlay=true;
+	if(type=='load'){
+		$('#prompt').addClass('loader');
+	} else {
+		//form prompt, remove after a few seconds
+		hidePagePrompt(2000);
+	}
+	//showOverlay(true,hideOverlay);
+	maintainPagePromptPosition(true);
+}
+function hidePagePrompt($delay){
+	if(console) console.log('loaded page');
+	//showOverlay(false);
+	if(!$delay) $delay=200;
+	$('#prompt').delay($delay).fadeOut(200,function(){
+		$(this).remove();
+	});
+	maintainPagePromptPosition(false);
+}
+function repositionPagePrompt(){
+	var $top = (($(window).height() / 2) - ($("#prompt").outerHeight() / 2)),
+		$left = (($(window).width() / 2) - ($("#prompt").outerWidth() / 2));
+		if( $top < 0 ) $top = 0;
+		if( $left < 0 ) $left = 0;
+		$("#prompt").css({
+			top: $top + 'px',
+			left: $left + 'px'
+		});
+		$("#loading-overlay").height( $(document).height());		
+}
+function maintainPagePromptPosition(status){
+	switch(status){
+		case true:
+			$(window).bind('resize', repositionPagePrompt());
+			$(window).bind('scroll', repositionPagePrompt());
+			break;
+		case false:
+			$(window).unbind('resize', repositionPagePrompt());
+			$(window).unbind('scroll', repositionPagePrompt());
+		}
+
+}
 
 })

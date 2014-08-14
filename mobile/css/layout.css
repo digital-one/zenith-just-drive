@@ -601,6 +601,29 @@ header#header-scene-1, footer#footer-scene-1, footer#footer-scene-1 #road, foote
   -moz-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out; }
 
+#prompt {
+  width: 250px;
+  height: 50px;
+  line-height: 50px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background-color: white;
+  padding: 0 12px;
+  position: absolute;
+  display: block;
+  text-align: center;
+  font-family: "interstateregular", Helvetica, Arial, sans-serif;
+  color: #535353;
+  left: 0;
+  font-size: 18px;
+  font-size: 1.8rem;
+  top: 0;
+  z-index: 999; }
+
 header#header-scene-1 {
   height: 164px;
   margin-top: 62px;
