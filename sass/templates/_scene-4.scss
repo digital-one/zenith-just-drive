@@ -111,13 +111,13 @@ a#show-me-sign{
 			margin-bottom: 40px;
 			span{
 				&.left{
-					width: 62%;
+					width: 60%;
 					@include font-size(26);
 					line-height: 120%;
 					font-family: $interstate-light;
 				}
 				&.right{
-					width: 38%;
+					width: 40%;
 					@include font-size(14);
 				}
 			}
@@ -157,17 +157,19 @@ a#show-me-sign{
 			}
 			span{
 				&.left{
-					width:80%;
+					width:75%;
 					@extend .clearfix;
+					overflow:visible;
 				}
 				&.right{
-					width: 20%;
+					width: 25%;
 					line-height: 50px;
 					height: 50px;
 					color: $grey;
 					text-align: right;
 					@include font-size(30);
 					font-weight: bold;
+					overflow:visible;
 				}	
 				.label{
 					line-height: 50px;

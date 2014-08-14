@@ -1352,13 +1352,13 @@ a#show-me-sign {
       color: white;
       margin-bottom: 40px; }
       #poster-tree #poster header span.left {
-        width: 62%;
+        width: 60%;
         font-size: 26px;
         font-size: 2.6rem;
         line-height: 120%;
         font-family: "interstatelight", Helvetica, Arial, sans-serif; }
       #poster-tree #poster header span.right {
-        width: 38%;
+        width: 40%;
         font-size: 14px;
         font-size: 1.4rem; }
     #poster-tree #poster #main {
@@ -1394,16 +1394,18 @@ a#show-me-sign {
           background-image: url("../images/tooltip-4.png");
           width: 346px; }
       #poster-tree #poster #main span.left {
-        width: 80%; }
+        width: 75%;
+        overflow: visible; }
       #poster-tree #poster #main span.right {
-        width: 20%;
+        width: 25%;
         line-height: 50px;
         height: 50px;
         color: #535353;
         text-align: right;
         font-size: 30px;
         font-size: 3rem;
-        font-weight: bold; }
+        font-weight: bold;
+        overflow: visible; }
       #poster-tree #poster #main span .label {
         line-height: 50px;
         height: 50px;
