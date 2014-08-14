@@ -1537,7 +1537,7 @@ a#show-me-sign {
     #kite p span {
       font-size: 21px;
       font-size: 2.1rem; }
-    #kite p:nth-child(2n) {
+    #kite p:nth-child(2) {
       margin-left: 30px; }
     #kite p:nth-child(3) {
       margin-left: 25px; }
