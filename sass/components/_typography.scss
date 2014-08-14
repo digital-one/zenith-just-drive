@@ -8,6 +8,10 @@ h1,h2,h3,h4,h5{
 }
 a{
 	outline: none;
+	&:focus{
+		outline: none;
+		border: none;
+	}
 }
 p{
 	color: #fff;
