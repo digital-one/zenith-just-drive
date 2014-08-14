@@ -41,7 +41,7 @@ function loadingOverlay(state){
 function showPagePrompt(msg,type){
 	if(console) console.log('loading page');
 	
-	$('body').append('<div id="prompt">'+msg+'</div>').fadeIn(200);
+	$('body').append('<div id="prompt">'+msg+'</div>').hide().fadeIn(200);
 
 	if(type=='load'){
 		loadingOverlay('show');
