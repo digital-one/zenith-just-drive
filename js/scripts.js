@@ -101,7 +101,7 @@ function preloadImages(list,callback) {
 
    		var $imageCount = list.length,
     		$loaded=0;
-    		console.log($imageCount);
+    		
 
 
    // if (!preloadImages.cache) {
@@ -168,7 +168,7 @@ for (var i = 0; i < $imageCount; i++) {
 	  
 
 function scene4JS(){
-	console.log('scene 4 js')
+	
 	// tooltips
 	$('a.tooltip-btn').on('click',function(e){
 	e.preventDefault();
