@@ -32,7 +32,7 @@ function showPageLoader(){
 				background: '#000',
 				opacity: '.4'
 	});
-	$("loading-overlay").html('<div id="loader">LOADING</div>');
+	$("#loading-overlay").append('<div id="loader">LOADING</div>');
 	maintainPageLoaderPosition(true);
 }
 function hidePageLoader(){
