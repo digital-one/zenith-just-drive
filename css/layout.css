@@ -497,9 +497,11 @@ h1, h2, h3, h4, h5 {
 
 a:focus, a:active {
   outline: none;
-  border: none; }
+  border: none;
+  border-style: none; }
 a img {
-  border: none; }
+  border: none;
+  border-style: none; }
 
 p {
   color: #fff;

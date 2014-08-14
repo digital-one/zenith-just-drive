@@ -10,9 +10,11 @@ a{
 	&:focus,&:active{
 		outline: none;
 		border: none;
+		border-style:none;
 	}
 	img{
 		border: none;
+		border-style:none;
 	}
 }
 p{
