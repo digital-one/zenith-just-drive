@@ -114,7 +114,7 @@ for (var i = 0; i < $imageCount; i++) {
 	  	 var State = History.getState();
 	  	// $('#content').load(State.url + ' #container',function(){
 	  		if(console) console.log(State.url);
-	  		showPageLoader('load','LOADING');
+	  		showPagePrompt('load','LOADING');
 			$.get(State.url, function(data) {
 	  	 		//hidePageLoader();
 	  	 		var $images=[],
