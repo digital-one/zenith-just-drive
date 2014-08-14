@@ -111,13 +111,13 @@ a#show-me-sign{
 			margin-bottom: 40px;
 			span{
 				&.left{
-					width: 65%;
+					width: 62%;
 					@include font-size(26);
 					line-height: 120%;
 					font-family: $interstate-light;
 				}
 				&.right{
-					width: 35%;
+					width: 38%;
 					@include font-size(14);
 				}
 			}

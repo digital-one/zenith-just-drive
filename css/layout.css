@@ -1352,13 +1352,13 @@ a#show-me-sign {
       color: white;
       margin-bottom: 40px; }
       #poster-tree #poster header span.left {
-        width: 65%;
+        width: 62%;
         font-size: 26px;
         font-size: 2.6rem;
         line-height: 120%;
         font-family: "interstatelight", Helvetica, Arial, sans-serif; }
       #poster-tree #poster header span.right {
-        width: 35%;
+        width: 38%;
         font-size: 14px;
         font-size: 1.4rem; }
     #poster-tree #poster #main {
