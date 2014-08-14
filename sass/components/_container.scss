@@ -36,13 +36,16 @@
 	padding:0 12px;
 	position:absolute;
 	display: block;
+	text-align:center;
 	font-family: $interstate-regular;
 	color: $grey;
 	left:0;
+	display:none;
 	@include font-size(18);
 	top:0;
 	z-index: 999;
 	&.loader{
+		text-align: left;
 		width:150px;
 		&:after{
 			content:"";

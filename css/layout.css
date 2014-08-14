@@ -535,14 +535,17 @@ p {
   padding: 0 12px;
   position: absolute;
   display: block;
+  text-align: center;
   font-family: "interstateregular", Helvetica, Arial, sans-serif;
   color: #535353;
   left: 0;
+  display: none;
   font-size: 18px;
   font-size: 1.8rem;
   top: 0;
   z-index: 999; }
   #prompt.loader {
+    text-align: left;
     width: 150px; }
     #prompt.loader:after {
       content: "";

@@ -29,7 +29,7 @@ function loadingOverlay(state){
 				width: '100%',
 				height: $(document).height(),
 				background: '#000',
-				opacity: '.2'
+				opacity: '0'
 	});
 		break;
 		case 'hide':
@@ -41,7 +41,7 @@ function loadingOverlay(state){
 function showPagePrompt(msg,type){
 	if(console) console.log('loading page');
 	
-	$('body').append('<div id="prompt">'+msg+'</div>');
+	$('body').append('<div id="prompt">'+msg+'</div>').fadeIn(200);
 
 	if(type=='load'){
 		loadingOverlay('show');
@@ -52,7 +52,9 @@ function showPagePrompt(msg,type){
 function hidePagePrompt(){
 	if(console) console.log('loaded page');
 	loadingOverlay('hide');
-	$('#prompt').remove();
+	$('#prompt').delay(600).fadeOut(200,function(){
+		$(this).remove();
+	});
 	maintainPagePromptPosition(false);
 }
 function repositionPagePrompt(){
