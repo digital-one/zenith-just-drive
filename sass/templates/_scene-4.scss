@@ -11,7 +11,7 @@
 }
 #sign-off{
 	@extend %element;
-	@include abs-pos(300px,auto,auto,65%);
+	@include abs-pos(300px,auto,auto,70%);
 	width:380px;
 	h2{
 		@include font-size(60);
@@ -39,6 +39,7 @@ a#show-me-sign{
 	display: block;
 	@include abs-pos(auto,180px,0,auto);
 	background-image: url('../images/show-me-sign.png');
+	z-index:999;
 }
 #hills-scene-4{
 	@extend %element;
