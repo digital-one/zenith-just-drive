@@ -17,9 +17,9 @@ scene3JS();
 scene4JS();
 resizeTree();
 
-function loadingOverlay(state){
+function showOverlay(state,hide){
 	switch(state){
-		case 'show':
+		case true:
 		$('body').append('<div id="loading-overlay" />');
 	$("#loading-overlay").css({
 				position: 'absolute',
@@ -31,8 +31,13 @@ function loadingOverlay(state){
 				background: '#000',
 				opacity: '0'
 	});
+	if(hide){
+		$("#loading-overlay").on('click',function(){
+			hidePagePrompt();
+		})
+	}
 		break;
-		case 'hide':
+		case false:
 		$('#loading-overlay').remove();
 		break;
 	}
@@ -41,17 +46,19 @@ function loadingOverlay(state){
 function showPagePrompt(msg,type){
 	if(console) console.log('loading page');
 	
-	$('body').append('<div id="prompt">'+msg+'</div>').hide().fadeIn(200);
-
+	$('body').append('<div id="prompt">'+msg+'</div>');
+	
+	var hideOverlay=true;
 	if(type=='load'){
-		loadingOverlay('show');
+		hideOverlay=false;
 		$('#prompt').addClass('loader');
 	}
+	showOverlay(true,hideOverlay);
 	maintainPagePromptPosition(true);
 }
 function hidePagePrompt(){
 	if(console) console.log('loaded page');
-	loadingOverlay('hide');
+	showOverlay(false);
 	$('#prompt').delay(600).fadeOut(200,function(){
 		$(this).remove();
 	});
