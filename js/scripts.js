@@ -116,7 +116,7 @@ for (var i = 0; i < $imageCount; i++) {
 	  		if(console) console.log(State.url);
 	  		showPagePrompt('load','LOADING');
 			$.get(State.url, function(data) {
-	  	 		//hidePageLoader();
+	  	 		hidePagePrompt();
 	  	 		var $images=[],
 	  	 			$preloads = $('.preload',data),
 	  	 			$preloads_src = $('img',data);
