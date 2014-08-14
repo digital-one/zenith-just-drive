@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Zenith | Just Drive</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         
@@ -16,25 +16,21 @@
         <![endif]-->
     </head>
     <body>
-        <div id="content">
-<div id="container" class="scene-1">
-    <h1 id="zenith-cloud" class="preload"  style="background-image: url('images/cloud-sun.png');">Zenith</h1>
-    <h2 id="title-cloud" class="preload"  style="background-image: url('images/just-drive-cloud.png');">just drive</h2>
-<h3>Would you like to know how our Salary Sacrifice Car Scheme works?</h3>
-<div id="balloon" class="preload" style="background-image: url('images/balloon.png');"></div>
-<div id="hills" class="preload" style="background-image: url('images/hills.png');"></div>
-<div id="road" class="preload" style="background-image: url('images/road.png');"></div>
-<div id="car" class="preload" style="background-image: url('images/car.png');"></div>
-<a href="scene-2.html" id="sign-yes" class="history preload"  style="background-image: url('images/sign-yes.png');">Yes please</a>
-<a href="" id="sign-no" class="preload" style="background-image: url('images/sign-no.png');">No, I'll get a quote please</a>
-
-</div>
-</div>
-<script  src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script type="text/javascript" src="js/jquery-1.10.1.min.js"><\/script>')</script>
-<script src="js/jquery.history.js"></script>
-<script src="js/scripts.js"></script>
 
 
     </body>
+
+    <script  src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script type="text/javascript" src="js/jquery-1.10.1.min.js"><\/script>')</script>
+    <script>
+    console.log($(window).width());
+	if ($(window).width() < 1134) {
+ 	 	window.location = '/mobile'; 
+ 	} else {
+ 		window.location = 'scene-1.html';
+ 	}
+ </script>
     </html>
+
+
+
