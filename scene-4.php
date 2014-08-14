@@ -39,9 +39,6 @@ endif;
          <div id="poster">
             <header>
 <span class="left">
-tax=<?php echo $tax ?><br />
-age=<?php echo $car ?><br />
-car=<?php echo $car ?><br />
     a large family car<br />
 for someone 35-44<br />
 and paying 40% tax</span>

@@ -263,7 +263,7 @@ function submitForm(){
 		$car= $('input[name=car]:checked').val();
 		
 		if($tax && $age && $car){
-			showPagePrompt('PLEASE WAIT','load');
+			showPagePrompt('LOADING','load');
 			$.get('scene-4.php', {tax:$tax,age:$age,car:$car},function(data) {
 				hidePagePrompt();
 				//loaded page, preload images then show
