@@ -46,8 +46,8 @@ function repositionPageLoader(){
 		if( $top < 0 ) $top = 0;
 		if( $left < 0 ) $left = 0;
 		$("#loader").css({
-			top: top + 'px',
-			left: left + 'px'
+			top: $top + 'px',
+			left: $left + 'px'
 		});
 		$("#loading-overlay").height( $(document).height());		
 }
