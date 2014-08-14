@@ -536,7 +536,7 @@ p {
   display: block;
   left: 0;
   top: 0;
-  z-index: 200; }
+  z-index: 999; }
 
 #hills, #road, #car, #sign-yes, #sign-no, #zenith-cloud, #title-cloud, #balloon, nav#main .balloon, #car-shadow, #sign-save, #sun, #small-cloud, #fg-hills, #bg-hills, #tree-wrapper, #tree-wrapper #top, #tree-wrapper #base, form#calculator section#age .shadow, form#calculator section div, form#calculator button, #sign-off, a#show-me-sign, #hills-scene-4, #deer, .big-cloud, #poster-tree #poster, #kite, #sign-get-a-quote, #deer-left, #scene-6-hills, #large-cloud, #sign, #scene-6-balloon, #road-sign, #road-sign ul a {
   display: block;
