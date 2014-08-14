@@ -18,12 +18,13 @@ scene4JS();
 resizeTree();
 
 
+
 function showPageLoader(){
-	console.log('load');
+	if(console) console.log('loading page');
 	$('body').append('<div id="loading-overlay" />');
 	$("#loading-overlay").css({
 				position: 'absolute',
-				zIndex: 9999,
+				zIndex: 100,
 				top: '0px',
 				left: '0px',
 				width: '100%',
@@ -31,13 +32,37 @@ function showPageLoader(){
 				background: '#000',
 				opacity: '.4'
 	});
-	$("loading-overlay").append('<div id="loading"></div>');
+	$("loading-overlay").append('<div id="loader"></div>');
+	maintainPageLoaderPosition(true);
 }
 function hidePageLoader(){
-	console.log('loaded');
+	if(console) console.log('loaded page');
 	$("#loading-overlay").remove();
+	maintainPageLoaderPosition(false);
 }
+function repositionPageLoader(){
+	var $top = (($(window).height() / 2) - ($("#loader").outerHeight() / 2)),
+		$left = (($(window).width() / 2) - ($("#loader").outerWidth() / 2));
+		if( $top < 0 ) $top = 0;
+		if( $left < 0 ) $left = 0;
+		$("#loader").css({
+			top: top + 'px',
+			left: left + 'px'
+		});
+		$("#loading-overlay").height( $(document).height());		
+}
+function maintainPageLoaderPosition(status){
+	switch(status){
+		case true:
+			$(window).bind('resize', repositionPageLoader());
+			$(window).bind('scroll', repositionPageLoader());
+			break;
+		case false:
+			$(window).unbind('resize', repositionPageLoader());
+			$(window).unbind('scroll', repositionPageLoader());
+		}
 
+}
 // image preloader
 
 function preloadImages(list,callback) {
@@ -76,7 +101,7 @@ for (var i = 0; i < $imageCount; i++) {
 	  		if(console) console.log(State.url);
 	  		showPageLoader();
 			$.get(State.url, function(data) {
-	  	 		hidePageLoader();
+	  	 		//hidePageLoader();
 	  	 		var $images=[],
 	  	 			$preloads = $('.preload',data),
 	  	 			$preloads_src = $('img',data);

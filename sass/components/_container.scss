@@ -27,6 +27,18 @@
 		min-height: 100%;
 	}*/
 }
+#loader{
+	width: 200px;
+	height: 200px;
+	@include border-radius(10px);
+	background-color: white;
+	padding:20px;
+	position:absolute;
+	display: block
+	left:0;
+	top:0;
+	z-index: 200;
+}
 %element{
 	display: block;
 	@include abs-pos(0,auto,auto,0);
