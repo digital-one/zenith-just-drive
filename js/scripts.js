@@ -180,10 +180,10 @@ function scene4JS(){
 		evt.preventDefault();
 		var $tooltip = $('.tooltip',$(this).parents('p'));
 			if($tooltip.hasClass('active')){
-		$($tooltip).removeClass('active').slideUp(100);
+		$($tooltip).removeClass('active').fadeOut(100);
 	} else {
 		$('.tooltip').hide().removeClass('active');
-		$($tooltip).addClass('active').slideDown(200);
+		$($tooltip).addClass('active').fadeIn(200);
 	}
 	})
 }
