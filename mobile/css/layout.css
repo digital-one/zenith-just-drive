@@ -562,7 +562,7 @@ small {
 
 #container {
   width: 100%;
-  height: auto;
+  height: 100%;
   max-width: 768px;
   min-height: 600px;
   height: auto;
