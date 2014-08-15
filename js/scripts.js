@@ -13,6 +13,8 @@ function resizeTree(){
 
 $(document).ready(function(){
 
+//fix for ie8 background cover
+	$("#container").css({backgroundSize: "cover"})
 
 setHistoryLink();
 scene2JS();

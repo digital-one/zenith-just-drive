@@ -1,5 +1,9 @@
 $(document).ready(function(){
 
+	//fix for ie8 background cover
+
+	$("#container").css({backgroundSize: "cover"})
+
 	//tooltip
 
 	$('.tooltip-btn').on('click',function(evt){
