@@ -2,7 +2,7 @@
 	width: 100%;
 	height: auto;
 	max-width: 768px;
-	min-height:444px;
+	min-height:480px;
 	height:auto;
 	display: block;
 	@include bg-cover;
@@ -16,7 +16,6 @@
 	@extend .clearfix;
 	position: relative;
 	overflow: hidden;
-	min-height:1024px;
 	@media screen and (max-width: $break-point) {
 		min-height:auto;
 	}

@@ -564,7 +564,7 @@ small {
   width: 100%;
   height: auto;
   max-width: 768px;
-  min-height: 444px;
+  min-height: 480px;
   height: auto;
   display: block;
   background-position: center top;
@@ -577,8 +577,7 @@ small {
   background-repeat: no-repeat;
   background-color: #8ebedd;
   position: relative;
-  overflow: hidden;
-  min-height: 1024px; }
+  overflow: hidden; }
   @media screen and (max-width: 320px) {
     #container {
       background-image: url("../images/mobile-bg.jpg"); } }
