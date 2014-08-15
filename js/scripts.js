@@ -175,10 +175,17 @@ $image.src = list[i];
 function scene4JS(){
 	
 	// tooltips
-	$('a.tooltip-btn').on('click',function(e){
-	e.preventDefault();
-	$('.tooltip',$(this).parents('p')).fadeToggle();
-})
+	
+	$('.tooltip-btn').on('click',function(evt){
+		evt.preventDefault();
+		var $tooltip = $('.tooltip',$(this).parents('p'));
+			if($tooltip).hasClass('active')){
+		$($tooltip).removeClass('active').slideUp(100);
+	} else {
+		$('.tooltip').hide().removeClass('active');
+		$($tooltip).addClass('active').slideDown(200);
+	}
+	})
 }
 
 function setHistoryLink(){

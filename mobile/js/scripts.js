@@ -8,8 +8,14 @@ $(document).ready(function(){
 
 	$('.tooltip-btn').on('click',function(evt){
 		evt.preventDefault();
-		var $content = $(this).parent('dt').next('dd');
-		$('.tooltip',$content).slideToggle(200);
+		var $content = $(this).parent('dt').next('dd'),
+			$tooltip = $('.tooltip',$content);
+			if($tooltip).hasClass('active')){
+		$($tooltip).removeClass('active').slideUp(100);
+	} else {
+		$('.tooltip').hide().removeClass('active');
+		$($tooltip).addClass('active').slideDown(200);
+	}
 	})
 
 	//menu
