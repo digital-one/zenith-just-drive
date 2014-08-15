@@ -534,6 +534,7 @@ p {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  -ms-behavior: url("../js/backgroundsize.min.htc");
   background-image: url("../images/bg.jpg");
   /*@media screen and (min-height: 800px){ //if screen height is larger than 800px make site 100% deep
   	height: 100%;
