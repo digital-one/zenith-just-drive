@@ -10,7 +10,7 @@ $(document).ready(function(){
 		evt.preventDefault();
 		var $content = $(this).parent('dt').next('dd'),
 			$tooltip = $('.tooltip',$content);
-			if($tooltip).hasClass('active')){
+			if($tooltip.hasClass('active')){
 		$($tooltip).removeClass('active').slideUp(100);
 	} else {
 		$('.tooltip').hide().removeClass('active');

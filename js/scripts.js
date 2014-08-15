@@ -179,7 +179,7 @@ function scene4JS(){
 	$('.tooltip-btn').on('click',function(evt){
 		evt.preventDefault();
 		var $tooltip = $('.tooltip',$(this).parents('p'));
-			if($tooltip).hasClass('active')){
+			if($tooltip.hasClass('active')){
 		$($tooltip).removeClass('active').slideUp(100);
 	} else {
 		$('.tooltip').hide().removeClass('active');
