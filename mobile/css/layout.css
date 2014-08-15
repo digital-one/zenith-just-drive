@@ -757,11 +757,7 @@ footer#footer-scene-2 {
     footer#footer-scene-2 {
       background-image: url("../images/footer-scene-2.png");
       height: 260px;
-      top: auto;
-      right: auto;
-      bottom: 0;
-      left: 0;
-      position: absolute; } }
+      position: relative; } }
   footer#footer-scene-2 a {
     top: 0;
     right: 0;

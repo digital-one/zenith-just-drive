@@ -54,7 +54,7 @@ footer#footer-scene-2{
 	@media screen and (max-width: $break-point) {
 		background-image:url('../images/footer-scene-2.png');
 		height:260px;	
-		@include abs-pos(auto,auto,0,0);
+		position: relative;
 	}
 	a{
 		@include abs-pos(0,0,0,0);
