@@ -32,7 +32,7 @@ $(document).ready(function(){
 	var $radios = $('input[type=radio]','#calculator');
 
 	$('input[type=radio]','#calculator').each(function(){
-		var $btn = $("<a/>",{class:'radio'})
+		var $btn = $("<a/>",{'class':'radio'})
 		$(this).before($btn);
 		$btn.on('click',function(e){
 			e.preventDefault();
@@ -67,7 +67,6 @@ $(document).ready(function(){
 	// form validation prompt
 
 	function showPagePrompt(msg,type){
-	if(console) console.log('loading page');
 	
 	$('body').append('<div id="prompt">'+msg+'</div>');
 	
@@ -82,7 +81,7 @@ $(document).ready(function(){
 	maintainPagePromptPosition(true);
 }
 function hidePagePrompt($delay){
-	if(console) console.log('loaded page');
+
 	//showOverlay(false);
 	if(!$delay) $delay=200;
 	$('#prompt').delay($delay).fadeOut(200,function(){

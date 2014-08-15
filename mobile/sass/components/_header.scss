@@ -1,14 +1,14 @@
 #header{
 	height: 63px;
-	background: white url('../images/header-rule.jpg') left bottom repeat-x;
+	background: white url('../images/header-rule-tablet.jpg') left bottom repeat-x;
+	@media screen and (max-width: $break-point) {
+		background: white url('../images/header-rule.jpg') left bottom repeat-x;
+	}
 	position: fixed;
 	display: block;
 	width: 100%;
 	z-index:999;
 	max-width:768px;
-	@media screen and (min-width: $break-point) {
-		background: white url('../images/header-rule-tablet.jpg') left bottom repeat-x;
-	}
 }
 #home-link{
 	@extend %ir;

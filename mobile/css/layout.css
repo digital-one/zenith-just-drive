@@ -1,7 +1,7 @@
 /*!
 ==================================================================
 
-ON BRAND
+ZENITH JUST DRIVE
 Author: Neil Mills
 
 ==================================================================
@@ -363,39 +363,41 @@ th {
   padding: 0; }
 
 @font-face {
-  font-family: "marydale";
+  font-family: "marydale-webfont";
   src: url("../fonts/marydale-webfont.eot");
-  src: url("../fonts/marydale-webfont?#iefix") format("embedded-opentype"), url("../fonts/marydale-webfont.woff") format("woff"), url("../fonts/marydale-webfont.ttf") format("truetype"), url("../fonts/marydale-webfont.svg#marydale") format("svg");
+  src: url("../fonts/marydale-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/marydale-webfont.woff") format("woff"), url("../fonts/marydale-webfont.ttf") format("truetype"), url("../fonts/marydale-webfont.svg#marydale-webfont") format("svg");
   font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: "marydale-bold";
+  font-family: "marydale-bold-webfont";
   src: url("../fonts/marydale-bold-webfont.eot");
-  src: url("../fonts/marydale-bold-webfont?#iefix") format("embedded-opentype"), url("../fonts/marydale-bold-webfont.woff") format("woff"), url("../fonts/marydale-bold-webfont.ttf") format("truetype"), url("../fonts/marydale-bold-webfont.svg#marydale-bold") format("svg");
+  src: url("../fonts/marydale-bold-webfont?#iefix") format("embedded-opentype"), url("../fonts/marydale-bold-webfont.woff") format("woff"), url("../fonts/marydale-bold-webfont.ttf") format("truetype"), url("../fonts/marydale-bold-webfont.svg#marydale-bold-webfont") format("svg");
   font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: "interstateblack";
+  font-family: "interstateblack-webfont";
   src: url("../fonts/interstateblack-webfont.eot");
-  src: url("../fonts/interstateblack-webfont?#iefix") format("embedded-opentype"), url("../fonts/interstateblack-webfont.woff") format("woff"), url("../fonts/interstateblack-webfont.ttf") format("truetype"), url("../fonts/interstateblack-webfont.svg#interstateblack") format("svg");
+  /* this line made the difference */
+  src: url("../fonts/interstateblack-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/interstateblack-webfont.woff") format("woff"), url("../fonts/interstateblack-webfont.ttf") format("truetype"), url("../fonts/interstateblack-webfont.svg#interstateblack-webfont") format("svg");
   font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: "interstatelight";
+  font-family: "interstatelight-webfont";
   src: url("../fonts/interstatelight-webfont.eot");
-  src: url("../fonts/interstatelight-webfont?#iefix") format("embedded-opentype"), url("../fonts/interstatelight-webfont.woff") format("woff"), url("../fonts/interstatelight-webfont.ttf") format("truetype"), url("../fonts/interstatelight-webfont.svg#interstatelight") format("svg");
+  /* this line made the difference */
+  src: url("../fonts/interstatelight-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/interstatelight-webfont.woff") format("woff"), url("../fonts/interstatelight-webfont.ttf") format("truetype"), url("../fonts/interstatelight-webfont.svg#interstatelight-webfont") format("svg");
   font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: "interstateregular";
+  font-family: "interstateregular-webfont";
   src: url("../fonts/interstateregular-webfont.eot");
-  src: url("../fonts/interstateregular-webfont?#iefix") format("embedded-opentype"), url("../fonts/interstateregular-webfont.woff") format("woff"), url("../fonts/interstateregular-webfont.ttf") format("truetype"), url("../fonts/interstateregular-webfont.svg#interstateregular") format("svg");
+  src: url("../fonts/interstateregular-webfont?#iefix") format("embedded-opentype"), url("../fonts/interstateregular-webfont.woff") format("woff"), url("../fonts/interstateregular-webfont.ttf") format("truetype"), url("../fonts/interstateregular-webfont.svg#interstateregular-webfont") format("svg");
   font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: "interstatebold";
+  font-family: "interstate_bold-webfont";
   src: url("../fonts/interstate_bold-webfont.eot");
-  src: url("../fonts/interstate_bold-webfont?#iefix") format("embedded-opentype"), url("../fonts/interstate_bold-webfont.woff") format("woff"), url("../fonts/interstate_bold-webfont.ttf") format("truetype"), url("../fonts/interstate_bold-webfont.svg#interstatebold") format("svg");
+  src: url("../fonts/interstate_bold-webfont?#iefix") format("embedded-opentype"), url("../fonts/interstate_bold-webfont.woff") format("woff"), url("../fonts/interstate_bold-webfont.ttf") format("truetype"), url("../fonts/interstate_bold-webfont.svg#interstate_bold-webfont") format("svg");
   font-weight: normal;
   font-style: normal; }
 * {
@@ -465,7 +467,7 @@ body, html {
   overflow-y: scroll;
   overflow-x: hidden;
   color: #1d1e4b;
-  font-family: "interstatelight", Helvetica, Arial, sans-serif;
+  font-family: "interstatelight-webfont", Helvetica, Arial, sans-serif;
   background-color: #e1e1e1; }
 
 body {
@@ -475,15 +477,15 @@ body {
 
 #header {
   height: 63px;
-  background: white url("../images/header-rule.jpg") left bottom repeat-x;
+  background: white url("../images/header-rule-tablet.jpg") left bottom repeat-x;
   position: fixed;
   display: block;
   width: 100%;
   z-index: 999;
   max-width: 768px; }
-  @media screen and (min-width: 321px) {
+  @media screen and (max-width: 320px) {
     #header {
-      background: white url("../images/header-rule-tablet.jpg") left bottom repeat-x; } }
+      background: white url("../images/header-rule.jpg") left bottom repeat-x; } }
 
 #home-link {
   width: 88px;
@@ -540,7 +542,7 @@ nav#nav {
 h1, h2, h3, h4, h5 {
   font-size: 21px;
   font-size: 2.1rem;
-  font-family: "interstatebold", Helvetica, Arial, sans-serif;
+  font-family: "interstate_bold-webfont", Helvetica, Arial, sans-serif;
   line-height: 110%;
   margin: 0 0 10px;
   letter-spacing: -1px;
@@ -571,23 +573,25 @@ small {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-image: url("../images/mobile-bg.jpg");
+  background-image: url("../images/tablet-bg.jpg");
   background-color: #8ebedd;
   position: relative;
-  overflow: hidden; }
-  @media screen and (min-width: 321px) {
+  overflow: hidden;
+  min-height: 1024px; }
+  @media screen and (max-width: 320px) {
     #container {
-      background-image: url("../images/tablet-bg.jpg"); } }
-  @media screen and (min-width: 321px) {
+      background-image: url("../images/mobile-bg.jpg"); } }
+  @media screen and (max-width: 320px) {
     #container {
-      min-height: 1024px; } }
+      min-height: auto; } }
 
 #main {
-  padding: 0 20px 50px; }
-  @media screen and (min-width: 321px) {
+  padding: 0 20px 50px;
+  margin: 0 auto;
+  width: 400px; }
+  @media screen and (max-width: 320px) {
     #main {
-      width: 400px;
-      margin: 0 auto; } }
+      width: 100%; } }
   .scene-4 #main {
     padding-bottom: 0; }
 
@@ -616,7 +620,7 @@ header#header-scene-1, footer#footer-scene-1, footer#footer-scene-1 #road, foote
   position: absolute;
   display: block;
   text-align: center;
-  font-family: "interstateregular", Helvetica, Arial, sans-serif;
+  font-family: "interstateregular-webfont", Helvetica, Arial, sans-serif;
   color: #535353;
   left: 0;
   font-size: 18px;
@@ -633,45 +637,45 @@ header#header-scene-1 {
   text-align: center; }
 
 footer#footer-scene-1 {
-  height: 244px;
   top: auto;
   right: auto;
   bottom: 0;
   left: 0;
   position: absolute;
-  background-image: url("../images/hills.png");
-  background-position: center bottom; }
-  @media screen and (min-width: 321px) {
+  background-position: center bottom;
+  background-image: url("../images/hills-tablet.png");
+  height: 313px; }
+  @media screen and (max-width: 320px) {
     footer#footer-scene-1 {
-      background-image: url("../images/hills-tablet.png");
-      height: 313px; } }
+      background-image: url("../images/hills.png");
+      height: 244px; } }
   footer#footer-scene-1 #road {
-    height: 124px;
     top: auto;
     right: auto;
     bottom: 0;
     left: 0;
     position: absolute;
-    background-image: url("../images/road.png");
+    background-image: url("../images/road-tablet.png");
+    height: 197px;
     z-index: 3; }
-    @media screen and (min-width: 321px) {
+    @media screen and (max-width: 320px) {
       footer#footer-scene-1 #road {
-        background-image: url("../images/road-tablet.png");
-        height: 197px; } }
+        background-image: url("../images/road.png");
+        height: 124px; } }
   footer#footer-scene-1 a#sign-no {
     width: 170px;
     height: 142px;
     background-image: url("../images/sign-no.png");
-    top: 60px;
+    top: 40px;
     right: auto;
     bottom: auto;
     left: 50%;
     position: absolute;
     margin-left: -140px;
     z-index: 2; }
-    @media screen and (min-width: 321px) {
+    @media screen and (max-width: 320px) {
       footer#footer-scene-1 a#sign-no {
-        top: 40px;
+        top: 60px;
         right: auto;
         bottom: auto;
         left: 50%;
@@ -688,7 +692,7 @@ footer#footer-scene-1 {
     position: absolute;
     z-index: 1;
     margin-left: -10px; }
-    @media screen and (min-width: 321px) {
+    @media screen and (max-width: 320px) {
       footer#footer-scene-1 a#sign-yes {
         top: -20px;
         right: auto;
@@ -697,14 +701,14 @@ footer#footer-scene-1 {
         position: absolute; } }
 
 header#header-scene-2 {
-  height: 287px;
   text-align: center;
-  background-image: url("../images/header-scene-2.png");
-  margin-top: 62px; }
-  @media screen and (min-width: 321px) {
+  margin-top: 62px;
+  height: 322px;
+  background-image: url("../images/header-scene-2-tablet.png"); }
+  @media screen and (max-width: 320px) {
     header#header-scene-2 {
-      height: 322px;
-      background-image: url("../images/header-scene-2-tablet.png"); } }
+      background-image: url("../images/header-scene-2.png");
+      height: 287px; } }
 
 #accordion {
   width: 100%;
@@ -716,7 +720,7 @@ header#header-scene-2 {
       position: relative;
       height: 21px;
       display: block;
-      font-family: "interstatebold", Helvetica, Arial, sans-serif;
+      font-family: "interstate_bold-webfont", Helvetica, Arial, sans-serif;
       font-size: 21px;
       font-size: 2.1rem;
       display: block;
@@ -739,17 +743,22 @@ header#header-scene-2 {
       display: none; }
 
 footer#footer-scene-2 {
-  height: 260px;
   position: relative;
-  background-image: url("../images/footer-scene-2.png");
-  background-position: left top; }
-  @media screen and (min-width: 321px) {
+  background-position: left top;
+  background-image: url("../images/footer-scene-2-tablet.png");
+  height: 268px;
+  top: auto;
+  right: auto;
+  bottom: -10px;
+  left: 0;
+  position: absolute; }
+  @media screen and (max-width: 320px) {
     footer#footer-scene-2 {
-      background-image: url("../images/footer-scene-2-tablet.png");
-      height: 268px;
+      background-image: url("../images/footer-scene-2.png");
+      height: 260px;
       top: auto;
       right: auto;
-      bottom: -10px;
+      bottom: 0;
       left: 0;
       position: absolute; } }
   footer#footer-scene-2 a {
@@ -760,21 +769,21 @@ footer#footer-scene-2 {
     position: absolute; }
 
 header#header-scene-3 {
-  height: 185px;
   text-align: center;
-  background-image: url("../images/header-scene-3.png");
+  height: 244px;
+  background-image: url("../images/header-scene-3-tablet.png");
   margin-bottom: 20px;
   margin-top: 62px; }
-  @media screen and (min-width: 321px) {
+  @media screen and (max-width: 320px) {
     header#header-scene-3 {
-      height: 244px;
-      background-image: url("../images/header-scene-3-tablet.png"); } }
+      background-image: url("../images/header-scene-3.png");
+      height: 185px; } }
 
 form#calculator {
   text-align: center; }
   form#calculator h3 {
     margin-bottom: 20px; }
-  form#calculator input[type=radio] {
+  form#calculator input[type='radio'] {
     display: none; }
   form#calculator section {
     margin: 0 20px 30px 20px; }
@@ -808,7 +817,7 @@ form#calculator {
       margin: 0 20px; }
       form#calculator section#age li label, form#calculator section#tax li label {
         margin-bottom: 5px;
-        font-family: "interstatelight", Helvetica, Arial, sans-serif; }
+        font-family: "interstatelight-webfont", Helvetica, Arial, sans-serif; }
     form#calculator section#age div {
       margin-bottom: 0; }
     form#calculator section#car label {
@@ -832,12 +841,12 @@ form#calculator {
   form#calculator label {
     font-size: 16px;
     font-size: 1.6rem;
-    font-family: "interstatebold", Helvetica, Arial, sans-serif;
+    font-family: "interstate_bold-webfont", Helvetica, Arial, sans-serif;
     display: block; }
     form#calculator label small {
       font-size: 12px;
       font-size: 1.2rem;
-      font-family: "interstatelight", Helvetica, Arial, sans-serif;
+      font-family: "interstatelight-webfont", Helvetica, Arial, sans-serif;
       display: block;
       margin: 5px 0 0;
       line-height: 110% !important; }
@@ -853,36 +862,36 @@ form#calculator {
     form#calculator a.radio.checked {
       background-position: right top; }
   form#calculator footer {
-    height: 227px;
     position: relative; }
     form#calculator footer button {
       height: 227px;
       border: none;
-      background: url("../images/footer-scene-3.png") left top no-repeat; }
-      @media screen and (min-width: 321px) {
+      background: url("../images/footer-scene-3-tablet.png") left top no-repeat;
+      height: 241px; }
+      @media screen and (max-width: 320px) {
         form#calculator footer button {
-          background: url("../images/footer-scene-3-tablet.png") left top no-repeat;
-          height: 241px; } }
+          background: url("../images/footer-scene-3.png") left top no-repeat;
+          height: 227px; } }
 
 header#header-scene-4 {
-  height: 146px;
   text-align: center;
-  background-image: url("../images/header-scene-4.png");
+  background-image: url("../images/header-scene-4-tablet.png");
+  height: 148px;
   margin-top: 62px; }
-  @media screen and (min-width: 321px) {
+  @media screen and (max-width: 320px) {
     header#header-scene-4 {
-      background-image: url("../images/header-scene-4-tablet.png");
-      height: 148px; } }
+      height: 146px;
+      background-image: url("../images/header-scene-4.png"); } }
 
 footer#footer-scene-4 {
-  height: 204px;
   position: relative;
-  background-image: url("../images/footer-scene-4.png");
+  background-image: url("../images/footer-scene-4-tablet.png");
+  height: 259px;
   background-position: left top; }
-  @media screen and (min-width: 321px) {
+  @media screen and (max-width: 320px) {
     footer#footer-scene-4 {
-      background-image: url("../images/footer-scene-4-tablet.png");
-      height: 259px; } }
+      height: 204px;
+      background-image: url("../images/footer-scene-4.png"); } }
   footer#footer-scene-4 a {
     top: 0;
     right: 0;
@@ -921,7 +930,7 @@ footer#footer-scene-4 {
       background-color: #e3e5dc;
       font-size: 18px;
       font-size: 1.8rem;
-      font-family: "interstatebold", Helvetica, Arial, sans-serif;
+      font-family: "interstate_bold-webfont", Helvetica, Arial, sans-serif;
       color: #535353;
       line-height: 52px; }
     #quote dl dt a.tooltip-btn {
@@ -958,7 +967,7 @@ footer#footer-scene-4 {
     #quote dl dd span {
       font-size: 39px;
       font-size: 3.9rem;
-      font-family: "interstatebold", Helvetica, Arial, sans-serif;
+      font-family: "interstate_bold-webfont", Helvetica, Arial, sans-serif;
       color: #535353;
       line-height: 60px;
       height: 60px;
@@ -971,35 +980,36 @@ footer#footer-scene-4 {
       font-size: 14px;
       font-size: 1.4rem;
       line-height: 100%;
-      font-family: "interstatelight", Helvetica, Arial, sans-serif;
+      font-family: "interstatelight-webfont", Helvetica, Arial, sans-serif;
       margin: 0;
       padding: 8px 0;
       border-bottom: 1px solid #92a65c; }
 
 header#header-scene-5 {
-  height: 185px;
   text-align: center;
-  background-image: url("../images/header-scene-5.png");
+  background-image: url("../images/header-scene-5-tablet.png");
+  height: 192px;
   margin-top: 62px; }
-  @media screen and (min-width: 321px) {
+  @media screen and (max-width: 320px) {
     header#header-scene-5 {
-      background-image: url("../images/header-scene-5-tablet.png");
-      height: 192px; } }
+      background-image: url("../images/header-scene-5.png");
+      height: 185px; } }
 
 footer#footer-scene-5 {
-  height: 163px;
   position: relative;
-  background-image: url("../images/footer-scene-5.png");
-  background-position: left top; }
-  @media screen and (min-width: 321px) {
+  background-position: left top;
+  background-image: url("../images/footer-scene-5-tablet.png");
+  height: 235px;
+  top: auto;
+  right: auto;
+  bottom: 0;
+  left: 0;
+  position: absolute; }
+  @media screen and (max-width: 320px) {
     footer#footer-scene-5 {
-      background-image: url("../images/footer-scene-5-tablet.png");
-      height: 235px;
-      top: auto;
-      right: auto;
-      bottom: 0;
-      left: 0;
-      position: absolute; } }
+      background-image: url("../images/footer-scene-5.png");
+      height: 163px;
+      position: relative; } }
   footer#footer-scene-5 a {
     top: 0;
     right: 0;
@@ -1081,14 +1091,14 @@ header#header-scene-6 {
 
 footer#footer-scene-6 {
   position: relative;
-  background-image: url("../images/footer-scene-6.png");
+  background-image: url("../images/footer-scene-6-tablet.png");
   background-position: left bottom;
   background-color: transparent;
   height: 316px;
   display: block; }
-  @media screen and (min-width: 321px) {
+  @media screen and (max-width: 320px) {
     footer#footer-scene-6 {
-      background-image: url("../images/footer-scene-6-tablet.png"); } }
+      background-image: url("../images/footer-scene-6.png"); } }
   footer#footer-scene-6 ul {
     list-style-type: none;
     padding: 0;
@@ -1123,11 +1133,11 @@ footer#footer-scene-6 {
       left: 0;
       position: absolute; }
   footer#footer-scene-6.version-2 {
-    background-image: url("../images/footer-scene-6-v2.png");
+    background-image: url("../images/footer-scene-6-v2-tablet.png");
     height: 366px; }
-    @media screen and (min-width: 321px) {
+    @media screen and (max-width: 320px) {
       footer#footer-scene-6.version-2 {
-        background-image: url("../images/footer-scene-6-v2-tablet.png"); } }
+        background-image: url("../images/footer-scene-6-v2.png"); } }
     footer#footer-scene-6.version-2 a.link-1 {
       background-image: url("../images/sign-order-2nd-car-v2.png");
       height: 70px;

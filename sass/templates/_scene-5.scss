@@ -25,7 +25,12 @@
 	p{
 		@extend .clearfix;
 		margin-bottom: 25px;
-
+		.ie7 &{
+			margin-left: 90px;
+		}
+		.ie8 &{
+			margin-left: 60px;
+		}
 		span{
 			@include font-size(21);
 		}

@@ -1,7 +1,7 @@
 /*!
 ==================================================================
 
-ON BRAND
+ZENITH JUST DRIVE
 Author: Neil Mills
 
 ==================================================================
@@ -1378,6 +1378,8 @@ a#show-me-sign {
       position: relative;
       color: white;
       margin-bottom: 40px; }
+      .ie7 #poster-tree #poster header {
+        margin: 40px 0 80px; }
       #poster-tree #poster header span.left {
         width: 60%;
         font-size: 26px;
@@ -1452,18 +1454,21 @@ a#show-me-sign {
     #poster-tree #poster footer {
       position: relative;
       z-index: 2; }
-      #poster-tree #poster footer span.left {
-        width: 65%;
-        font-family: "marydale-webfont", Helvetica, Arial, sans-serif;
-        font-size: 42px;
-        font-size: 4.2rem;
-        text-indent: 10px; }
-      #poster-tree #poster footer span.right {
-        width: 35%;
-        font-size: 38px;
-        font-size: 3.8rem;
-        font-weight: bold;
-        text-align: right; }
+      #poster-tree #poster footer span {
+        display: block;
+        line-height: 1; }
+        #poster-tree #poster footer span.left {
+          width: 65%;
+          font-family: "marydale-webfont", Helvetica, Arial, sans-serif;
+          font-size: 42px;
+          font-size: 4.2rem;
+          text-indent: 10px; }
+        #poster-tree #poster footer span.right {
+          width: 35%;
+          font-size: 38px;
+          font-size: 3.8rem;
+          font-weight: bold;
+          text-align: right; }
     #poster-tree #poster.small {
       width: 453px;
       height: 513px;
@@ -1534,6 +1539,10 @@ a#show-me-sign {
       margin-bottom: 0; }
   #kite p {
     margin-bottom: 25px; }
+    .ie7 #kite p {
+      margin-left: 90px; }
+    .ie8 #kite p {
+      margin-left: 60px; }
     #kite p span {
       font-size: 21px;
       font-size: 2.1rem; }

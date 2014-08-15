@@ -1,66 +1,71 @@
 //Font declarations
 
 @font-face {
-    font-family: "marydale";
-    src: url('../fonts/marydale-webfont.eot');
-    src: url('../fonts/marydale-webfont?#iefix') format('embedded-opentype'),
-         url('../fonts/marydale-webfont.woff') format('woff'),
-         url('../fonts/marydale-webfont.ttf') format('truetype'),
-         url('../fonts/marydale-webfont.svg#marydale') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: "marydale-bold";
-    src: url('../fonts/marydale-bold-webfont.eot');
-    src: url('../fonts/marydale-bold-webfont?#iefix') format('embedded-opentype'),
-         url('../fonts/marydale-bold-webfont.woff') format('woff'),
-         url('../fonts/marydale-bold-webfont.ttf') format('truetype'),
-         url('../fonts/marydale-bold-webfont.svg#marydale-bold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: "interstateblack";
-    src: url('../fonts/interstateblack-webfont.eot');
-    src: url('../fonts/interstateblack-webfont?#iefix') format('embedded-opentype'),
-         url('../fonts/interstateblack-webfont.woff') format('woff'),
-         url('../fonts/interstateblack-webfont.ttf') format('truetype'),
-         url('../fonts/interstateblack-webfont.svg#interstateblack') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: "interstatelight";
-    src: url('../fonts/interstatelight-webfont.eot');
-    src: url('../fonts/interstatelight-webfont?#iefix') format('embedded-opentype'),
-         url('../fonts/interstatelight-webfont.woff') format('woff'),
-         url('../fonts/interstatelight-webfont.ttf') format('truetype'),
-         url('../fonts/interstatelight-webfont.svg#interstatelight') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: "interstateregular";
-    src: url('../fonts/interstateregular-webfont.eot');
-    src: url('../fonts/interstateregular-webfont?#iefix') format('embedded-opentype'),
-         url('../fonts/interstateregular-webfont.woff') format('woff'),
-         url('../fonts/interstateregular-webfont.ttf') format('truetype'),
-         url('../fonts/interstateregular-webfont.svg#interstateregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: "interstatebold";
-    src: url('../fonts/interstate_bold-webfont.eot');
-    src: url('../fonts/interstate_bold-webfont?#iefix') format('embedded-opentype'),
-         url('../fonts/interstate_bold-webfont.woff') format('woff'),
-         url('../fonts/interstate_bold-webfont.ttf') format('truetype'),
-         url('../fonts/interstate_bold-webfont.svg#interstatebold') format('svg');
+    font-family: "marydale-webfont";
+    src: url('../fonts/marydale-webfont.eot'); 
+    src: url("../fonts/marydale-webfont.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/marydale-webfont.woff") format("woff"),
+         url("../fonts/marydale-webfont.ttf") format("truetype"),
+         url("../fonts/marydale-webfont.svg#marydale-webfont") format("svg");
     font-weight: normal;
     font-style: normal;
 }
 
+
+@font-face {
+    font-family: "marydale-bold-webfont";
+    src: url('../fonts/marydale-bold-webfont.eot');
+    src: url('../fonts/marydale-bold-webfont?#iefix') format("embedded-opentype"),
+         url('../fonts/marydale-bold-webfont.woff') format("woff"),
+         url('../fonts/marydale-bold-webfont.ttf') format("truetype"),
+         url('../fonts/marydale-bold-webfont.svg#marydale-bold-webfont') format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "interstateblack-webfont";
+    src: url('../fonts/interstateblack-webfont.eot'); /* this line made the difference */
+    src: url("../fonts/interstateblack-webfont.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/interstateblack-webfont.woff") format("woff"),
+         url("../fonts/interstateblack-webfont.ttf") format("truetype"),
+         url("../fonts/interstateblack-webfont.svg#interstateblack-webfont") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "interstatelight-webfont";
+    src: url('../fonts/interstatelight-webfont.eot'); /* this line made the difference */
+    src: url("../fonts/interstatelight-webfont.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/interstatelight-webfont.woff") format("woff"),
+         url("../fonts/interstatelight-webfont.ttf") format("truetype"),
+         url("../fonts/interstatelight-webfont.svg#interstatelight-webfont") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: "interstateregular-webfont";
+    src: url('../fonts/interstateregular-webfont.eot');
+    src: url('../fonts/interstateregular-webfont?#iefix') format("embedded-opentype"),
+         url('../fonts/interstateregular-webfont.woff') format("woff"),
+         url('../fonts/interstateregular-webfont.ttf') format("truetype"),
+         url('../fonts/interstateregular-webfont.svg#interstateregular-webfont') format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "interstate_bold-webfont";
+    src: url('../fonts/interstate_bold-webfont.eot');
+    src: url('../fonts/interstate_bold-webfont?#iefix') format("embedded-opentype"),
+         url('../fonts/interstate_bold-webfont.woff') format("woff"),
+         url('../fonts/interstate_bold-webfont.ttf') format("truetype"),
+         url('../fonts/interstate_bold-webfont.svg#interstate_bold-webfont') format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
 //overide neat outer container width
 $max-width: 1080px; 
 
@@ -73,14 +78,13 @@ $blue: #1d1e4b;
 $red: #a32121;
 
 //Fonts
-$arial: Arial, Helvetica, sans-serif;
-$marydale:  "marydale", Helvetica, Arial, sans-serif;
-$marydaleBold:  "marydale-bold", Helvetica, Arial, sans-serif;
+$marydale:  "marydale-webfont", Helvetica, Arial, sans-serif;
+$marydaleBold:  "marydale-bold-webfont", Helvetica, Arial, sans-serif;
 $arial: Arial,Helvetica, sans-serif;
-$interstate-light: "interstatelight",Helvetica,Arial,sans-serif;
-$interstate-regular: "interstateregular",Helvetica,Arial,sans-serif;
-$interstate-bold: "interstatebold",Helvetica,Arial,sans-serif;
-$interstate-black: "interstateblack",Helvetica,Arial,sans-serif;
+$interstate-light: "interstatelight-webfont",Helvetica,Arial,sans-serif;
+$interstate-regular: "interstateregular-webfont",Helvetica,Arial,sans-serif;
+$interstate-bold: "interstate_bold-webfont",Helvetica,Arial,sans-serif;
+$interstate-black: "interstateblack-webfont",Helvetica,Arial,sans-serif;
 //Break points
 
-$break-point: 321px;
+$break-point: 320px;

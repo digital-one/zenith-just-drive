@@ -40,9 +40,9 @@ footer#footer-scene-6{
 	@extend %full-width;
 	@extend %element;
 	position:relative;
-	background-image:url('../images/footer-scene-6.png');
-	@media screen and (min-width: $break-point) {
-		background-image:url('../images/footer-scene-6-tablet.png');
+	background-image:url('../images/footer-scene-6-tablet.png');
+	@media screen and (max-width: $break-point) {
+		background-image:url('../images/footer-scene-6.png');	
 	}
 	background-position: left bottom;
 	background-color: transparent;
@@ -76,9 +76,9 @@ footer#footer-scene-6{
 		}
 	}
 	&.version-2{
-		background-image:url('../images/footer-scene-6-v2.png');
-		@media screen and (min-width: $break-point) {
-			background-image:url('../images/footer-scene-6-v2-tablet.png');
+		background-image:url('../images/footer-scene-6-v2-tablet.png');
+		@media screen and (max-width: $break-point) {
+			background-image:url('../images/footer-scene-6-v2.png');	
 		}
 		height:366px;
 		a{

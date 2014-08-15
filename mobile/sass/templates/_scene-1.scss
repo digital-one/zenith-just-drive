@@ -5,36 +5,33 @@ header#header-scene-1{
 	@extend %ir;
 	margin-top:62px;
 	background-image: url('../images/header-scene-1.png');
-	@media screen and (min-width: $break-point) {
-
-	}
 }
 .scene-1{
 	h3{
-		text-align: center;
+		text-align: center; 
 	}
 }
 footer#footer-scene-1{
-	height:244px;
 	@extend %full-width;
 	@extend %element;
 	@include abs-pos(auto,auto,0,0);
-	background-image:url('../images/hills.png');
 	background-position: center bottom;
-	@media screen and (min-width: $break-point) {
-		background-image:url('../images/hills-tablet.png');
-		height:313px;
+	background-image:url('../images/hills-tablet.png');
+	height:313px;
+	@media screen and (max-width: $break-point) {
+		background-image:url('../images/hills.png');
+		height:244px;
 	}
 	#road{
 		@extend %full-width;
-		height:124px;
 		@extend %element;
 		@include abs-pos(auto,auto,0,0);
-		background-image:url('../images/road.png');
+		background-image:url('../images/road-tablet.png');
+		height:197px;
 		z-index:3;
-		@media screen and (min-width: $break-point) {
-			background-image:url('../images/road-tablet.png');
-			height:197px;
+		@media screen and (max-width: $break-point) {
+			background-image:url('../images/road.png');	
+			height:124px;
 		}
 	}
 	a#sign-no{
@@ -43,11 +40,11 @@ footer#footer-scene-1{
 		width:170px;
 		height:142px;
 		background-image:url('../images/sign-no.png');
-		@include abs-pos(60px,auto,auto,50%);
+		@include abs-pos(40px,auto,auto,50%);
 		margin-left:-140px;
 		z-index:2;
-		@media screen and (min-width: $break-point) {
-			@include abs-pos(40px,auto,auto,50%);
+		@media screen and (max-width: $break-point) {
+			@include abs-pos(60px,auto,auto,50%);	
 		}
 	}
 	a#sign-yes{
@@ -60,7 +57,7 @@ footer#footer-scene-1{
 		@include abs-pos(0,auto,auto,50%);
 		z-index:1;
 		margin-left:-10px;
-		@media screen and (min-width: $break-point) {
+		@media screen and (max-width: $break-point) {
 			@include abs-pos(-20px,auto,auto,50%);
 		}
 	}

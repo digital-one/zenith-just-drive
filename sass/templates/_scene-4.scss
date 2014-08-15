@@ -110,6 +110,9 @@ a#show-me-sign{
 			@extend .clearfix;
 			color: white;
 			margin-bottom: 40px;
+			.ie7 &{
+				margin: 40px 0 80px;
+			}
 			span{
 				&.left{
 					width: 60%;
@@ -200,6 +203,8 @@ a#show-me-sign{
 			position: relative;
 			z-index: 2;
 			span{
+				display: block;
+				line-height: 1;
 				&.left{
 					width:65%;
 					font-family: $marydale;

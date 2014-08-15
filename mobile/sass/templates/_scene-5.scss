@@ -1,28 +1,29 @@
 header#header-scene-5{
 	@extend %full-width;
-	height:185px;
 	@extend %element;
 	@extend %ir;
 	text-align:center;
-	background-image: url('../images/header-scene-5.png');
-	@media screen and (min-width: $break-point) {
-		background-image: url('../images/header-scene-5-tablet.png');
-		height: 192px;
+	background-image: url('../images/header-scene-5-tablet.png');
+	height: 192px;
+	@media screen and (max-width: $break-point) {
+		background-image: url('../images/header-scene-5.png');	
+		height:185px;
 	}
 	margin-top:62px;
 }
 footer#footer-scene-5{
-	height:163px;
 	@extend %full-width;
 	@extend %element;
 	position:relative;
-	background-image:url('../images/footer-scene-5.png');
-	@media screen and (min-width: $break-point) {
-		background-image: url('../images/footer-scene-5-tablet.png');
-		height: 235px;
-		@include abs-pos(auto,auto,0,0);
-	}
 	background-position: left top;
+	background-image: url('../images/footer-scene-5-tablet.png');
+	height: 235px;
+	@include abs-pos(auto,auto,0,0);
+	@media screen and (max-width: $break-point) {
+		background-image:url('../images/footer-scene-5.png');
+		height:163px;
+		position: relative;
+	}
 	a{
 		@include abs-pos(0,0,0,0);
 		@extend %ir;	
