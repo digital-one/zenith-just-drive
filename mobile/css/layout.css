@@ -589,7 +589,7 @@ small {
 #main {
   padding: 0 20px 50px;
   margin: 0 auto;
-  width: 400px; }
+  width: 500px; }
   @media screen and (max-width: 320px) {
     #main {
       width: 100%; } }
