@@ -25,6 +25,7 @@ header#header-scene-2{
 			@include font-size(21);
 			display: block;
 			cursor:pointer;
+			width:100%;
 			margin-bottom: 20px;
 			&:after{
 				content:"";

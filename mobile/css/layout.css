@@ -726,6 +726,7 @@ header#header-scene-2 {
       font-size: 2.1rem;
       display: block;
       cursor: pointer;
+      width: 100%;
       margin-bottom: 20px; }
       #accordion dl dt:after {
         content: "";
