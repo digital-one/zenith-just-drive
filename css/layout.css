@@ -1450,6 +1450,7 @@ a#show-me-sign {
         height: 71px;
         display: block;
         position: relative;
+        z-index: 999;
         float: left;
         margin-top: -21px;
         cursor: pointer; }

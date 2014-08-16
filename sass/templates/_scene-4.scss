@@ -189,7 +189,7 @@ a#show-me-sign{
 					height:71px;
 					display: block;
 					position: relative;
-					//background: url('../images/tooltip-btn.png') left top no-repeat;
+					z-index: 999;
 					float: left;
 					margin-top: -21px;
 					cursor: pointer;
