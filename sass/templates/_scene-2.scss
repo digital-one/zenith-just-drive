@@ -124,6 +124,7 @@ nav#main{
 	margin-left:400px;
 }
 .content{
+	z-index: 20;
 	&.easy,&.saving{
 		@include abs-pos(320px,auto,auto,50%);
 		width: 430px;

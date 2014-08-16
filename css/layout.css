@@ -887,18 +887,20 @@ nav#main a {
   position: absolute;
   margin-left: 400px; }
 
-.content.easy, .content.saving {
-  top: 320px;
-  right: auto;
-  bottom: auto;
-  left: 50%;
-  position: absolute;
-  width: 430px;
-  margin-left: -560px; }
-.content.easy {
-  text-align: right; }
-.content.saving {
-  margin-left: 100px; }
+.content {
+  z-index: 20; }
+  .content.easy, .content.saving {
+    top: 320px;
+    right: auto;
+    bottom: auto;
+    left: 50%;
+    position: absolute;
+    width: 430px;
+    margin-left: -560px; }
+  .content.easy {
+    text-align: right; }
+  .content.saving {
+    margin-left: 100px; }
 
 .preload {
   background-image: url("../images/red-balloon.png"); }
