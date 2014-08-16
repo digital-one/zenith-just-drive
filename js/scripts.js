@@ -176,16 +176,14 @@ function scene4JS(){
 	
 	// tooltips
 	
-	$('.tooltip-btn').on('click',function(evt){
-		evt.preventDefault();
+	$('.tooltip-btn').on('mouseover',function(evt){
 		var $tooltip = $('.tooltip',$(this).parents('p'));
-			if($tooltip.hasClass('active')){
-		$($tooltip).removeClass('active').fadeOut(100);
-	} else {
-		$('.tooltip').hide().removeClass('active');
-		$($tooltip).addClass('active').fadeIn(200);
-	}
-	})
+		$($tooltip).fadeIn(200);
+	});
+	$('.tooltip-btn').on('mouseout',function(evt){
+		var $tooltip = $('.tooltip',$(this).parents('p'));
+		$($tooltip).fadeOut(100);
+	});
 }
 
 function setHistoryLink(){
