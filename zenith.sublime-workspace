@@ -4,8 +4,32 @@
 		"selected_items":
 		[
 			[
+				"ba",
+				"background"
+			],
+			[
+				"ma",
+				"margin-bottom"
+			],
+			[
+				"fo",
+				"font-weight"
+			],
+			[
+				"te",
+				"text-decoration"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
 				"pad",
-				"padding-bottom"
+				"padding"
+			],
+			[
+				"marg",
+				"margin"
 			],
 			[
 				"pa",
@@ -16,24 +40,12 @@
 				"bottom"
 			],
 			[
-				"ma",
-				"margin-bottom"
-			],
-			[
-				"mar",
-				"margin-bottom"
-			],
-			[
 				"fon",
 				"font-size"
 			],
 			[
 				"str_rep",
 				"str_replace"
-			],
-			[
-				"fo",
-				"font-size"
 			],
 			[
 				"font",
@@ -46,10 +58,6 @@
 			[
 				"bac",
 				"background-color"
-			],
-			[
-				"te",
-				"text-align"
 			],
 			[
 				"incorr",
@@ -70,10 +78,6 @@
 			[
 				"list-s",
 				"list-style-type"
-			],
-			[
-				"ba",
-				"background-color"
 			],
 			[
 				"padd",
@@ -392,6 +396,61 @@
 	},
 	"file_history":
 	[
+		"/Applications/MAMP/htdocs/jump/zenith-just-drive/sass/templates/_scene-4.scss",
+		"/Applications/MAMP/htdocs/jump/zenith-just-drive/sass/templates/_scene-2.scss",
+		"/Applications/MAMP/htdocs/jump/zenith-just-drive/js/scripts.js",
+		"/Applications/MAMP/htdocs/jump/zenith-just-drive/mobile/js/scripts.js",
+		"/Applications/MAMP/htdocs/jump/zenith-just-drive/mobile/scene-3.html",
+		"/Applications/MAMP/htdocs/jump/zenith-just-drive/mobile/sass/templates/_scene-3.scss",
+		"/Applications/MAMP/htdocs/jump/zenith-just-drive/mobile/sass/components/_container.scss",
+		"/Applications/MAMP/htdocs/jump/zenith-just-drive/mobile/sass/_settings.scss",
+		"/Applications/MAMP/htdocs/jump/zenith-just-drive/mobile/sass/templates/_scene-2.scss",
+		"/Applications/MAMP/htdocs/jump/zenith-just-drive/sass/helpers/mixins/_bg-cover.scss",
+		"/Applications/MAMP/htdocs/jump/zenith-just-drive/mobile/sass/templates/_scene-1.scss",
+		"/Applications/MAMP/htdocs/jump/zenith-just-drive/sass/components/_container.scss",
+		"/Applications/MAMP/htdocs/jump/zenith-just-drive/scene-1.html",
+		"/Applications/MAMP/htdocs/jump/zenith-just-drive/scene-3.html",
+		"/Applications/MAMP/htdocs/jump/zenith-just-drive/scene-4.php",
+		"/Applications/MAMP/htdocs/jump/zenith-just-drive/scene-5.html",
+		"/Applications/MAMP/htdocs/jump/zenith-just-drive/scene-6-v2.html",
+		"/Applications/MAMP/htdocs/jump/zenith-just-drive/scene-6.html",
+		"/Applications/MAMP/htdocs/jump/zenith-just-drive/scene-2.html",
+		"/Applications/MAMP/htdocs/jump/zenith-just-drive/mobile/css/layout.css",
+		"/Applications/MAMP/htdocs/jump/zenith-just-drive/mobile/index.html",
+		"/Applications/MAMP/htdocs/jump/zenith-just-drive/mobile/scene-2.html",
+		"/Applications/MAMP/htdocs/jump/zenith-just-drive/mobile/scene-4.html",
+		"/Applications/MAMP/htdocs/jump/zenith-just-drive/mobile/scene-5.html",
+		"/Applications/MAMP/htdocs/jump/zenith-just-drive/mobile/scene-6-v2.html",
+		"/Applications/MAMP/htdocs/jump/zenith-just-drive/mobile/scene-6.html",
+		"/Applications/MAMP/htdocs/jump/zenith-just-drive/mobile/sass/templates/_all.scss",
+		"/Applications/MAMP/htdocs/jump/zenith-just-drive/mobile/sass/helpers/_all.scss",
+		"/Applications/MAMP/htdocs/jump/zenith-just-drive/mobile/sass/layout.scss",
+		"/Applications/MAMP/htdocs/jump/zenith-just-drive/mobile/sass/components/_typography.scss",
+		"/Applications/MAMP/htdocs/jump/zenith-just-drive/mobile/sass/_base.scss",
+		"/Applications/MAMP/htdocs/jump/zenith-just-drive/mobile/sass/components/_all.scss",
+		"/Applications/MAMP/htdocs/jump/zenith-just-drive/mobile/sass/components/_header.scss",
+		"/Applications/MAMP/htdocs/jump/zenith-just-drive/mobile/sass/components/_navigation.scss",
+		"/Applications/MAMP/htdocs/jump/zenith-just-drive/sass/layout.scss",
+		"/Applications/MAMP/htdocs/jump/zenith-just-drive/.htaccess",
+		"/Applications/MAMP/htdocs/jump/zenith-just-drive/sass/templates/_scene-3.scss",
+		"/Applications/MAMP/htdocs/jump/zenith-just-drive/sass/_settings.scss",
+		"/Applications/MAMP/htdocs/jump/zenith-just-drive/sass/templates/_scene-1.scss",
+		"/Applications/MAMP/htdocs/jump/zenith-just-drive/mobile/sass/templates/_scene-5.scss",
+		"/Applications/MAMP/htdocs/jump/zenith-just-drive/mobile/sass/templates/_scene-6.scss",
+		"/Applications/MAMP/htdocs/jump/zenith-just-drive/mobile/sass/templates/_scene-4.scss",
+		"/Applications/MAMP/htdocs/jump/zenith-just-drive/sass/components/_typography.scss",
+		"/Applications/MAMP/htdocs/jump/zenith-just-drive/sass/components/_all.scss",
+		"/Applications/MAMP/htdocs/jump/zenith-just-drive/sass/templates/_scene-5.scss",
+		"/Applications/MAMP/htdocs/jump/zenith-just-drive/sass/components/_forms.scss",
+		"/Applications/MAMP/htdocs/jump/zenith-just-drive/mobile/sass/components/_forms.scss",
+		"/Applications/MAMP/htdocs/jump/zenith-just-drive/index.html",
+		"/Applications/MAMP/htdocs/jump/zenith-just-drive/sass/templates/_scene-6.scss",
+		"/Applications/MAMP/htdocs/jump/zenith-just-drive/sass/templates/_all.scss",
+		"/Applications/MAMP/htdocs/jump/zenith-just-drive/mobile/images/tablet-bg.jpg",
+		"/Applications/MAMP/htdocs/jump/zenith-just-drive/mobile/images/footer-scene-3-tablet.png",
+		"/Applications/MAMP/htdocs/jump/zenith-just-drive/mobile/sass/helpers/mixins/_font-size.scss",
+		"/Applications/MAMP/htdocs/jump/zenith-just-drive/mobile/sass/helpers/mixins/_bg-cover.scss",
+		"/Applications/MAMP/htdocs/jump/zenith-just-drive/mobile/sass/helpers/mixins/_border-radius.scss",
 		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/assets/js/common.js",
 		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/pages/picks_view.xsl",
 		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/pages/products.xsl",
@@ -464,62 +523,7 @@
 		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/games/ie8_game/js/ie8_game.js",
 		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/pages/msft-reps.xsl",
 		"/Applications/MAMP/htdocs/corporate_resolve/wp-content/themes/corporateresolve/sass/all.scss",
-		"/Applications/MAMP/htdocs/corporate_resolve/wp-content/themes/corporateresolve/sass/_layout.scss",
-		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/games/ie8_game/sass/ie8-game.scss",
-		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/assets/sass/components/_all.scss",
-		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/assets/sass/components/_forms.scss",
-		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/assets/sass/components/_typography.scss",
-		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/assets/css/layout.css",
-		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/assets/sass/components/_search.scss",
-		"/Users/neilmills/Downloads/ie8-game.scss",
-		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/html5game.html",
-		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/games/126823/common.js",
-		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/games/ie8_game/index.html",
-		"/Applications/MAMP/htdocs/pitter_patter_parcels/sass/layout.scss",
-		"/Applications/MAMP/htdocs/pitter_patter_parcels/sass/_variables.scss",
-		"/Applications/MAMP/htdocs/pitter_patter_parcels/index.php",
-		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/pages/games_view_questions.xsl",
-		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/pages/_products.xsl",
-		"/Applications/MAMP/htdocs/Backups/titan ip/titanip.sql",
-		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/utilities/master.xsl",
-		"/Applications/MAMP/htdocs/pitter_patter_parcels/js/placeholders.js",
-		"/Applications/MAMP/htdocs/pitter_patter_parcels/sass/_typography.scss",
-		"/Applications/MAMP/htdocs/pitter_patter_parcels/css/layout.css",
-		"/Users/neilmills/Library/Caches/Cleanup At Startup/Transmit/C92A8F85-9BB6-4788-A9C3-2607B4959241/header.php",
-		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/pages/home.xsl",
-		"/Applications/MAMP/htdocs/pitter_patter_parcels/sass/_normalize.scss",
-		"/Applications/MAMP/htdocs/pitter_patter_parcels/sass/_settings.scss",
-		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/assets/sass/layout.scss",
-		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/pages/ms-ft-reps.xsl",
-		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/games/278329/bower_components/jasmine/spec/support/dev_boot.js",
-		"/Applications/MAMP/htdocs/corporate_resolve/sass/_media_queries.scss",
-		"/Applications/MAMP/htdocs/corporate_resolve/sass/_grid_12col.scss",
-		"/Applications/MAMP/htdocs/corporate_resolve/sass/_layout.scss",
-		"/Applications/MAMP/htdocs/corporate_resolve/archive-news.php",
-		"/Applications/MAMP/htdocs/corporate_resolve/header.php",
-		"/Applications/MAMP/htdocs/corporate_resolve/js/modernizr.js",
-		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/assets/js/modernizr.js",
-		"/Applications/MAMP/htdocs/corporate_resolve/footer.php",
-		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/games/278329/sass/game.scss",
-		"/Applications/MAMP/htdocs/corporate_resolve/index.php",
-		"/Applications/MAMP/htdocs/corporate_resolve/header-home.php",
-		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/games/ie8_game/sass/_media_queries.scss",
-		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/games/ie8_game/css/ie.css",
-		"/Applications/MAMP/htdocs/corporate_resolve/sass/all.scss",
-		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/games/278329/js/lib/game/views/main.js",
-		"/Applications/MAMP/htdocs/juggle/wp-admin/js/edit-comments.js",
-		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/games/278329/bower_components/jquery/src/manipulation/support.js",
-		"/Applications/MAMP/htdocs/juggle/wp-admin/js/common.js",
-		"/Applications/MAMP/htdocs/corporate_resolve/js/placeholder.js",
-		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/games/278329/bower_components/jasmine/spec/core/integration/CustomMatchersSpec.js",
-		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/extensions/markdown/lib/htmlpurifier-4.5.0-standalone/standalone/HTMLPurifier/ConfigSchema/schema/Output.CommentScriptContents.txt",
-		"/Applications/MAMP/htdocs/juggle/wp-includes/js/customize-models.js",
-		"/Applications/MAMP/htdocs/corporate_resolve/news-archive.php",
-		"/Applications/MAMP/htdocs/corporate_resolve/services.php",
-		"/Applications/MAMP/htdocs/corporate_resolve/single-service.php",
-		"/Applications/MAMP/htdocs/corporate_resolve/js/jquery.cycle2.min.js",
-		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/games/ie8_game/css/ie8-game.css",
-		"/Applications/MAMP/htdocs/corporate_resolve/sass/layout.scss"
+		"/Applications/MAMP/htdocs/corporate_resolve/wp-content/themes/corporateresolve/sass/_layout.scss"
 	],
 	"find":
 	{
@@ -538,6 +542,21 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"tooltip",
+			"#accordion",
+			"cover",
+			"container",
+			"menu",
+			"mobile",
+			"#header",
+			"header",
+			"media",
+			"console",
+			"loaded",
+			"console",
+			"20%",
+			"kite",
+			"prop",
 			"button",
 			"console",
 			"coming-soon",
@@ -650,22 +669,7 @@
 			"sticker",
 			"16px",
 			".sticker",
-			"25px",
-			".common_sec",
-			"url-mode",
-			"landing",
-			"Quizzes",
-			"html5-play",
-			"95221",
-			"1320",
-			"sign-in",
-			".sticker.lock",
-			".lock",
-			".sticker02",
-			".sticker",
-			".page-games",
-			".page-games .sticker",
-			".common_sec"
+			"25px"
 		],
 		"highlight": false,
 		"in_selection": false,

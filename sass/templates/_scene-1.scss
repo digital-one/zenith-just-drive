@@ -77,6 +77,11 @@
 			z-index: 2;
 			margin-left: -6%;
 		}
+		.scene-8 &{
+			@include abs-pos(80px,auto,auto,50%);
+			z-index: 2;
+			margin-left: 240px;
+		}
 	}
 }
 #balloon{

@@ -1,0 +1,111 @@
+.scene-8{
+	#scene-8-hills{
+		@extend %full-width;
+		@extend %element;
+		height: 434px;
+		background-image: url('../images/scene-8-hills.png');
+		@include abs-pos(auto,auto,0,0);
+		z-index: 1;
+	}
+	#poster{
+		@extend %element;
+		width:773px;
+		height:885px;
+		@include abs-pos(0,auto,auto,50%);
+		background-image: url('../images/poster-scene-8.png');
+		margin-left: -436px;
+		z-index: 3;
+		padding: 300px 0 0 200px;
+		font-family: $interstate-regular;
+		.row{
+			margin-bottom: 30px;
+		}
+		.label{
+			font-size: 18px;
+			float:left;
+			display: block;
+			width: 30%;
+			height: 25px;
+			line-height: 25px;
+			color: $grey;
+		}
+		ul{
+			float: left;
+			list-style-type: none;
+			margin:0;
+			padding:0;
+			width: 60%;
+			li{
+				position: relative;
+				display: block;
+				width:100%;
+				float: none;
+				label{
+					font-size: 18px;
+					line-height: 25px;
+					height: 25px;
+					display: inline-block;
+					position: relative;
+					float: left;
+					display: inline-block;
+					padding:0 6px;
+					text-decoration: none;
+					color: $grey;
+					&:hover,&:active,&.selected{
+						background-color:#fff;
+					}
+				}
+				input{
+					display: none;
+				}
+				.tooltip-btn{
+					width:53px;
+					height:45px;
+					display: block;
+					float: left;
+					cursor: pointer;
+					margin-top: -10px;
+					position: relative;
+					img{
+						width: 100%;
+						height: auto;
+					}
+				}
+				.tooltip{
+					//@extend %element;
+					width:317px;
+					height:133px;
+					display:none;
+					background-image: url('../images/large-tooltip.png');
+					background-position: 0 0;
+					background-repeat:no-repeat;
+					font-family: $interstate-regular;
+					padding: 20px 0 0 20px;
+					@include abs-pos(-20px,auto,auto,0);
+					top:12px;
+					left: -100px;
+					z-index: 998;
+					p{
+						color: $grey;
+						line-height: 105%;
+						margin: 0 0 5px;
+						a:link,a:visited{
+							color: $grey;
+							font-family: $interstate-bold;
+						}
+					}
+				}
+			}
+		}
+	}
+	#signpost{
+		@extend %element;
+		@extend %ir;
+		width:232px;
+		height:203px;
+		@include abs-pos(auto,auto,120px,10%);
+		background-image: url('../images/back-to-home-sign.png');
+		z-index: 3;
+	}
+}
+

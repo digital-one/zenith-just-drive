@@ -20,6 +20,7 @@ setHistoryLink();
 scene2JS();
 scene3JS();
 scene4JS();
+scene8JS();
 resizeTree();
 
 
@@ -160,6 +161,8 @@ $image.src = list[i];
 	  	 		scene2JS();
 	  	 		scene3JS();
 	  	 		scene4JS();
+	  	 		scene8JS();
+
 	  	 		resizeTree();
 	  	 		$(window).bind('resize',function(){
 	  	 			resizeTree();
@@ -170,7 +173,24 @@ $image.src = list[i];
 	  	 });
 			
 	  });
-	  
+	
+function scene8JS(){
+	$('.option').on('click',function(){
+		var $siblings = $('label',$(this).parents('ul'));
+		$siblings.removeClass('selected');
+		$(this).addClass('selected');
+	})
+	$('.tooltip-btn').on('mouseenter',function(evt){
+		$(this).css({zIndex:999})
+		var $tooltip = $('.tooltip',$(this).parent('li'));
+		$($tooltip).fadeIn(300);
+	});
+	$('.tooltip-btn').on('mouseleave',function(evt){
+			$(this).css({zIndex:997})
+		var $tooltip = $('.tooltip',$(this).parent('li'));
+		$($tooltip).fadeOut(200);
+	});
+}  
 
 function scene4JS(){
 	

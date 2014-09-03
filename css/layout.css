@@ -456,11 +456,11 @@ th {
 /*
 .box-shadow ($string: 0px 0px 5px 0px rgba(50, 50, 50, 0.75));
 */
-#scene-6-hills {
+#scene-6-hills, .scene-8 #scene-8-hills {
   width: 100%;
   display: block; }
 
-#sign-yes, #sign-no, #zenith-cloud, #title-cloud, #balloon, #sign-save, form#calculator button, a#show-me-sign, #poster-tree #poster #main span a, #sign-get-a-quote, #road-sign ul a {
+#sign-yes, #sign-no, #zenith-cloud, #title-cloud, #balloon, #sign-save, form#calculator button, a#show-me-sign, #poster-tree #poster #main span a, #sign-get-a-quote, #road-sign ul a, .scene-8 #signpost {
   text-indent: -10000px;
   overflow: hidden; }
 
@@ -543,6 +543,8 @@ p {
     background-image: url("../images/bg-scene-2.jpg"); }
   #container.scene-4 {
     background-image: url("../images/bg-scene-4.jpg"); }
+  #container.scene-8 {
+    background-image: url("../images/bg-scene-8.jpg"); }
 
 #prompt {
   width: 250px;
@@ -580,7 +582,7 @@ p {
       left: auto;
       position: absolute; }
 
-#hills, #road, #car, #sign-yes, #sign-no, #zenith-cloud, #title-cloud, #balloon, nav#main .balloon, #car-shadow, #sign-save, #sun, #small-cloud, #fg-hills, #bg-hills, #tree-wrapper, #tree-wrapper #top, #tree-wrapper #base, form#calculator section#age .shadow, form#calculator section div, form#calculator button, #sign-off, a#show-me-sign, #hills-scene-4, #deer, .big-cloud, #poster-tree #poster, #kite, #sign-get-a-quote, #deer-left, #scene-6-hills, #large-cloud, #sign, #scene-6-balloon, #road-sign, #road-sign ul a {
+#hills, #road, #car, #sign-yes, #sign-no, #zenith-cloud, #title-cloud, #balloon, nav#main .balloon, #car-shadow, #sign-save, #sun, #small-cloud, #fg-hills, #bg-hills, #tree-wrapper, #tree-wrapper #top, #tree-wrapper #base, form#calculator section#age .shadow, form#calculator section div, form#calculator button, #sign-off, a#show-me-sign, #hills-scene-4, #deer, .big-cloud, #poster-tree #poster, #kite, #sign-get-a-quote, #deer-left, #scene-6-hills, #large-cloud, #sign, #scene-6-balloon, #road-sign, #road-sign ul a, .scene-8 #scene-8-hills, .scene-8 #poster, .scene-8 #signpost {
   display: block;
   top: 0;
   right: auto;
@@ -707,6 +709,14 @@ button:focus {
       position: absolute;
       z-index: 2;
       margin-left: -6%; }
+    .scene-8 #title-cloud.small {
+      top: 80px;
+      right: auto;
+      bottom: auto;
+      left: 50%;
+      position: absolute;
+      z-index: 2;
+      margin-left: 240px; }
 
 #balloon {
   width: 393px;
@@ -1784,3 +1794,107 @@ a#show-me-sign {
 
 #order-form td {
   padding: 0 30px 10px 0; }
+
+.scene-8 #scene-8-hills {
+  height: 434px;
+  background-image: url("../images/scene-8-hills.png");
+  top: auto;
+  right: auto;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  z-index: 1; }
+.scene-8 #poster {
+  width: 773px;
+  height: 885px;
+  top: 0;
+  right: auto;
+  bottom: auto;
+  left: 50%;
+  position: absolute;
+  background-image: url("../images/poster-scene-8.png");
+  margin-left: -436px;
+  z-index: 3;
+  padding: 300px 0 0 200px;
+  font-family: "interstateregular-webfont", Helvetica, Arial, sans-serif; }
+  .scene-8 #poster .row {
+    margin-bottom: 30px; }
+  .scene-8 #poster .label {
+    font-size: 18px;
+    float: left;
+    display: block;
+    width: 30%;
+    height: 25px;
+    line-height: 25px;
+    color: #535353; }
+  .scene-8 #poster ul {
+    float: left;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 60%; }
+    .scene-8 #poster ul li {
+      position: relative;
+      display: block;
+      width: 100%;
+      float: none; }
+      .scene-8 #poster ul li label {
+        font-size: 18px;
+        line-height: 25px;
+        height: 25px;
+        display: inline-block;
+        position: relative;
+        float: left;
+        display: inline-block;
+        padding: 0 6px;
+        text-decoration: none;
+        color: #535353; }
+        .scene-8 #poster ul li label:hover, .scene-8 #poster ul li label:active, .scene-8 #poster ul li label.selected {
+          background-color: #fff; }
+      .scene-8 #poster ul li input {
+        display: none; }
+      .scene-8 #poster ul li .tooltip-btn {
+        width: 53px;
+        height: 45px;
+        display: block;
+        float: left;
+        cursor: pointer;
+        margin-top: -10px;
+        position: relative; }
+        .scene-8 #poster ul li .tooltip-btn img {
+          width: 100%;
+          height: auto; }
+      .scene-8 #poster ul li .tooltip {
+        width: 317px;
+        height: 133px;
+        display: none;
+        background-image: url("../images/large-tooltip.png");
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        font-family: "interstateregular-webfont", Helvetica, Arial, sans-serif;
+        padding: 20px 0 0 20px;
+        top: -20px;
+        right: auto;
+        bottom: auto;
+        left: 0;
+        position: absolute;
+        top: 12px;
+        left: -100px;
+        z-index: 998; }
+        .scene-8 #poster ul li .tooltip p {
+          color: #535353;
+          line-height: 105%;
+          margin: 0 0 5px; }
+          .scene-8 #poster ul li .tooltip p a:link, .scene-8 #poster ul li .tooltip p a:visited {
+            color: #535353;
+            font-family: "interstate_bold-webfont", Helvetica, Arial, sans-serif; }
+.scene-8 #signpost {
+  width: 232px;
+  height: 203px;
+  top: auto;
+  right: auto;
+  bottom: 120px;
+  left: 10%;
+  position: absolute;
+  background-image: url("../images/back-to-home-sign.png");
+  z-index: 3; }
