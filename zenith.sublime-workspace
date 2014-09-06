@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"tooltip",
+				"tooltip-btn"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"fo",
+				"font-size"
+			],
+			[
 				"ba",
 				"background"
 			],
@@ -12,16 +24,8 @@
 				"margin-bottom"
 			],
 			[
-				"fo",
-				"font-weight"
-			],
-			[
 				"te",
 				"text-decoration"
-			],
-			[
-				"mar",
-				"margin-left"
 			],
 			[
 				"pad",
@@ -367,6 +371,102 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "scene-8.html",
+			"settings":
+			{
+				"buffer_size": 3458,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "sass/templates/_scene-8.scss",
+			"settings":
+			{
+				"buffer_size": 2153,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "sass/components/_container.scss",
+			"settings":
+			{
+				"buffer_size": 1467,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "sass/templates/_scene-1.scss",
+			"settings":
+			{
+				"buffer_size": 2049,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "sass/templates/_all.scss",
+			"settings":
+			{
+				"buffer_size": 132,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "sass/templates/_scene-2.scss",
+			"settings":
+			{
+				"buffer_size": 2607,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "sass/templates/_scene-5.scss",
+			"settings":
+			{
+				"buffer_size": 1512,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "sass/templates/_scene-4.scss",
+			"settings":
+			{
+				"buffer_size": 4954,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/scripts.js",
+			"settings":
+			{
+				"buffer_size": 8630,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "scene-6.html",
+			"settings":
+			{
+				"buffer_size": 3956,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "scene-1.html",
+			"settings":
+			{
+				"buffer_size": 2455,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "scene-2.html",
+			"settings":
+			{
+				"buffer_size": 4595,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -396,6 +496,7 @@
 	},
 	"file_history":
 	[
+		"/Applications/MAMP/htdocs/jump/zenith-just-drive/sass/_settings.scss",
 		"/Applications/MAMP/htdocs/jump/zenith-just-drive/sass/templates/_scene-4.scss",
 		"/Applications/MAMP/htdocs/jump/zenith-just-drive/sass/templates/_scene-2.scss",
 		"/Applications/MAMP/htdocs/jump/zenith-just-drive/js/scripts.js",
@@ -433,7 +534,6 @@
 		"/Applications/MAMP/htdocs/jump/zenith-just-drive/sass/layout.scss",
 		"/Applications/MAMP/htdocs/jump/zenith-just-drive/.htaccess",
 		"/Applications/MAMP/htdocs/jump/zenith-just-drive/sass/templates/_scene-3.scss",
-		"/Applications/MAMP/htdocs/jump/zenith-just-drive/sass/_settings.scss",
 		"/Applications/MAMP/htdocs/jump/zenith-just-drive/sass/templates/_scene-1.scss",
 		"/Applications/MAMP/htdocs/jump/zenith-just-drive/mobile/sass/templates/_scene-5.scss",
 		"/Applications/MAMP/htdocs/jump/zenith-just-drive/mobile/sass/templates/_scene-6.scss",
@@ -672,7 +772,7 @@
 			"25px"
 		],
 		"highlight": false,
-		"in_selection": false,
+		"in_selection": true,
 		"preserve_case": false,
 		"regex": false,
 		"replace_history":
@@ -815,8 +915,336 @@
 	"groups":
 	[
 		{
+			"selected": 10,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "scene-8.html",
+					"settings":
+					{
+						"buffer_size": 3458,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2971,
+								2971
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "sass/templates/_scene-8.scss",
+					"settings":
+					{
+						"buffer_size": 2153,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								346,
+								328
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "sass/components/_container.scss",
+					"settings":
+					{
+						"buffer_size": 1467,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								527,
+								527
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "sass/templates/_scene-1.scss",
+					"settings":
+					{
+						"buffer_size": 2049,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1746,
+								1746
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 551.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "sass/templates/_all.scss",
+					"settings":
+					{
+						"buffer_size": 132,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								130,
+								130
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "sass/templates/_scene-2.scss",
+					"settings":
+					{
+						"buffer_size": 2607,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "sass/templates/_scene-5.scss",
+					"settings":
+					{
+						"buffer_size": 1512,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "sass/templates/_scene-4.scss",
+					"settings":
+					{
+						"buffer_size": 4954,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2496,
+								2503
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3143.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "js/scripts.js",
+					"settings":
+					{
+						"buffer_size": 8630,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4062,
+								4062
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2102.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "scene-6.html",
+					"settings":
+					{
+						"buffer_size": 3956,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "scene-1.html",
+					"settings":
+					{
+						"buffer_size": 2455,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								1082
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "scene-2.html",
+					"settings":
+					{
+						"buffer_size": 4595,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1200,
+								1144
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],

@@ -73,14 +73,14 @@
 				}
 				.tooltip{
 					//@extend %element;
-					width:317px;
-					height:133px;
+					width:287px;
+					height:75px;
 					display:none;
 					background-image: url('../images/large-tooltip.png');
 					background-position: 0 0;
 					background-repeat:no-repeat;
 					font-family: $interstate-regular;
-					padding: 20px 0 0 20px;
+					padding: 14px 0 0 9px;
 					@include abs-pos(-20px,auto,auto,0);
 					top:12px;
 					left: -100px;

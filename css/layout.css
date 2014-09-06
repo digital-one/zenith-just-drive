@@ -1865,14 +1865,14 @@ a#show-me-sign {
           width: 100%;
           height: auto; }
       .scene-8 #poster ul li .tooltip {
-        width: 317px;
-        height: 133px;
+        width: 287px;
+        height: 75px;
         display: none;
         background-image: url("../images/large-tooltip.png");
         background-position: 0 0;
         background-repeat: no-repeat;
         font-family: "interstateregular-webfont", Helvetica, Arial, sans-serif;
-        padding: 20px 0 0 20px;
+        padding: 14px 0 0 9px;
         top: -20px;
         right: auto;
         bottom: auto;
