@@ -708,7 +708,7 @@ button:focus {
       left: 50%;
       position: absolute;
       z-index: 2;
-      margin-left: -6%; }
+      margin-left: -40px; }
     .scene-8 #title-cloud.small {
       top: 80px;
       right: auto;
@@ -1625,7 +1625,7 @@ a#show-me-sign {
   bottom: auto;
   left: 50%;
   position: absolute;
-  margin-left: -48%;
+  margin-left: -550px;
   padding: 120px 0 0 180px; }
   #large-cloud h2 {
     font-family: "interstateregular-webfont", Helvetica, Arial, sans-serif;
@@ -1641,8 +1641,9 @@ a#show-me-sign {
   top: auto;
   right: auto;
   bottom: 0;
-  left: 2%;
+  left: 50%;
   position: absolute;
+  margin-left: -520px;
   background-image: url("../images/sign.png");
   z-index: 10; }
   #sign ul {
@@ -1693,10 +1694,11 @@ a#show-me-sign {
   top: 0;
   right: 1%;
   bottom: auto;
-  left: auto;
+  left: 50%;
   position: absolute;
   font-size: 14px;
   font-size: 1.4rem;
+  margin-left: 200px;
   text-align: center;
   padding: 50px 0 0; }
   #scene-6-balloon .content {
@@ -1724,10 +1726,11 @@ a#show-me-sign {
   background-image: url("../images/signpost.png");
   background-position: left bottom;
   top: auto;
-  right: 2%;
+  right: auto;
   bottom: 10px;
-  left: auto;
-  position: absolute; }
+  left: 50%;
+  position: absolute;
+  margin-left: 160px; }
   #road-sign ul {
     list-style-type: none;
     padding: 0; }

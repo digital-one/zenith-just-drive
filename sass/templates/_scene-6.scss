@@ -11,7 +11,7 @@
 	height:478px;
 	background-image: url('../images/large-cloud.png');
 	@include abs-pos(40px,auto,auto,50%);
-	margin-left:-48%;
+	margin-left:-550px;
 	padding:120px 0 0 180px;
 	h2{
 		font-family: $interstate-regular;
@@ -64,7 +64,9 @@
 		}
 	}
 	@extend %element;
-	@include abs-pos(auto,auto,0,2%);
+	@include abs-pos(auto,auto,0,50%);
+	margin-left:-520px;
+
 	background-image: url('../images/sign.png');
 	z-index:10;
 	h2{
@@ -78,8 +80,9 @@
 	width:416px;
 	height:435px;
 	background-image: url('../images/balloon-scene-6.png');
-	@include abs-pos(0,1%,auto,auto);
+	@include abs-pos(0,1%,auto,50%);
 	@include font-size(14);
+	margin-left:200px;
 	text-align: center;
 	padding:50px 0 0;
 	.content{
@@ -112,7 +115,8 @@
 	@extend %element;
 	background-image: url('../images/signpost.png');
 	background-position: left bottom;
-	@include abs-pos(auto,2%,10px,auto);
+	@include abs-pos(auto,auto,10px,50%);
+	margin-left: 160px;
 	ul{
 		list-style-type: none;
 		padding:0;

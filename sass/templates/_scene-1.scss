@@ -75,7 +75,7 @@
 		.scene-6 &{
 			@include abs-pos(20px,auto,auto,50%);
 			z-index: 2;
-			margin-left: -6%;
+			margin-left:-40px;
 		}
 		.scene-8 &{
 			@include abs-pos(80px,auto,auto,50%);
